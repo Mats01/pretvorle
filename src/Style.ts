@@ -120,4 +120,21 @@ export const styles: Record<string, CSSProperties> = {
     alignItems: 'center',
 
   },
+  alert: {
+    backgroundColor: '#ffc0c0',
+    borderRadius: '5px',
+    padding: '5px',
+    margin: '5px',
+    width: '800px',
+    maxWidth: '90%',
+    height: '50px',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    position: 'absolute',
+    top: 20,
+    left: '50%',
+    transform: 'translateX(-50%)',
+    border: '1px solid red',
+  }
 }

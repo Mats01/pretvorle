@@ -6,7 +6,7 @@ import Keyboard from './Keyboard';
 import { styles } from './Style';
 import { sveHrvRijeci } from './sveHrvRijeci';
 import { useCorrectHeight, useScrollToBottom } from './hooks';
-import { findOptimalPath, findTargetWord } from './utils';
+import { findTargetWord } from './utils';
 
 const isAlpha = (ch: string): boolean => {
   if (ch === 'lj') return true;
@@ -61,41 +61,49 @@ function App() {
   // const wordOfTheDay = ['š', 'k', 'o', 'l', 'a'];
   const [wordOfTheDay, setWordOfTheDay] = useState<string[]>([]);
 
-  const setWordPair = useCallback(() => {
+  const setWordPair = useCallback((tryAgain: number) => {
     const sveHvrImenice = Object.keys(sveHrvRijeci);
 
     let todaysStartIndex = 0;
 
-    // let yourDate = new Date()
-    // todaysStartIndex = SHA256(yourDate.toISOString().split('T')[0]).words.reduce((a: number, b: number) => Math.abs(Math.abs(a) + b))
+    let yourDate = new Date()
+    todaysStartIndex = SHA256(yourDate.toISOString().split('T')[0]).words.reduce((a: number, b: number) => Math.abs(Math.abs(a) + b)) + tryAgain;
     // random number between 0 and length of array
-    todaysStartIndex = Math.floor(Math.random() * sveHvrImenice.length);
+    // todaysStartIndex = Math.floor(Math.random() * sveHvrImenice.length);
 
     const w = sveHvrImenice[todaysStartIndex % sveHvrImenice.length];
     console.log(w);
 
     const path = findTargetWord(w, 6, [w]);
     if (path.length === 6) {
+      // console.log(path);
+
       setWordOfTheDay(splitCroatianWord(path[5].toLowerCase()));
       setStartWord(splitCroatianWord(w.toLowerCase()));
     } else {
-      setWordPair()
+      setWordPair(tryAgain + 1)
     }
   }, [sveHrvRijeci]);
   useEffect(() => {
-    setWordPair();
+    setWordPair(0);
 
   }, []);
 
   useEffect(() => {
     console.log(wordOfTheDay);
     console.log(startWord);
-    checkWord(startWord)
+    startWord.length && checkWord(startWord)
 
   }, [wordOfTheDay, startWord]);
 
 
-
+  const [alertText, setAlertText] = useState<string>('');
+  const showAlert = useCallback((text: string) => {
+    setAlertText(text);
+    setTimeout(() => {
+      setAlertText('');
+    }, 2000);
+  }, []);
 
 
 
@@ -108,29 +116,30 @@ function App() {
 
   const getEmoji = useCallback((): string => {
     <h3>Pokusaji: <strong></strong></h3>
-    let emoji = `Rjecle 🇭🇷 ${previousWords.length + 1}/6`;
+    let emoji = `Pretvorle 🇭🇷 ${previousWords.length}`;
 
     for (const guess of previousWords) {
-      let line = '';
+      let line = [];
       for (const letter of guess.colors) {
         switch (letter) {
           case GREEN:
-            line += '🟩';
+            line.push('🟩');
             break;
           default:
-            line += '⬜️';
+            line.push('⬜️');
         }
       }
-      emoji += `\n${line}`;
+      emoji += `\n${line.sort().reverse().join('')
+        } `;
     }
-    emoji += `\n🟩🟩🟩🟩🟩`;
+    emoji += `\n${'🟩'.repeat(word.length)} `;
     return emoji;
   }, [previousWords])
 
   const checkWord = (word: string[]) => {
     let isWord = isAcceptedWord(word);
     if (!isWord) {
-      alert('Nije u popisu riječi.');
+      showAlert('Nije u popisu riječi.');
       return;
     }
     let newColors = colors;
@@ -174,10 +183,25 @@ function App() {
 
     // setCorrect(Array.from(new Set([...Array.from(newCorrect), ...correct])));
     // setIncorrect(Array.from(new Set([...Array.from(newIncorrect), ...incorrect])));
-    setPreviousWords([...previousWords, { word: word, colors: newColors }]);
-    setColors([...new Array(WORD_LENGTH)].fill(WHITE));
-    setWord([]);
+    if (previousWords.length > 0) {
+      const lastWord = previousWords[previousWords.length - 1].word.join('');
+      if (lastWord === word.join('')) {
+        showAlert('Rijec je ista');
 
+      }
+      else if (sveHrvRijeci[lastWord].includes(word.join(''))) {
+        setPreviousWords([...previousWords, { word: word, colors: newColors }]);
+        setColors([...new Array(WORD_LENGTH)].fill(WHITE));
+        setWord([]);
+      } else {
+        showAlert('Promijenjeno vise od jednog slova');
+      }
+
+    } else {
+      setPreviousWords([...previousWords, { word: word, colors: newColors }]);
+      setColors([...new Array(WORD_LENGTH)].fill(WHITE));
+      setWord([]);
+    }
   }
 
   const acceptLetter = useCallback((key: string) => {
@@ -215,7 +239,7 @@ function App() {
       window.localStorage.setItem('@hideExplainer', '1');
     } else {
       let nrOfShowings = parseInt(window.localStorage.getItem('@hideExplainer') || '0');
-      window.localStorage.setItem('@hideExplainer', `${nrOfShowings + 1}`);
+      window.localStorage.setItem('@hideExplainer', `${nrOfShowings + 1} `);
     }
     setHideExplainer(true);
   }
@@ -252,6 +276,7 @@ function App() {
         <Keyboard correct={correct} incorrect={incorrect} sendKeyPress={(key) => acceptLetter(key)} />
       </div>
       {!hideExplainer && <Explainer hide={dismissExplainer} />}
+      {alertText && <Alert text={alertText} />}
     </div >
   );
 }
@@ -345,4 +370,18 @@ const Explainer: FC<{ hide: () => void }> = ({ hide }) => {
       <button style={styles.greebButton} onClick={hide}>Kreni</button>
     </div>
   </>)
+}
+
+
+
+const Alert: FC<{ text: string }> = ({ text }) => {
+
+  return (
+    <>
+      <div style={styles.alert}>
+        {text}
+      </div>
+
+    </>
+  )
 }
