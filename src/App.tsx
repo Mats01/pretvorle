@@ -53,8 +53,6 @@ function App() {
   const [startWord, setStartWord] = useState<string[]>([]);
   const [colors, setColors] = useState<string[]>([...new Array(WORD_LENGTH)].fill(WHITE));
   const [previousWords, setPreviousWords] = useState<{ word: string[], colors: string[] }[]>([]);
-  const [correct, setCorrect] = useState<string[]>([]);
-  const [incorrect, setIncorrect] = useState<string[]>([]);
   const [showPopup, setShowPopup] = useState<boolean>(false);
   const [hideExplainer, setHideExplainer] = useState<boolean>(window.localStorage.getItem('@hideExplainer') === '4' || false);
   const [emojiText, setEmojiText] = useState<string>('');
@@ -83,18 +81,13 @@ function App() {
     } else {
       setWordPair(tryAgain + 1)
     }
-  }, [sveHrvRijeci]);
+  }, []);
   useEffect(() => {
     setWordPair(0);
 
-  }, []);
+  }, [setWordPair]);
 
-  useEffect(() => {
-    console.log(wordOfTheDay);
-    console.log(startWord);
-    startWord.length && checkWord(startWord)
 
-  }, [wordOfTheDay, startWord]);
 
 
   const [alertText, setAlertText] = useState<string>('');
@@ -109,10 +102,8 @@ function App() {
 
 
   const isAcceptedWord = useCallback((word: string[]): boolean => {
-
     return Object.keys(sveHrvRijeci).map(r => r.toLowerCase()).includes(word.join(""))
-
-  }, [word]);
+  }, []);
 
   const getEmoji = useCallback((): string => {
     <h3>Pokusaji: <strong></strong></h3>
@@ -132,19 +123,17 @@ function App() {
       emoji += `\n${line.sort().reverse().join('')
         } `;
     }
-    emoji += `\n${'🟩'.repeat(word.length)} `;
+    emoji += `\n${'🟩'.repeat(WORD_LENGTH)} `;
     return emoji;
   }, [previousWords])
 
-  const checkWord = (word: string[]) => {
+  const checkWord = useCallback((word: string[]) => {
     let isWord = isAcceptedWord(word);
     if (!isWord) {
       showAlert('Nije u popisu riječi.');
       return;
     }
     let newColors = colors;
-    let newCorrect = new Set<string>();
-    let newIncorrect = new Set(word);
     if (word.join('') === wordOfTheDay.join('')) {
       console.log('Pobijedili ste');
       setEmojiText(getEmoji());
@@ -163,8 +152,6 @@ function App() {
           guessed.push(i);
           newColors[i] = GREEN;
           target[i] = '_';
-          newCorrect.add(word[i]);
-          newIncorrect.delete(word[i]);
         }
 
       }
@@ -202,7 +189,15 @@ function App() {
       setColors([...new Array(WORD_LENGTH)].fill(WHITE));
       setWord([]);
     }
-  }
+  }, [wordOfTheDay, previousWords, isAcceptedWord, showAlert, colors, getEmoji]);
+
+
+  useEffect(() => {
+    console.log(wordOfTheDay);
+    console.log(startWord);
+    startWord.length && checkWord(startWord)
+
+  }, [wordOfTheDay, startWord, checkWord]);
 
   const acceptLetter = useCallback((key: string) => {
     if (key === 'Backspace') {
@@ -273,7 +268,7 @@ function App() {
         </div>
         <Guesses word={wordOfTheDay} colors={[...new Array(WORD_LENGTH)].fill(GREEN)} />
 
-        <Keyboard correct={correct} incorrect={incorrect} sendKeyPress={(key) => acceptLetter(key)} />
+        <Keyboard correct={[]} incorrect={[]} sendKeyPress={(key) => acceptLetter(key)} />
       </div>
       {!hideExplainer && <Explainer hide={dismissExplainer} />}
       {alertText && <Alert text={alertText} />}
