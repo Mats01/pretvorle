@@ -256,7 +256,7 @@ function App() {
         />
       }
       <div style={styles.mainflexWrapper}>
-        <h1>Rijecle</h1>
+        <h1>Pretvorle</h1>
         <div
           ref={guessesRef}
           style={styles.guessesWrapper}
@@ -355,7 +355,7 @@ const Explainer: FC<{ hide: () => void }> = ({ hide }) => {
 
   return (<>
     <div style={styles.explanerWindow}>
-      <h1>Rijecle</h1>
+      <h1>Pretvorle</h1>
       <p>Pogodi novu riječ svaki dan u 6 pokušaja.</p>
       <p>Svaki pokušaj mora biti hrvatska riječ.</p>
       <p>Nakon svakog pokušaja otkriva se koja slova su pogođena.</p>
