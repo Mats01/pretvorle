@@ -6,6 +6,7 @@ import Keyboard from './Keyboard';
 import { styles } from './Style';
 import { sveHrvRijeci } from './sveHrvRijeci';
 import { useCorrectHeight, useScrollToBottom } from './hooks';
+import { findOptimalPath, findTargetWord } from './utils';
 
 const isAlpha = (ch: string): boolean => {
   if (ch === 'lj') return true;
@@ -18,7 +19,6 @@ export const YELLOW = '#f8f86c';
 export const GREY = '#aaa';
 const WHITE = '#fff';
 const WORD_LENGTH = 4;
-const NR_OF_TRIES = 6;
 
 
 const splitCroatianWord = (word: string): string[] => {
@@ -50,7 +50,7 @@ function App() {
 
 
   const [word, setWord] = useState<string[]>([]);
-  const [targetWord, setTargetWord] = useState<string[]>([]);
+  const [startWord, setStartWord] = useState<string[]>([]);
   const [colors, setColors] = useState<string[]>([...new Array(WORD_LENGTH)].fill(WHITE));
   const [previousWords, setPreviousWords] = useState<{ word: string[], colors: string[] }[]>([]);
   const [correct, setCorrect] = useState<string[]>([]);
@@ -60,30 +60,47 @@ function App() {
   const [emojiText, setEmojiText] = useState<string>('');
   // const wordOfTheDay = ['š', 'k', 'o', 'l', 'a'];
   const [wordOfTheDay, setWordOfTheDay] = useState<string[]>([]);
-  useEffect(() => {
+
+  const setWordPair = useCallback(() => {
     const sveHvrImenice = Object.keys(sveHrvRijeci);
 
     let todaysStartIndex = 0;
 
-    let yourDate = new Date()
-    todaysStartIndex = SHA256(yourDate.toISOString().split('T')[0]).words.reduce((a: number, b: number) => Math.abs(Math.abs(a) + b))
-    const todaysEndIndex = todaysStartIndex + sveHvrImenice.length / 2;
+    // let yourDate = new Date()
+    // todaysStartIndex = SHA256(yourDate.toISOString().split('T')[0]).words.reduce((a: number, b: number) => Math.abs(Math.abs(a) + b))
+    // random number between 0 and length of array
+    todaysStartIndex = Math.floor(Math.random() * sveHvrImenice.length);
 
     const w = sveHvrImenice[todaysStartIndex % sveHvrImenice.length];
-    const w2 = sveHvrImenice[todaysEndIndex % sveHvrImenice.length];
     console.log(w);
-    console.log(w2);
-    setWordOfTheDay(splitCroatianWord(w.toLowerCase()));
-    setTargetWord(splitCroatianWord(w2.toLowerCase()));
+
+    const path = findTargetWord(w, 6, [w]);
+    if (path.length === 6) {
+      setWordOfTheDay(splitCroatianWord(path[5].toLowerCase()));
+      setStartWord(splitCroatianWord(w.toLowerCase()));
+    } else {
+      setWordPair()
+    }
+  }, [sveHrvRijeci]);
+  useEffect(() => {
+    setWordPair();
 
   }, []);
 
+  useEffect(() => {
+    console.log(wordOfTheDay);
+    console.log(startWord);
+    checkWord(startWord)
+
+  }, [wordOfTheDay, startWord]);
 
 
 
 
 
-  const isAcceptedWord = useCallback((): boolean => {
+
+
+  const isAcceptedWord = useCallback((word: string[]): boolean => {
 
     return Object.keys(sveHrvRijeci).map(r => r.toLowerCase()).includes(word.join(""))
 
@@ -100,9 +117,6 @@ function App() {
           case GREEN:
             line += '🟩';
             break;
-          case YELLOW:
-            line += '🟨';
-            break;
           default:
             line += '⬜️';
         }
@@ -113,8 +127,8 @@ function App() {
     return emoji;
   }, [previousWords])
 
-  const checkWord = () => {
-    let isWord = isAcceptedWord();
+  const checkWord = (word: string[]) => {
+    let isWord = isAcceptedWord(word);
     if (!isWord) {
       alert('Nije u popisu riječi.');
       return;
@@ -145,24 +159,21 @@ function App() {
         }
 
       }
-      for (let i = 0; i < word.length; i++) {
-        if (guessed.indexOf(i) !== -1) continue;
-        if (target.includes(word[i])) {
-          newColors[i] = YELLOW;
-          target[target.indexOf(word[i])] = '_';
-          newCorrect.add(word[i]);
-          newIncorrect.delete(word[i]);
-        }
-      }
+      // for (let i = 0; i < word.length; i++) {
+      //   if (guessed.indexOf(i) !== -1) continue;
+      //   if (target.includes(word[i])) {
+      //     newColors[i] = YELLOW;
+      //     target[target.indexOf(word[i])] = '_';
+      //     newCorrect.add(word[i]);
+      //     newIncorrect.delete(word[i]);
+      //   }
+      // }
 
 
     }
-    if (previousWords.length > NR_OF_TRIES) {
-      alert('Ostali ste bez pokušaja, rijec je bila: ' + wordOfTheDay.join(''));
-      return;
-    }
-    setCorrect(Array.from(new Set([...Array.from(newCorrect), ...correct])));
-    setIncorrect(Array.from(new Set([...Array.from(newIncorrect), ...incorrect])));
+
+    // setCorrect(Array.from(new Set([...Array.from(newCorrect), ...correct])));
+    // setIncorrect(Array.from(new Set([...Array.from(newIncorrect), ...incorrect])));
     setPreviousWords([...previousWords, { word: word, colors: newColors }]);
     setColors([...new Array(WORD_LENGTH)].fill(WHITE));
     setWord([]);
@@ -174,7 +185,7 @@ function App() {
       setWord(word.slice(0, -1));
     }
     if (key === 'Enter') {
-      word.length === WORD_LENGTH && checkWord();
+      word.length === WORD_LENGTH && checkWord(word);
     }
     else if (isAlpha(key)) {
       if (word.length < WORD_LENGTH) {
@@ -236,6 +247,8 @@ function App() {
           ))}
           <Guesses word={word} colors={colors} />
         </div>
+        <Guesses word={wordOfTheDay} colors={[...new Array(WORD_LENGTH)].fill(GREEN)} />
+
         <Keyboard correct={correct} incorrect={incorrect} sendKeyPress={(key) => acceptLetter(key)} />
       </div>
       {!hideExplainer && <Explainer hide={dismissExplainer} />}
