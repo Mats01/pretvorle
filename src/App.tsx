@@ -5,7 +5,6 @@ import './App.css';
 import Keyboard from './Keyboard';
 import { styles } from './Style';
 import { sveHrvRijeci } from './sveHrvRijeci';
-import { sveHvrImenice } from './sveHvrImenice';
 import { useCorrectHeight, useScrollToBottom } from './hooks';
 
 const isAlpha = (ch: string): boolean => {
@@ -17,6 +16,9 @@ const isAlpha = (ch: string): boolean => {
 export const GREEN = '#6ff573';
 export const YELLOW = '#f8f86c';
 export const GREY = '#aaa';
+const WHITE = '#fff';
+const WORD_LENGTH = 4;
+const NR_OF_TRIES = 6;
 
 
 const splitCroatianWord = (word: string): string[] => {
@@ -45,59 +47,45 @@ function App() {
   const correctHeightRef = useCorrectHeight<HTMLDivElement>();
   const guessesRef = useScrollToBottom<HTMLDivElement>();
 
+
+
   const [word, setWord] = useState<string[]>([]);
-  const [colors, setColors] = useState<string[]>(['white', 'white', 'white', 'white', 'white']);
+  const [targetWord, setTargetWord] = useState<string[]>([]);
+  const [colors, setColors] = useState<string[]>([...new Array(WORD_LENGTH)].fill(WHITE));
   const [previousWords, setPreviousWords] = useState<{ word: string[], colors: string[] }[]>([]);
   const [correct, setCorrect] = useState<string[]>([]);
   const [incorrect, setIncorrect] = useState<string[]>([]);
   const [showPopup, setShowPopup] = useState<boolean>(false);
-  const [randomMode,] = useState<boolean>(window.localStorage.getItem('@random') === 'true' || false);
   const [hideExplainer, setHideExplainer] = useState<boolean>(window.localStorage.getItem('@hideExplainer') === '4' || false);
   const [emojiText, setEmojiText] = useState<string>('');
   // const wordOfTheDay = ['š', 'k', 'o', 'l', 'a'];
   const [wordOfTheDay, setWordOfTheDay] = useState<string[]>([]);
   useEffect(() => {
-    let todaysIndex = 0;
-    if (randomMode) {
-      todaysIndex = Math.floor(Math.random() * sveHvrImenice.length);
-    } else {
-      let yourDate = new Date()
-      todaysIndex = SHA256(yourDate.toISOString().split('T')[0]).words.reduce((a: number, b: number) => Math.abs(Math.abs(a) + b))
-    }
-    let w = sveHvrImenice[todaysIndex % sveHvrImenice.length];
+    const sveHvrImenice = Object.keys(sveHrvRijeci);
+
+    let todaysStartIndex = 0;
+
+    let yourDate = new Date()
+    todaysStartIndex = SHA256(yourDate.toISOString().split('T')[0]).words.reduce((a: number, b: number) => Math.abs(Math.abs(a) + b))
+    const todaysEndIndex = todaysStartIndex + sveHvrImenice.length / 2;
+
+    const w = sveHvrImenice[todaysStartIndex % sveHvrImenice.length];
+    const w2 = sveHvrImenice[todaysEndIndex % sveHvrImenice.length];
     console.log(w);
+    console.log(w2);
     setWordOfTheDay(splitCroatianWord(w.toLowerCase()));
-  }, [randomMode]);
+    setTargetWord(splitCroatianWord(w2.toLowerCase()));
 
-  // useEffect(() => {
-  //   if (previousWords.length > 5) {
-  //     alert('Ostali ste bez pokušaja, rijec je bila: ' + wordOfTheDay.join(''));
-  //   }
-  // }, [previousWords]);
+  }, []);
 
 
 
 
 
-  const getWiktionary = useCallback((): boolean => {
-    // return fetch(`https://hr.wiktionary.org/w/api.php?action=query&titles=${word.join("")}&prop=revisions&rvprop=content&format=json&origin=*`)
-    //   .then(
-    //     (response) =>
-    //       response.json()
-    //   ).then((data) => {
-    //     let pages = data.query.pages;
-    //     let firstKey = Object.keys(pages)[0];
-    //     if (firstKey === '-1') return false;
-    //     try {
-    //       return data.query.pages[Object.keys(data.query.pages)[0]].revisions[0]['*'].includes("{{hrvatski jezik}}");
-    //     } catch (e) {
-    //       return false;
-    //     }
-    //   }).catch((error) => {
-    //     console.log(error);
-    //     return false;
-    //   })
-    return sveHrvRijeci.map(r => r.toLowerCase()).includes(word.join(""))
+
+  const isAcceptedWord = useCallback((): boolean => {
+
+    return Object.keys(sveHrvRijeci).map(r => r.toLowerCase()).includes(word.join(""))
 
   }, [word]);
 
@@ -126,7 +114,7 @@ function App() {
   }, [previousWords])
 
   const checkWord = () => {
-    let isWord = getWiktionary();
+    let isWord = isAcceptedWord();
     if (!isWord) {
       alert('Nije u popisu riječi.');
       return;
@@ -138,7 +126,7 @@ function App() {
       console.log('Pobijedili ste');
       setEmojiText(getEmoji());
       setShowPopup(true);
-      setColors([GREEN, GREEN, GREEN, GREEN, GREEN]);
+      setColors([...new Array(WORD_LENGTH)].fill(GREEN));
       return;
     } else {
 
@@ -146,7 +134,7 @@ function App() {
 
       const guessed = []
 
-      newColors = [GREY, GREY, GREY, GREY, GREY];
+      newColors = [...new Array(WORD_LENGTH)].fill(GREY);
       for (let i = 0; i < word.length; i++) {
         if (word[i] === target[i]) {
           guessed.push(i);
@@ -169,14 +157,14 @@ function App() {
 
 
     }
-    if (previousWords.length >= 5) {
+    if (previousWords.length > NR_OF_TRIES) {
       alert('Ostali ste bez pokušaja, rijec je bila: ' + wordOfTheDay.join(''));
       return;
     }
     setCorrect(Array.from(new Set([...Array.from(newCorrect), ...correct])));
     setIncorrect(Array.from(new Set([...Array.from(newIncorrect), ...incorrect])));
     setPreviousWords([...previousWords, { word: word, colors: newColors }]);
-    setColors(['white', 'white', 'white', 'white', 'white']);
+    setColors([...new Array(WORD_LENGTH)].fill(WHITE));
     setWord([]);
 
   }
@@ -186,10 +174,10 @@ function App() {
       setWord(word.slice(0, -1));
     }
     if (key === 'Enter') {
-      word.length === 5 && checkWord();
+      word.length === WORD_LENGTH && checkWord();
     }
     else if (isAlpha(key)) {
-      if (word.length < 5) {
+      if (word.length < WORD_LENGTH) {
         setWord([...word, key]);
       }
     }
@@ -210,13 +198,6 @@ function App() {
 
   }, [word, getKeyFromPhisycalKeyboard])
 
-  const toggleRandomMode = () => {
-    if (previousWords.length > 0) {
-      if (!window.confirm('Da li želite krenuti ispočetka?')) return;
-    }
-    window.localStorage.setItem('@random', !randomMode ? 'true' : 'false');
-    window.location.reload();
-  }
 
   const dismissExplainer = () => {
     if (!parseInt(window.localStorage.getItem('@hideExplainer') || '0')) {
@@ -236,18 +217,7 @@ function App() {
         <div style={styles.betaText}>BETA</div>
       </div>
 
-      <div
-        style={styles.randomSwitch}
-        onClick={toggleRandomMode}
-      >
-        <span
-          style={!randomMode ? { textDecoration: 'underline' } : { color: "#666" }}
-        >ranked
-        </span> | <span
-          style={randomMode ? { textDecoration: 'underline' } : { color: "#666" }}
-        >random
-        </span>
-      </div>
+
       {showPopup &&
         <BravoPopup
           wordOfTheDay={wordOfTheDay.join("")}
@@ -313,14 +283,6 @@ const Guesses: FC<{ word: string[], colors: string[] }> = ({ word, colors }) => 
         }}
       >
         {word[3]}
-      </div>
-      <div
-        style={{
-          ...styles.container,
-          backgroundColor: colors[4]
-        }}
-      >
-        {word[4]}
       </div>
     </div>
   )
