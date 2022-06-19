@@ -58,6 +58,7 @@ function App() {
   const [emojiText, setEmojiText] = useState<string>('');
   // const wordOfTheDay = ['š', 'k', 'o', 'l', 'a'];
   const [wordOfTheDay, setWordOfTheDay] = useState<string[]>([]);
+  const [optimal, setOptimal] = useState<number>(0);
 
   const setWordPair = useCallback(() => {
     const sveHvrImenice = Object.keys(sveHrvRijeci);
@@ -79,7 +80,7 @@ function App() {
 
     setWordOfTheDay(splitCroatianWord(target.toLowerCase()));
     setStartWord(splitCroatianWord(w.toLowerCase()));
-
+    setOptimal(depth);
 
 
   }, []);
@@ -147,7 +148,7 @@ function App() {
 
       const guessed = []
 
-      newColors = [...new Array(WORD_LENGTH)].fill(GREY);
+      newColors = [...new Array(WORD_LENGTH)].fill(WHITE);
       for (let i = 0; i < word.length; i++) {
         if (word[i] === target[i]) {
           guessed.push(i);
@@ -360,16 +361,15 @@ const Explainer: FC<{ hide: () => void }> = ({ hide }) => {
   return (<>
     <div style={styles.explanerWindow}>
       <h1>Pretvorle</h1>
-      <p>Pogodi novu riječ svaki dan u 6 pokušaja.</p>
+      <p>Zamjenom jednog po jednog slova pretrovi početnu riječ u završnu.</p>
       <p>Svaki pokušaj mora biti hrvatska riječ.</p>
-      <p>Nakon svakog pokušaja otkriva se koja slova su pogođena.</p>
-      <h3>Primjeri:</h3>
+      <h3>Primjer:</h3>
 
-      <Guesses word={['o', 'k', 'o', 'l', 'o']} colors={[GREY, YELLOW, GREY, GREY, GREY]} />
-      <p>Tražena riječ sadrži slovo 'k' na nakom drugom mjestu.</p>
+      <Guesses word={['m', 'a', 'n', 'a']} colors={[WHITE, GREEN, WHITE, GREEN]} />
+      <Guesses word={['m', 'a', 'm', 'a']} colors={[WHITE, GREEN, WHITE, GREEN]} />
+      <Guesses word={['t', 'a', 'm', 'a']} colors={[GREEN, GREEN, WHITE, GREEN]} />
+      <Guesses word={['t', 'a', 't', 'a']} colors={[GREEN, GREEN, GREEN, GREEN]} />
 
-      <Guesses word={['r', 'u', 'k', 'a', 'v']} colors={[GREEN, GREY, GREY, GREY, GREY]} />
-      <p>Tražena riječ sadrži slovo 'r' na prvom mjestu.</p>
 
       <button style={styles.greebButton} onClick={hide}>Kreni</button>
     </div>
