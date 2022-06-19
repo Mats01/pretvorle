@@ -6,7 +6,7 @@ import Keyboard from './Keyboard';
 import { styles } from './Style';
 import { sveHrvRijeci } from './sveHrvRijeci';
 import { useCorrectHeight, useScrollToBottom } from './hooks';
-import { findTargetWord } from './utils';
+import { findTargetWord, findTargetWordNaive } from './utils';
 
 const isAlpha = (ch: string): boolean => {
   if (ch === 'lj') return true;
@@ -59,31 +59,32 @@ function App() {
   // const wordOfTheDay = ['š', 'k', 'o', 'l', 'a'];
   const [wordOfTheDay, setWordOfTheDay] = useState<string[]>([]);
 
-  const setWordPair = useCallback((tryAgain: number) => {
+  const setWordPair = useCallback(() => {
     const sveHvrImenice = Object.keys(sveHrvRijeci);
 
     let todaysStartIndex = 0;
 
     let yourDate = new Date()
-    todaysStartIndex = SHA256(yourDate.toISOString().split('T')[0]).words.reduce((a: number, b: number) => Math.abs(Math.abs(a) + b)) + tryAgain;
+    todaysStartIndex = SHA256(yourDate.toISOString().split('T')[0]).words.reduce((a: number, b: number) => Math.abs(Math.abs(a) + b));
     // random number between 0 and length of array
     // todaysStartIndex = Math.floor(Math.random() * sveHvrImenice.length);
 
     const w = sveHvrImenice[todaysStartIndex % sveHvrImenice.length];
+    const depth = 5 + todaysStartIndex % 3;
     console.log(w);
+    const target = findTargetWord(w, depth, todaysStartIndex);
+    console.log(target);
 
-    const path = findTargetWord(w, 6, [w]);
-    if (path.length === 6) {
-      // console.log(path);
+    console.log('optimalno, ', depth);
 
-      setWordOfTheDay(splitCroatianWord(path[5].toLowerCase()));
-      setStartWord(splitCroatianWord(w.toLowerCase()));
-    } else {
-      setWordPair(tryAgain + 1)
-    }
+    setWordOfTheDay(splitCroatianWord(target.toLowerCase()));
+    setStartWord(splitCroatianWord(w.toLowerCase()));
+
+
+
   }, []);
   useEffect(() => {
-    setWordPair(0);
+    setWordPair();
 
   }, [setWordPair]);
 
@@ -197,11 +198,19 @@ function App() {
     console.log(startWord);
     startWord.length && checkWord(startWord)
 
-  }, [wordOfTheDay, startWord, checkWord]);
+  }, [wordOfTheDay, startWord]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const acceptLetter = useCallback((key: string) => {
     if (key === 'Backspace') {
-      setWord(word.slice(0, -1));
+      if (word.length === 0) {
+        if (previousWords.length > 1) {
+          setWord(previousWords[previousWords.length - 1].word);
+          setPreviousWords(previousWords.slice(0, -1));
+        }
+      }
+      else {
+        setWord(word.slice(0, -1));
+      }
     }
     if (key === 'Enter') {
       word.length === WORD_LENGTH && checkWord(word);
