@@ -136,5 +136,8 @@ export const styles: Record<string, CSSProperties> = {
     left: '50%',
     transform: 'translateX(-50%)',
     border: '1px solid red',
+  },
+  emojiText: {
+    textAlign: 'center',
   }
 }

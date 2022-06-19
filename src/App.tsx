@@ -6,7 +6,8 @@ import Keyboard from './Keyboard';
 import { styles } from './Style';
 import { sveHrvRijeci } from './sveHrvRijeci';
 import { useCorrectHeight, useScrollToBottom } from './hooks';
-import { findTargetWord, findTargetWordNaive } from './utils';
+import { findTargetWord } from './utils';
+import moment from 'moment';
 
 const isAlpha = (ch: string): boolean => {
   if (ch === 'lj') return true;
@@ -56,7 +57,6 @@ function App() {
   const [showPopup, setShowPopup] = useState<boolean>(false);
   const [hideExplainer, setHideExplainer] = useState<boolean>(window.localStorage.getItem('@hideExplainer') === '4' || false);
   const [emojiText, setEmojiText] = useState<string>('');
-  // const wordOfTheDay = ['š', 'k', 'o', 'l', 'a'];
   const [wordOfTheDay, setWordOfTheDay] = useState<string[]>([]);
   const [optimal, setOptimal] = useState<number>(0);
 
@@ -109,7 +109,8 @@ function App() {
 
   const getEmoji = useCallback((): string => {
     <h3>Pokusaji: <strong></strong></h3>
-    let emoji = `Pretvorle 🇭🇷 ${previousWords.length}`;
+    let emoji = `Pretvorle 🇭🇷 ${moment().format('DD.MM.YYYY')} \n${previousWords.length}`;
+    emoji += `\n\n${startWord.join('')}`;
 
     for (const guess of previousWords) {
       let line = [];
@@ -126,6 +127,8 @@ function App() {
         } `;
     }
     emoji += `\n${'🟩'.repeat(WORD_LENGTH)} `;
+    emoji += `\n${wordOfTheDay.join('')}`;
+
     return emoji;
   }, [previousWords])
 
@@ -135,6 +138,19 @@ function App() {
       showAlert('Nije u popisu riječi.');
       return;
     }
+    if (previousWords.length > 0) {
+      const lastWord = previousWords[previousWords.length - 1].word.join('');
+      if (lastWord === word.join('')) {
+        showAlert('Rijec je ista');
+        return;
+      }
+      if (!sveHrvRijeci[lastWord].includes(word.join(''))) {
+        showAlert('Promijenjeno vise od jednog slova');
+        return;
+      }
+
+    }
+
     let newColors = colors;
     if (word.join('') === wordOfTheDay.join('')) {
       console.log('Pobijedili ste');
@@ -157,40 +173,15 @@ function App() {
         }
 
       }
-      // for (let i = 0; i < word.length; i++) {
-      //   if (guessed.indexOf(i) !== -1) continue;
-      //   if (target.includes(word[i])) {
-      //     newColors[i] = YELLOW;
-      //     target[target.indexOf(word[i])] = '_';
-      //     newCorrect.add(word[i]);
-      //     newIncorrect.delete(word[i]);
-      //   }
-      // }
 
 
     }
 
-    // setCorrect(Array.from(new Set([...Array.from(newCorrect), ...correct])));
-    // setIncorrect(Array.from(new Set([...Array.from(newIncorrect), ...incorrect])));
-    if (previousWords.length > 0) {
-      const lastWord = previousWords[previousWords.length - 1].word.join('');
-      if (lastWord === word.join('')) {
-        showAlert('Rijec je ista');
 
-      }
-      else if (sveHrvRijeci[lastWord].includes(word.join(''))) {
-        setPreviousWords([...previousWords, { word: word, colors: newColors }]);
-        setColors([...new Array(WORD_LENGTH)].fill(WHITE));
-        setWord([]);
-      } else {
-        showAlert('Promijenjeno vise od jednog slova');
-      }
+    setPreviousWords([...previousWords, { word: word, colors: newColors }]);
+    setColors([...new Array(WORD_LENGTH)].fill(WHITE));
+    setWord([]);
 
-    } else {
-      setPreviousWords([...previousWords, { word: word, colors: newColors }]);
-      setColors([...new Array(WORD_LENGTH)].fill(WHITE));
-      setWord([]);
-    }
   }, [wordOfTheDay, previousWords, isAcceptedWord, showAlert, colors, getEmoji]);
 
 
@@ -261,7 +252,8 @@ function App() {
       {showPopup &&
         <BravoPopup
           wordOfTheDay={wordOfTheDay.join("")}
-          guesses={previousWords.map(p => p.word.join(""))}
+          startWord={startWord.join("")}
+          optimal={optimal}
           emoji={emojiText}
         />
       }
@@ -333,7 +325,7 @@ const Guesses: FC<{ word: string[], colors: string[] }> = ({ word, colors }) => 
 
 
 
-const BravoPopup: FC<{ wordOfTheDay: string, guesses: string[], emoji: string }> = ({ wordOfTheDay, guesses, emoji }) => {
+const BravoPopup: FC<{ wordOfTheDay: string, startWord: string, emoji: string, optimal: number }> = ({ wordOfTheDay, startWord, emoji, optimal }) => {
 
 
   return (
@@ -341,9 +333,11 @@ const BravoPopup: FC<{ wordOfTheDay: string, guesses: string[], emoji: string }>
       style={styles.bravoPopup}
     >
       <h1>Bravo!</h1>
-      <h3>Pokusaji: <strong>{guesses.length + 1}/6</strong></h3>
-      <h1>{wordOfTheDay}</h1>
-      <pre>{emoji}</pre>
+      <p>Optimalno: <strong>{optimal}</strong></p>
+      <pre
+        style={styles.emojiText}
+      >{emoji}</pre>
+
       <button
         style={styles.greebButton}
         onClick={() => {
