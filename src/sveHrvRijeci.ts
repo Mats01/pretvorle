@@ -1,291 +1,478 @@
 export const sveHrvRijeci: { [key: string]: string[] } = {
-  "alat": [
-    "mlat",
-    "vlat"
+  "slog": [
+    "blog",
+    "ulog",
+    "glog",
+    "stog",
+    "smog",
+    "sloj",
+    "slon",
+    "slom"
   ],
-  "alga": [
-    "alka",
-    "malja"
-  ],
-  "alka": [
-    "arka",
-    "alga",
-    "malja"
-  ],
-  "arak": [
+  "trak": [
+    "krak",
     "brak",
+    "mrak",
+    "zrak",
+    "arak",
     "frak",
+    "tlak",
+    "trik",
+    "trap",
+    "trač",
+    "trag",
+    "tras"
+  ],
+  "kuka": [
+    "ruka",
+    "buka",
+    "muka",
+    "luka",
+    "huka",
+    "žuka",
+    "koka",
+    "kula",
+    "kupa",
+    "kuma",
+    "kuda",
+    "kuta",
+    "kuga",
+    "kuna",
+    "kuja",
+    "kuća",
+    "kuku"
+  ],
+  "udar": [
+    "odar",
+    "užar",
+    "ular",
+    "ulja",
+    "urar",
+    "udav",
+    "udah",
+    "udal"
+  ],
+  "kula": [
+    "bula",
+    "mula",
+    "lula",
+    "nula",
+    "kola",
+    "kila",
+    "kuka",
+    "kupa",
+    "kuma",
+    "kuda",
+    "kuta",
+    "kuga",
+    "kuna",
+    "kuja",
+    "kuća",
+    "kult"
+  ],
+  "grom": [
+    "brom",
+    "krom",
+    "hrom",
+    "trom",
+    "gnom",
+    "gram",
+    "grob",
+    "groš",
+    "grof"
+  ],
+  "klin": [
+    "plin",
+    "mlin",
+    "krin",
+    "klon",
+    "klen",
+    "klik",
+    "klif",
+    "klip"
+  ],
+  "koda": [
+    "roda",
+    "poda",
+    "voda",
+    "moda",
+    "kuda",
+    "kada",
+    "kora",
+    "kola",
+    "kosa",
+    "koza",
+    "kota",
+    "koka",
+    "koma",
+    "koća",
+    "koža",
+    "koča"
+  ],
+  "kupa": [
+    "rupa",
+    "lupa",
+    "župa",
+    "kapa",
+    "krpa",
+    "kuka",
+    "kula",
+    "kuma",
+    "kuda",
+    "kuta",
+    "kuga",
+    "kuna",
+    "kuja",
+    "kuća",
+    "kupe"
+  ],
+  "stap": [
+    "štap",
+    "slap",
+    "stup",
+    "stas",
+    "stan",
+    "star",
+    "stav",
+    "staž"
+  ],
+  "bura": [
+    "pura",
+    "jura",
+    "hura",
+    "cura",
+    "bara",
+    "bora",
+    "buna",
+    "buka",
+    "bula",
+    "buša",
+    "buha",
+    "buća",
+    "bure"
+  ],
+  "kora": [
+    "bora",
+    "pora",
+    "mora",
+    "gora",
+    "zora",
+    "koda",
+    "kola",
+    "kosa",
+    "koza",
+    "kota",
+    "koka",
+    "koma",
+    "koća",
+    "koža",
+    "koča"
+  ],
+  "slan": [
+    "plan",
+    "član",
+    "dlan",
+    "elan",
+    "stan",
+    "slon",
+    "slak",
+    "slap",
+    "slab"
+  ],
+  "kuma": [
+    "guma",
+    "puma",
+    "šuma",
+    "suma",
+    "koma",
+    "krma",
+    "kuka",
+    "kula",
+    "kupa",
+    "kuda",
+    "kuta",
+    "kuga",
+    "kuna",
+    "kuja",
+    "kuća"
+  ],
+  "kako": [
+    "tako",
+    "sako",
+    "iako",
+    "lako",
+    "jako",
+    "kamo",
+    "karo",
+    "kaki"
+  ],
+  "krak": [
+    "trak",
+    "brak",
+    "mrak",
+    "zrak",
+    "arak",
+    "frak",
+    "krik",
+    "kran",
+    "kraj",
+    "kral"
+  ],
+  "kuda": [
+    "ruda",
+    "tuda",
+    "duda",
+    "luda",
+    "koda",
+    "kada",
+    "kuka",
+    "kula",
+    "kupa",
+    "kuma",
+    "kuta",
+    "kuga",
+    "kuna",
+    "kuja",
+    "kuća"
+  ],
+  "rana": [
+    "mana",
+    "runa",
+    "rasa",
+    "raka",
+    "rata",
+    "raža",
+    "raja",
+    "rano",
+    "rani",
+    "rang",
+    "ranč"
+  ],
+  "kola": [
+    "pola",
+    "kula",
+    "kila",
+    "koda",
+    "kora",
+    "kosa",
+    "koza",
+    "kota",
+    "koka",
+    "koma",
+    "koća",
+    "koža",
+    "koča",
+    "kolo"
+  ],
+  "mama": [
+    "tama",
+    "vama",
+    "lama",
+    "dama",
+    "ljam",
+    "jama",
+    "nama",
+    "mada",
+    "masa",
+    "mapa",
+    "malj",
+    "mana",
+    "manj",
+    "maca"
+  ],
+  "kosa": [
+    "rosa",
+    "kasa",
+    "kesa",
+    "koda",
+    "kora",
+    "kola",
+    "koza",
+    "kota",
+    "koka",
+    "koma",
+    "koća",
+    "koža",
+    "koča",
+    "kost"
+  ],
+  "tama": [
+    "mama",
+    "vama",
+    "lama",
+    "dama",
+    "ljam",
+    "jama",
+    "nama",
+    "tema",
+    "tada",
+    "tata",
+    "tava",
+    "tamo"
+  ],
+  "brak": [
+    "trak",
     "krak",
     "mrak",
-    "trak",
-    "zrak"
+    "zrak",
+    "arak",
+    "frak",
+    "blja",
+    "brav",
+    "brat"
   ],
-  "arka": [
+  "nauk": [
+    "pauk",
+    "bauk",
+    "jauk",
+    "neuk",
+    "naum"
+  ],
+  "slak": [
+    "mlak",
+    "vlak",
+    "tlak",
+    "svak",
+    "smak",
+    "slan",
+    "slap",
+    "slab"
+  ],
+  "koza": [
+    "roza",
+    "poza",
+    "loza",
+    "doza",
+    "koda",
+    "kora",
+    "kola",
+    "kosa",
+    "kota",
+    "koka",
+    "koma",
+    "koća",
+    "koža",
+    "koča"
+  ],
+  "kuta": [
+    "puta",
+    "ljut",
+    "šuta",
+    "juta",
+    "kota",
+    "kita",
+    "kuka",
+    "kula",
+    "kupa",
+    "kuma",
+    "kuda",
+    "kuga",
+    "kuna",
+    "kuja",
+    "kuća"
+  ],
+  "teka": [
+    "deka",
+    "jeka",
+    "seka",
+    "neka",
     "trka",
-    "alka"
+    "teta",
+    "tema",
+    "teza"
   ],
-  "atol": [
-    "stol",
-    "atom"
+  "plan": [
+    "slan",
+    "član",
+    "dlan",
+    "elan",
+    "plin",
+    "plah",
+    "plač",
+    "plav"
   ],
-  "atom": [
-    "atol"
-  ],
-  "auto": [
-    "ljuto"
-  ],
-  "baba": [
-    "žaba",
-    "beba",
-    "boba"
-  ],
-  "baka": [
-    "raka",
-    "šaka",
-    "buka",
-    "baba",
-    "bala",
-    "bara",
-    "baza"
-  ],
-  "bala": [
-    "hala",
-    "šala",
-    "bula",
-    "baba",
-    "baka",
-    "bara",
-    "baza"
-  ],
-  "bale": [
-    "bala"
+  "kuga": [
+    "tuga",
+    "duga",
+    "vuga",
+    "šuga",
+    "fuga",
+    "kuka",
+    "kula",
+    "kupa",
+    "kuma",
+    "kuda",
+    "kuta",
+    "kuna",
+    "kuja",
+    "kuća"
   ],
   "bara": [
     "para",
     "šara",
     "žara",
+    "bura",
     "bora",
-    "bura",
+    "bala",
+    "baza",
     "baba",
     "baka",
-    "bala",
-    "baza"
+    "bard"
   ],
-  "bard": [
-    "jard",
-    "bara"
-  ],
-  "bauk": [
-    "jauk",
-    "nauk",
-    "pauk"
-  ],
-  "baza": [
-    "faza",
-    "gaza",
-    "oaza",
-    "vaza",
-    "baba",
-    "baka",
-    "bala",
-    "bara"
-  ],
-  "beba": [
-    "zeba",
-    "baba",
-    "boba"
-  ],
-  "biće": [
-    "piće"
-  ],
-  "bilo": [
-    "rilo",
-    "šilo",
-    "biro",
-    "bilje"
-  ],
-  "bilje": [
-    "milje",
-    "žilje"
-  ],
-  "biro": [
-    "bilo"
-  ],
-  "biti": [
-    "liti",
-    "niti",
-    "piti",
-    "šiti",
-    "viti"
-  ],
-  "blag": [
-    "šlag",
-    "blog"
-  ],
-  "blog": [
-    "glog",
-    "slog",
-    "ulog",
-    "blag",
-    "blok"
-  ],
-  "blok": [
-    "blog"
-  ],
-  "boba": [
-    "doba",
-    "roba",
-    "soba",
-    "baba",
-    "beba"
-  ],
-  "boca": [
-    "boba",
-    "boća",
-    "boja",
-    "bora"
-  ],
-  "boća": [
-    "koća",
-    "buća",
-    "boba",
-    "boca",
-    "boja",
-    "bora"
-  ],
-  "boja": [
-    "soja",
-    "bljak",
-    "boba",
-    "boca",
-    "boća",
-    "bora"
-  ],
-  "boks": [
-    "koks"
-  ],
-  "bora": [
-    "gora",
-    "kora",
-    "mora",
-    "pora",
-    "zora",
-    "bara",
-    "bura",
-    "boba",
-    "boca",
-    "boća",
-    "boja"
-  ],
-  "brak": [
-    "arak",
-    "frak",
-    "krak",
-    "mrak",
-    "trak",
-    "zrak",
-    "brat",
-    "brav"
-  ],
-  "brat": [
-    "vrat",
-    "brak",
-    "brav"
-  ],
-  "brav": [
-    "mrav",
-    "brak",
-    "brat"
-  ],
-  "brdo": [
-    "krdo",
-    "brzo"
-  ],
-  "brid": [
-    "hrid",
-    "brod"
-  ],
-  "brod": [
-    "urod",
-    "brid",
-    "broj",
-    "brom",
-    "broš"
-  ],
-  "broj": [
-    "kroj",
-    "brod",
-    "brom",
-    "broš"
-  ],
-  "brom": [
-    "grom",
-    "hrom",
-    "krom",
-    "trom",
-    "brod",
-    "broj",
-    "broš"
-  ],
-  "broš": [
-    "groš",
-    "brod",
-    "broj",
-    "brom"
-  ],
-  "bruh": [
-    "kruh"
-  ],
-  "brzo": [
-    "brdo"
-  ],
-  "buća": [
-    "kuća",
-    "boća",
-    "buha",
-    "buka",
-    "bula",
+  "kuna": [
+    "runa",
     "buna",
-    "bura",
-    "buša"
-  ],
-  "buha": [
-    "juha",
-    "muha",
-    "buća",
-    "buka",
-    "bula",
-    "buna",
-    "bura",
-    "buša"
-  ],
-  "buka": [
-    "huka",
+    "tuna",
+    "vuna",
+    "žuna",
     "kuka",
-    "luka",
-    "muka",
-    "ruka",
-    "žuka",
-    "baka",
-    "buća",
-    "buha",
-    "bula",
-    "buna",
-    "bura",
-    "buša"
-  ],
-  "bula": [
     "kula",
-    "lula",
-    "mula",
-    "nula",
-    "bala",
-    "buća",
-    "buha",
+    "kupa",
+    "kuma",
+    "kuda",
+    "kuta",
+    "kuga",
+    "kuja",
+    "kuća"
+  ],
+  "ruka": [
+    "kuka",
     "buka",
+    "muka",
+    "luka",
+    "huka",
+    "žuka",
+    "rika",
+    "raka",
+    "runa",
+    "ruda",
+    "rupa",
+    "ruža",
+    "rulj"
+  ],
+  "rano": [
+    "pano",
+    "runo",
+    "ralo",
+    "rado",
+    "rana",
+    "rani",
+    "rang",
+    "ranč"
+  ],
+  "runa": [
+    "kuna",
     "buna",
-    "bura",
-    "buša"
+    "tuna",
+    "vuna",
+    "žuna",
+    "rana",
+    "ruka",
+    "ruda",
+    "rupa",
+    "ruža",
+    "rulj",
+    "runo"
   ],
   "buna": [
     "kuna",
@@ -293,3578 +480,244 @@ export const sveHrvRijeci: { [key: string]: string[] } = {
     "tuna",
     "vuna",
     "žuna",
-    "buća",
-    "buha",
+    "bura",
     "buka",
     "bula",
-    "bura",
     "buša",
+    "buha",
+    "buća",
     "bunt"
   ],
-  "bunt": [
-    "buna"
-  ],
-  "bura": [
-    "cura",
-    "hura",
-    "jura",
-    "pura",
-    "bara",
-    "bora",
-    "buća",
-    "buha",
-    "buka",
-    "bula",
-    "buna",
-    "buša",
-    "bure"
-  ],
-  "bure": [
-    "bura"
-  ],
-  "buša": [
-    "duša",
-    "guša",
-    "suša",
-    "šuša",
-    "buća",
-    "buha",
-    "buka",
-    "bula",
-    "buna",
-    "bura"
-  ],
-  "ciju": [
-    "fiju"
-  ],
-  "cink": [
-    "link"
-  ],
-  "cura": [
-    "bura",
-    "hura",
-    "jura",
-    "pura"
-  ],
-  "cvat": [
-    "hvat",
-    "svat"
-  ],
-  "čađa": [
-    "lađa",
-    "čaša"
-  ],
-  "čast": [
-    "mast",
-    "rast",
-    "tast",
-    "čest",
-    "čist"
-  ],
-  "čaša": [
-    "kaša",
-    "paša",
-    "čađa"
-  ],
-  "čedo": [
-    "medo",
-    "čudo",
-    "čelo"
-  ],
-  "čelo": [
-    "jelo",
-    "selo",
-    "čulo",
-    "čedo"
-  ],
-  "čest": [
-    "gest",
-    "pest",
-    "šest",
-    "test",
-    "čast",
-    "čist"
-  ],
-  "čiji": [
-    "čini"
-  ],
-  "čini": [
-    "čiji"
-  ],
-  "čips": [
-    "gips",
-    "rips"
-  ],
-  "čist": [
-    "kist",
-    "list",
-    "čast",
-    "čest"
-  ],
-  "član": [
-    "dlan",
-    "elan",
-    "plan",
-    "slan"
-  ],
-  "čudo": [
-    "ludo",
-    "rudo",
-    "čedo",
-    "čulo"
-  ],
-  "čulo": [
-    "čelo",
-    "čudo"
-  ],
-  "čvor": [
-    "dvor",
-    "tvor"
-  ],
-  "ćuba": [
-    "guba",
-    "tuba"
-  ],
-  "daća": [
-    "dama"
-  ],
-  "dama": [
-    "jama",
-    "lama",
-    "ljama",
-    "mama",
-    "nama",
-    "tama",
-    "vama",
-    "daća"
-  ],
-  "danji": [
-    "donji"
-  ],
-  "dati": [
-    "mati"
-  ],
-  "dažd": [
-    "dužd"
-  ],
-  "deka": [
-    "jeka",
-    "neka",
-    "seka",
-    "teka",
-    "dika",
-    "deva"
-  ],
-  "deva": [
-    "ševa",
-    "deka"
-  ],
-  "dići": [
-    "sići",
-    "doći"
-  ],
-  "dika": [
-    "rika",
-    "sika",
-    "vika",
-    "deka",
-    "dina"
-  ],
-  "dina": [
-    "mina",
-    "dika",
-    "dinja"
-  ],
-  "dinja": [
-    "dunja"
-  ],
-  "djed": [
-    "mjed"
-  ],
-  "dlan": [
-    "član",
-    "elan",
-    "plan",
-    "slan"
-  ],
-  "doba": [
-    "boba",
-    "roba",
-    "soba",
-    "doza"
-  ],
-  "doći": [
-    "moći",
-    "poći",
-    "dići"
-  ],
-  "dolje": [
-    "kolje",
-    "polje"
-  ],
-  "donji": [
-    "danji"
-  ],
-  "doza": [
-    "koza",
-    "loza",
-    "poza",
-    "roza",
-    "doba"
-  ],
-  "drač": [
-    "orač",
-    "trač",
-    "vrač",
-    "drag",
-    "drap"
-  ],
-  "drag": [
-    "prag",
-    "trag",
-    "vrag",
-    "drug",
-    "drač",
-    "drap"
-  ],
-  "drap": [
-    "trap",
-    "drač",
-    "drag"
-  ],
-  "dres": [
-    "tres",
-    "ures"
-  ],
-  "drug": [
-    "krug",
-    "drag",
-    "drum"
-  ],
-  "drum": [
-    "drug"
-  ],
-  "duda": [
-    "kuda",
-    "luda",
-    "ruda",
-    "tuda",
-    "dude"
-  ],
-  "dude": [
-    "duda"
-  ],
-  "duga": [
-    "fuga",
-    "kuga",
-    "šuga",
-    "tuga",
-    "vuga",
-    "duda",
-    "duša",
-    "dugo"
-  ],
-  "dugo": [
-    "jugo",
-    "duga"
-  ],
-  "dunja": [
-    "munja",
-    "dinja"
-  ],
-  "duša": [
-    "buša",
-    "guša",
-    "suša",
-    "šuša",
-    "duda",
-    "duga"
-  ],
-  "dužd": [
-    "dažd"
-  ],
-  "dvor": [
-    "čvor",
-    "tvor"
-  ],
-  "džem": [
-    "džep",
-    "džez"
-  ],
-  "džep": [
-    "džip",
-    "džem",
-    "džez"
-  ],
-  "džez": [
-    "džem",
-    "džep"
-  ],
-  "džip": [
-    "džep"
-  ],
-  "điha": [
-    "đija"
-  ],
-  "đija": [
-    "šija",
-    "điha"
-  ],
-  "elan": [
-    "član",
-    "dlan",
-    "plan",
-    "slan"
-  ],
-  "etil": [
-    "stil",
-    "etin"
-  ],
-  "etin": [
-    "eten",
-    "etil"
-  ],
-  "faza": [
-    "baza",
-    "gaza",
-    "oaza",
-    "vaza"
-  ],
-  "fiju": [
-    "ciju"
-  ],
-  "fliš": [
-    "pliš"
-  ],
-  "fond": [
-    "font"
-  ],
-  "font": [
-    "fond"
-  ],
-  "frak": [
-    "arak",
-    "brak",
-    "krak",
-    "mrak",
-    "trak",
-    "zrak"
-  ],
-  "fuga": [
-    "duga",
-    "kuga",
-    "šuga",
-    "tuga",
-    "vuga"
-  ],
-  "gaće": [
-    "saće"
-  ],
-  "gaza": [
-    "baza",
-    "faza",
-    "oaza",
-    "vaza"
-  ],
-  "gdje": [
-    "gnjev"
-  ],
-  "gema": [
-    "rema",
-    "tema",
-    "guma"
-  ],
-  "gest": [
-    "čest",
-    "pest",
-    "šest",
-    "test",
-    "gost",
-    "gust"
-  ],
-  "geto": [
-    "ljeto",
-    "veto"
-  ],
-  "gips": [
-    "čips",
-    "rips"
-  ],
-  "gira": [
-    "lira",
-    "gora"
-  ],
-  "glad": [
-    "hlad",
-    "mlad",
-    "grad",
-    "glas"
-  ],
-  "glas": [
-    "klas",
-    "vlas",
-    "glad"
-  ],
-  "glog": [
-    "blog",
-    "slog",
-    "ulog"
-  ],
-  "gluh": [
-    "sluh",
-    "glup"
-  ],
-  "glup": [
-    "gluh"
-  ],
-  "gnoj": [
-    "znoj",
-    "gnom"
-  ],
-  "gnom": [
-    "mnom",
-    "grom",
-    "gnoj"
-  ],
-  "gora": [
-    "bora",
-    "kora",
-    "mora",
-    "pora",
-    "zora",
-    "gira",
-    "gord",
-    "gore"
-  ],
-  "gord": [
-    "gora",
-    "gore"
-  ],
-  "gore": [
-    "more",
-    "gora",
-    "gord"
-  ],
-  "gost": [
-    "kost",
-    "most",
-    "post",
-    "tost",
-    "gest",
-    "gust"
-  ],
-  "grab": [
-    "grob",
-    "grub",
-    "grad",
-    "graf",
-    "grah",
-    "gram"
-  ],
-  "grad": [
-    "glad",
-    "grab",
-    "graf",
-    "grah",
-    "gram"
-  ],
-  "graf": [
-    "grof",
-    "grab",
-    "grad",
-    "grah",
-    "gram"
-  ],
-  "grah": [
-    "orah",
-    "prah",
-    "grab",
-    "grad",
-    "graf",
-    "gram"
-  ],
-  "gram": [
-    "hram",
-    "sram",
-    "grom",
-    "grab",
-    "grad",
-    "graf",
-    "grah"
-  ],
-  "grba": [
-    "vrba",
-    "guba"
-  ],
-  "grič": [
-    "gris",
-    "griz"
-  ],
-  "gris": [
-    "iris",
-    "grič",
-    "griz"
-  ],
-  "griz": [
-    "grič",
-    "gris"
-  ],
-  "grlo": [
-    "vrlo"
-  ],
-  "grob": [
-    "grab",
-    "grub",
-    "grof",
-    "grom",
-    "groš"
-  ],
-  "grof": [
-    "graf",
-    "grob",
-    "grom",
-    "groš"
-  ],
-  "grom": [
-    "brom",
-    "hrom",
-    "krom",
-    "trom",
-    "gnom",
-    "gram",
-    "grob",
-    "grof",
-    "groš"
-  ],
-  "groš": [
-    "broš",
-    "grob",
-    "grof",
-    "grom"
-  ],
-  "grub": [
-    "grab",
-    "grob"
-  ],
-  "guba": [
-    "ćuba",
-    "tuba",
-    "grba",
-    "guja",
-    "guma",
-    "guša"
-  ],
-  "guja": [
-    "kuja",
-    "tuja",
-    "guba",
-    "guma",
-    "guša"
-  ],
-  "guma": [
-    "kuma",
-    "puma",
-    "suma",
-    "šuma",
-    "gema",
-    "guba",
-    "guja",
-    "guša",
-    "gumb"
-  ],
-  "gumb": [
-    "guma"
-  ],
-  "gust": [
-    "pust",
-    "tust",
-    "gest",
-    "gost"
-  ],
-  "guša": [
-    "buša",
-    "duša",
-    "suša",
-    "šuša",
-    "guba",
-    "guja",
-    "guma"
-  ],
-  "hala": [
-    "bala",
-    "šala"
-  ],
-  "halo": [
-    "malo",
-    "ralo",
-    "salo",
-    "žalo",
-    "hala"
-  ],
-  "hlad": [
-    "glad",
-    "mlad",
-    "hlap"
-  ],
-  "hlap": [
-    "slap",
-    "hlad"
-  ],
-  "hobi": [
-    "lobi"
-  ],
-  "hram": [
-    "gram",
-    "sram",
-    "hrom"
-  ],
-  "hren": [
-    "tren"
-  ],
-  "hrid": [
-    "brid"
-  ],
-  "hrom": [
-    "brom",
-    "grom",
-    "krom",
-    "trom",
-    "hram"
-  ],
-  "huka": [
-    "buka",
-    "kuka",
-    "luka",
-    "muka",
-    "ruka",
-    "žuka",
-    "hura"
-  ],
-  "hulja": [
-    "rulja"
-  ],
-  "hura": [
-    "bura",
-    "cura",
-    "jura",
-    "pura",
-    "huka"
-  ],
-  "hvat": [
-    "cvat",
-    "svat"
-  ],
-  "iako": [
-    "jako",
-    "kako",
-    "lako",
-    "sako",
-    "tako",
-    "itko"
-  ],
-  "igla": [
-    "igra",
-    "iglu"
-  ],
-  "iglu": [
-    "igla"
-  ],
-  "igra": [
-    "ikra",
-    "igla"
-  ],
-  "ikra": [
-    "igra"
-  ],
-  "ipak": [
-    "opak"
-  ],
-  "iris": [
-    "gris"
-  ],
-  "isti": [
-    "osti"
-  ],
-  "isto": [
-    "usto",
-    "isti"
-  ],
-  "itko": [
-    "iako"
-  ],
-  "jako": [
-    "iako",
-    "kako",
-    "lako",
-    "sako",
-    "tako",
-    "jato"
-  ],
-  "jama": [
-    "dama",
-    "lama",
-    "ljama",
-    "mama",
-    "nama",
-    "tama",
-    "vama",
-    "njima",
-    "java",
-    "ljaga"
-  ],
-  "janje": [
-    "manje"
-  ],
-  "jard": [
-    "bard",
-    "jare",
-    "jari"
-  ],
-  "jare": [
-    "jaje",
-    "jard",
-    "jari"
-  ],
-  "jari": [
-    "jard",
-    "jare"
-  ],
-  "jato": [
-    "nato",
-    "zato",
-    "ljeto",
-    "ljuto",
-    "jako"
-  ],
-  "jauk": [
-    "bauk",
-    "nauk",
-    "pauk"
-  ],
-  "java": [
-    "kava",
-    "lava",
-    "tava",
-    "njiva",
-    "jama",
-    "ljaga",
-    "ljama"
-  ],
-  "jeka": [
-    "deka",
-    "neka",
-    "seka",
-    "teka",
-    "jela",
-    "jeza",
-    "njega"
-  ],
-  "jela": [
-    "jeka",
-    "jeza",
-    "njega",
-    "jelo"
-  ],
-  "jelo": [
-    "čelo",
-    "selo",
-    "ljeto",
-    "jela"
-  ],
-  "jeza": [
-    "teza",
-    "veza",
-    "jeka",
-    "jela",
-    "njega"
-  ],
-  "joga": [
-    "noga",
-    "toga",
-    "ljaga",
-    "njega",
-    "joha"
-  ],
-  "joha": [
-    "juha",
-    "joga"
-  ],
-  "juče": [
-    "ruče",
-    "june"
-  ],
-  "jugo": [
-    "dugo",
-    "ljuto"
-  ],
-  "juha": [
-    "buha",
-    "muha",
-    "joha",
-    "jura",
-    "juta"
-  ],
-  "june": [
-    "juče"
-  ],
-  "jura": [
-    "bura",
-    "cura",
-    "hura",
-    "pura",
-    "juha",
-    "juta"
-  ],
-  "juta": [
-    "kuta",
-    "puta",
-    "šuta",
-    "juha",
-    "jura",
-    "ljuto",
-    "njutn"
-  ],
-  "kada": [
-    "mada",
-    "nada",
-    "sada",
-    "tada",
-    "koda",
-    "kuda",
-    "kapa",
-    "kasa",
-    "kaša",
-    "kava"
-  ],
-  "kaki": [
-    "kako"
-  ],
-  "kako": [
-    "iako",
-    "jako",
-    "lako",
-    "sako",
-    "tako",
-    "kaki"
-  ],
-  "kamo": [
-    "samo",
-    "tamo",
-    "kako",
-    "karo",
-    "kamp"
-  ],
-  "kamp": [
-    "kamo"
-  ],
-  "kapa": [
-    "mapa",
-    "papa",
-    "sapa",
-    "šapa",
-    "krpa",
-    "kupa",
-    "kada",
-    "kasa",
-    "kaša",
-    "kava"
-  ],
-  "karo": [
-    "kako",
-    "kamo"
-  ],
-  "kasa": [
-    "masa",
-    "rasa",
-    "kesa",
-    "kosa",
-    "kada",
-    "kapa",
-    "kaša",
-    "kava"
-  ],
-  "kaša": [
-    "čaša",
-    "paša",
-    "kiša",
-    "kada",
-    "kapa",
-    "kasa",
-    "kava"
-  ],
-  "kava": [
-    "java",
-    "lava",
-    "tava",
-    "kada",
-    "kapa",
-    "kasa",
-    "kaša"
-  ],
-  "keks": [
-    "seks",
-    "koks"
-  ],
-  "kesa": [
-    "resa",
-    "kasa",
-    "kosa"
-  ],
-  "kila": [
-    "lila",
-    "pila",
-    "sila",
-    "vila",
-    "žila",
-    "kola",
-    "kula",
-    "kiša",
-    "kita",
-    "kilt"
-  ],
-  "kilt": [
-    "šilt",
-    "kult",
-    "kist",
-    "kila"
-  ],
-  "kino": [
-    "vino"
-  ],
-  "kist": [
-    "čist",
-    "list",
-    "kost",
-    "krst",
-    "kilt"
-  ],
-  "kiša": [
-    "niša",
-    "kaša",
-    "kila",
-    "kita"
-  ],
-  "kita": [
-    "pita",
-    "kota",
-    "kuta",
-    "kila",
-    "kiša"
-  ],
-  "klas": [
-    "glas",
-    "vlas"
-  ],
-  "klen": [
-    "klin",
-    "klon",
-    "kler"
-  ],
-  "kler": [
-    "klor",
-    "klen"
-  ],
-  "klif": [
-    "klik",
-    "klin",
-    "klip"
-  ],
-  "klik": [
-    "plik",
-    "krik"
-  ],
-  "klin": [
-    "mlin",
-    "plin",
-    "krin",
-    "klen",
-    "klon",
-    "klif",
-    "klik",
-    "klip"
-  ],
-  "klip": [
-    "klif",
-    "klik",
-    "klin"
-  ],
-  "klon": [
-    "slon",
-    "klen",
-    "klin",
-    "klor"
-  ],
-  "klor": [
-    "kler",
-    "klon"
-  ],
-  "koča": [
-    "koća",
-    "koda",
-    "koka",
-    "kola",
-    "koma",
-    "kora",
-    "kosa",
-    "kota",
-    "koza",
-    "koža"
-  ],
-  "koća": [
-    "boća",
-    "kuća",
-    "koča",
-    "koda",
-    "koka",
-    "kola",
-    "koma",
-    "kora",
-    "kosa",
-    "kota",
-    "koza",
-    "koža"
-  ],
-  "koda": [
-    "moda",
-    "poda",
-    "roda",
-    "voda",
-    "kada",
-    "kuda",
-    "koča",
-    "koća",
-    "koka",
-    "kola",
-    "koma",
-    "kora",
-    "kosa",
-    "kota",
-    "koza",
-    "koža"
-  ],
-  "koka": [
-    "kuka",
-    "koks"
-  ],
-  "koks": [
-    "boks",
-    "keks",
-    "koka"
-  ],
-  "kola": [
-    "pola",
-    "kila",
-    "kula",
-    "koča",
-    "koća",
-    "koda",
-    "koka",
-    "koma",
-    "kora",
-    "kosa",
-    "kota",
-    "koza",
-    "koža",
-    "kolo",
-    "kolje"
-  ],
-  "kolje": [
-    "dolje",
-    "polje"
-  ],
-  "koma": [
-    "krma",
-    "kuma",
-    "koča",
-    "koća",
-    "koda",
-    "koka",
-    "kola",
-    "kora",
-    "kosa",
-    "kota",
-    "koza",
-    "koža"
-  ],
-  "kopt": [
-    "kost"
-  ],
-  "kora": [
-    "bora",
-    "gora",
-    "mora",
-    "pora",
-    "zora",
-    "koča",
-    "koća",
-    "koda",
-    "koka",
-    "kola",
-    "koma",
-    "kosa",
-    "kota",
-    "koza",
-    "koža"
-  ],
-  "kosa": [
-    "rosa",
-    "kasa",
-    "kesa",
-    "koča",
-    "koća",
-    "koda",
-    "koka",
-    "kola",
-    "koma",
-    "kora",
-    "kota",
-    "koza",
-    "koža",
-    "kost"
-  ],
-  "kost": [
-    "gost",
-    "most",
-    "post",
-    "tost",
-    "kist",
-    "krst",
-    "kopt",
-    "kosa"
-  ],
-  "kota": [
-    "nota",
-    "kita",
-    "kuta",
-    "koča",
-    "koća",
-    "koda",
-    "koka",
-    "kola",
-    "koma",
-    "kora",
-    "kosa",
-    "koza",
-    "koža"
-  ],
-  "koza": [
-    "doza",
-    "loza",
-    "poza",
-    "roza",
-    "koča",
-    "koća",
-    "koda",
-    "koka",
-    "kola",
-    "koma",
-    "kora",
-    "kosa",
-    "kota",
-    "koža"
-  ],
-  "koža": [
-    "loža",
-    "koča",
-    "koća",
-    "koda",
-    "koka",
-    "kola",
-    "koma",
-    "kora",
-    "kosa",
-    "kota",
-    "koza"
-  ],
-  "kraj": [
-    "kroj",
-    "krak",
-    "kralj",
-    "kran"
-  ],
-  "krak": [
-    "arak",
-    "brak",
-    "frak",
-    "mrak",
-    "trak",
-    "zrak",
-    "krik"
-  ],
-  "kran": [
-    "vran",
-    "krin",
-    "kraj",
-    "krak",
-    "kralj"
-  ],
-  "krdo": [
-    "brdo"
-  ],
-  "krep": [
-    "krup"
-  ],
-  "krik": [
-    "trik",
-    "klik",
-    "krak"
-  ],
-  "krin": [
-    "urin",
-    "klin",
-    "kran",
-    "krik",
-    "kriv",
-    "križ"
-  ],
-  "kriv": [
-    "krov",
-    "krik",
-    "krin",
-    "križ"
-  ],
-  "križ": [
-    "krik",
-    "krin",
-    "kriv"
-  ],
-  "krma": [
-    "koma",
-    "kuma",
-    "krpa"
-  ],
-  "kroj": [
-    "broj",
-    "kraj",
-    "krom",
-    "krov"
-  ],
-  "krom": [
-    "brom",
-    "grom",
-    "hrom",
-    "trom",
-    "kroj",
-    "krov"
-  ],
-  "krov": [
-    "kriv",
-    "kroj",
-    "krom"
-  ],
-  "krpa": [
-    "kapa",
-    "kupa",
-    "krma"
-  ],
-  "krst": [
-    "prst",
-    "kist",
-    "kost",
-    "krut"
-  ],
-  "krug": [
-    "drug",
-    "kruh",
-    "krup",
-    "krut"
-  ],
-  "kruh": [
-    "bruh",
-    "krug",
-    "krup",
-    "krut"
-  ],
-  "krup": [
-    "trup",
-    "krep",
-    "krug",
-    "kruh",
-    "krut"
-  ],
-  "krut": [
-    "prut",
-    "trut",
-    "krst",
-    "krug",
-    "kruh",
-    "krup"
-  ],
-  "kuća": [
-    "buća",
-    "koća",
-    "kuda",
-    "kuga",
-    "kuja",
-    "kuka",
-    "kula",
-    "kuma",
-    "kuna",
-    "kupa",
-    "kuta"
-  ],
-  "kuda": [
-    "duda",
-    "luda",
-    "ruda",
-    "tuda",
-    "kada",
-    "koda",
-    "kuća",
-    "kuga",
-    "kuja",
-    "kuka",
-    "kula",
-    "kuma",
-    "kuna",
-    "kupa",
-    "kuta"
-  ],
-  "kuga": [
-    "duga",
-    "fuga",
-    "šuga",
-    "tuga",
-    "vuga",
-    "kuća",
-    "kuda",
-    "kuja",
-    "kuka",
-    "kula",
-    "kuma",
-    "kuna",
-    "kupa",
-    "kuta"
-  ],
-  "kuja": [
-    "guja",
-    "tuja",
-    "kuća",
-    "kuda",
-    "kuga",
-    "kuka",
-    "kula",
-    "kuma",
-    "kuna",
-    "kupa",
-    "kuta"
-  ],
-  "kuka": [
-    "buka",
-    "huka",
-    "luka",
-    "muka",
-    "ruka",
-    "žuka",
-    "koka",
-    "kuku"
-  ],
-  "kula": [
-    "bula",
-    "lula",
-    "mula",
-    "nula",
-    "kila",
-    "kola",
-    "kuća",
-    "kuda",
-    "kuga",
-    "kuja",
-    "kuka",
-    "kuma",
-    "kuna",
-    "kupa",
-    "kuta",
-    "kult"
-  ],
-  "kult": [
-    "pult",
-    "kilt",
-    "kula"
-  ],
-  "kuma": [
-    "guma",
-    "puma",
-    "suma",
-    "šuma",
-    "koma",
-    "krma",
-    "kuća",
-    "kuda",
-    "kuga",
-    "kuja",
-    "kuka",
-    "kula",
-    "kuna",
-    "kupa",
-    "kuta"
-  ],
-  "kuna": [
-    "buna",
-    "runa",
-    "tuna",
-    "vuna",
-    "žuna",
-    "kuća",
-    "kuda",
-    "kuga",
-    "kuja",
-    "kuka",
-    "kula",
-    "kuma",
-    "kupa",
-    "kuta"
-  ],
-  "kupa": [
-    "lupa",
-    "rupa",
-    "župa",
-    "kapa",
-    "krpa",
-    "kuća",
-    "kuda",
-    "kuga",
-    "kuja",
-    "kuka",
-    "kula",
-    "kuma",
-    "kuna",
-    "kuta",
-    "kupe"
-  ],
-  "kupe": [
-    "kupa"
-  ],
-  "kuta": [
-    "juta",
-    "puta",
-    "šuta",
-    "kita",
-    "kota",
-    "kuća",
-    "kuda",
-    "kuga",
-    "kuja",
-    "kuka",
-    "kula",
-    "kuma",
-    "kuna",
-    "kupa"
-  ],
-  "kvar": [
-    "tvar"
-  ],
-  "lađa": [
-    "čađa",
-    "leđa",
-    "lođa",
-    "lama",
-    "lava"
-  ],
-  "lako": [
-    "iako",
-    "jako",
-    "kako",
-    "sako",
-    "tako",
-    "laso"
-  ],
-  "lama": [
-    "dama",
-    "jama",
-    "ljama",
-    "mama",
-    "nama",
-    "tama",
-    "vama",
-    "lađa",
-    "lava"
-  ],
-  "lane": [
-    "tane",
-    "lani"
-  ],
-  "lani": [
-    "rani",
-    "vani",
-    "uljni",
-    "lane"
-  ],
-  "laso": [
-    "lako"
-  ],
-  "lava": [
-    "java",
-    "kava",
-    "tava",
-    "lađa",
-    "lama"
-  ],
-  "leća": [
-    "leđa",
-    "leći"
-  ],
-  "leći": [
-    "peći",
-    "reći",
-    "teći",
-    "leća"
-  ],
-  "leđa": [
-    "međa",
-    "lađa",
-    "lođa",
-    "leća"
-  ],
-  "leut": [
-    "ljuto"
-  ],
-  "lido": [
-    "ludo"
-  ],
-  "lift": [
-    "list"
-  ],
-  "liga": [
-    "siga",
-    "lila",
-    "lipa",
-    "lira",
-    "lisa"
-  ],
-  "lila": [
-    "kila",
-    "pila",
-    "sila",
-    "vila",
-    "žila",
-    "lula"
-  ],
-  "linč": [
-    "link"
-  ],
-  "link": [
-    "cink",
-    "linč"
-  ],
-  "lipa": [
-    "pipa",
-    "sipa",
-    "lupa",
-    "liga",
-    "lila",
-    "lira",
-    "lisa"
-  ],
-  "lira": [
-    "gira",
-    "liga",
-    "lila",
-    "lipa",
-    "lisa"
-  ],
-  "lisa": [
-    "misa",
-    "sisa",
-    "tisa",
-    "liga",
-    "lila",
-    "lipa",
-    "lira",
-    "list"
-  ],
-  "list": [
-    "čist",
-    "kist",
-    "lift",
-    "lisa"
-  ],
-  "liti": [
-    "biti",
-    "niti",
-    "piti",
-    "šiti",
-    "viti"
-  ],
-  "lobi": [
-    "hobi"
-  ],
-  "lođa": [
-    "vođa",
-    "lađa",
-    "leđa",
-    "loza",
-    "loža"
-  ],
-  "loza": [
-    "doza",
-    "koza",
-    "poza",
-    "roza",
-    "lođa",
-    "loža"
-  ],
-  "loža": [
-    "koža",
-    "lođa",
-    "loza"
-  ],
-  "luda": [
-    "duda",
-    "kuda",
-    "ruda",
-    "tuda",
-    "luka",
-    "lula",
-    "lupa",
-    "ludo"
-  ],
-  "ludo": [
-    "čudo",
-    "rudo",
-    "lido",
-    "luda"
-  ],
-  "luka": [
-    "buka",
-    "huka",
-    "kuka",
-    "muka",
-    "ruka",
-    "žuka",
-    "luda",
-    "lula",
-    "lupa"
-  ],
-  "lula": [
-    "bula",
-    "kula",
-    "mula",
-    "nula",
-    "lila"
-  ],
-  "lupa": [
-    "kupa",
-    "rupa",
-    "župa",
-    "lipa",
-    "luda",
-    "luka",
-    "lula"
-  ],
-  "ljaga": [
-    "ljama"
-  ],
-  "ljama": [
-    "ljaga"
-  ],
-  "ljeto": [
-    "ljuto"
-  ],
-  "ljuto": [
-    "ljeto"
-  ],
-  "maca": [
-    "mada",
-    "mama",
-    "mana",
-    "mapa",
-    "masa"
-  ],
-  "mače": [
-    "pače"
-  ],
-  "maći": [
-    "naći",
-    "taći",
-    "zaći",
-    "moći",
-    "mali",
-    "mati"
-  ],
-  "mada": [
-    "kada",
-    "nada",
-    "sada",
-    "tada",
-    "moda",
-    "maca",
-    "mama",
-    "mana",
-    "mapa",
-    "masa"
-  ],
-  "mali": [
-    "maći",
-    "mati",
-    "malo",
-    "malja"
-  ],
-  "malo": [
-    "halo",
-    "ralo",
-    "salo",
-    "žalo",
-    "mali",
-    "malja"
-  ],
-  "malja": [
-    "milja",
-    "mrlja"
-  ],
-  "mama": [
-    "dama",
-    "jama",
-    "lama",
-    "ljama",
-    "nama",
-    "tama",
-    "vama"
-  ],
-  "mana": [
-    "rana",
-    "mina",
-    "maca",
-    "mada",
-    "mama",
-    "mapa",
-    "masa"
-  ],
-  "manje": [
-    "janje"
-  ],
-  "mapa": [
-    "kapa",
-    "papa",
-    "sapa",
-    "šapa",
-    "maca",
-    "mada",
-    "mama",
-    "mana",
-    "masa"
-  ],
-  "masa": [
-    "kasa",
-    "rasa",
-    "misa",
-    "maca",
-    "mada",
-    "mama",
-    "mana",
-    "mapa"
-  ],
-  "mast": [
-    "čast",
-    "rast",
-    "tast",
-    "most",
-    "masa"
-  ],
-  "mati": [
-    "dati",
-    "maći",
-    "mali"
-  ],
-  "medo": [
-    "čedo",
-    "meso"
-  ],
-  "međa": [
-    "leđa",
-    "meta",
-    "među"
-  ],
-  "među": [
-    "međa"
-  ],
-  "meni": [
-    "mene"
-  ],
-  "meso": [
-    "medo"
-  ],
-  "meta": [
-    "peta",
-    "teta",
-    "međa"
-  ],
-  "milja": [
-    "malja",
-    "mrlja"
-  ],
-  "milje": [
-    "bilje",
-    "žilje"
-  ],
-  "mina": [
-    "dina",
-    "mana",
-    "misa"
-  ],
-  "miom": [
-    "mnom"
-  ],
-  "misa": [
-    "lisa",
-    "sisa",
-    "tisa",
-    "masa",
-    "mina"
-  ],
-  "mito": [
-    "sito",
-    "žito",
-    "mimo"
-  ],
-  "mjed": [
-    "djed"
-  ],
-  "mlad": [
-    "glad",
-    "hlad",
-    "mlađ",
-    "mlak",
-    "mlat",
-    "mlaz"
-  ],
-  "mlađ": [
-    "mlad",
-    "mlak",
-    "mlat",
-    "mlaz"
-  ],
-  "mlak": [
-    "slak",
-    "tlak",
-    "vlak",
-    "mrak",
-    "mlad",
-    "mlađ",
-    "mlat",
-    "mlaz"
-  ],
-  "mlat": [
-    "alat",
-    "vlat",
-    "mlad",
-    "mlađ",
-    "mlak",
-    "mlaz"
-  ],
-  "mlaz": [
-    "ulaz",
-    "mraz",
-    "mlad",
-    "mlađ",
-    "mlak",
-    "mlat"
-  ],
-  "mlin": [
-    "klin",
-    "plin"
-  ],
-  "mnom": [
-    "gnom",
-    "miom"
-  ],
-  "moći": [
-    "doći",
-    "poći",
-    "maći"
-  ],
-  "moda": [
-    "koda",
-    "poda",
-    "roda",
-    "voda",
-    "mada",
-    "mora"
-  ],
-  "mora": [
-    "bora",
-    "gora",
-    "kora",
-    "pora",
-    "zora",
-    "moda",
-    "more",
-    "mort",
-    "morž"
-  ],
-  "more": [
-    "gore",
-    "mora",
-    "mort",
-    "morž"
-  ],
-  "mort": [
-    "most",
-    "mošt",
-    "mora",
-    "more",
-    "morž"
-  ],
-  "morž": [
-    "mora",
-    "more",
-    "mort"
-  ],
-  "most": [
-    "gost",
-    "kost",
-    "post",
-    "tost",
-    "mast",
-    "mort",
-    "mošt"
-  ],
-  "mošt": [
-    "mort",
-    "most"
-  ],
   "mrak": [
-    "arak",
-    "brak",
-    "frak",
-    "krak",
     "trak",
+    "krak",
+    "brak",
     "zrak",
+    "arak",
+    "frak",
     "mlak",
+    "mrlj",
     "mrav",
     "mraz"
   ],
-  "mrav": [
-    "brav",
-    "mrak",
-    "mraz"
-  ],
-  "mraz": [
-    "mlaz",
-    "mrak",
-    "mrav"
-  ],
-  "mrlja": [
-    "malja",
-    "milja"
-  ],
-  "muha": [
-    "buha",
-    "juha",
-    "muka",
-    "mula",
-    "muza"
-  ],
-  "muka": [
-    "buka",
-    "huka",
+  "buka": [
     "kuka",
-    "luka",
     "ruka",
+    "muka",
+    "luka",
+    "huka",
     "žuka",
-    "muha",
-    "mula",
-    "muza"
-  ],
-  "mula": [
+    "baka",
+    "bura",
+    "buna",
     "bula",
-    "kula",
-    "lula",
-    "nula",
-    "muha",
-    "muka",
-    "muza"
+    "buša",
+    "buha",
+    "buća"
   ],
-  "munja": [
-    "dunja"
-  ],
-  "muza": [
-    "suza",
-    "muha",
-    "muka",
-    "mula"
-  ],
-  "naći": [
-    "maći",
-    "taći",
-    "zaći"
-  ],
-  "nada": [
-    "kada",
-    "mada",
-    "sada",
-    "tada",
-    "nama"
-  ],
-  "nama": [
-    "dama",
-    "jama",
-    "lama",
-    "ljama",
-    "mama",
-    "tama",
-    "vama",
-    "nada"
-  ],
-  "nato": [
-    "jato",
-    "zato"
-  ],
-  "nauk": [
-    "bauk",
-    "jauk",
-    "pauk",
-    "neuk",
-    "naum"
-  ],
-  "naum": [
-    "nauk"
-  ],
-  "nebo": [
-    "nego"
-  ],
-  "nego": [
-    "nebo"
-  ],
-  "neka": [
-    "deka",
-    "jeka",
-    "seka",
-    "teka",
-    "neki"
-  ],
-  "neki": [
-    "neka"
-  ],
-  "neuk": [
-    "nauk"
-  ],
-  "niša": [
-    "kiša",
-    "niza"
-  ],
-  "niti": [
-    "biti",
-    "liti",
-    "piti",
-    "šiti",
-    "viti"
-  ],
-  "nivo": [
-    "pivo",
-    "živo"
-  ],
-  "niza": [
-    "viza",
-    "niša"
-  ],
-  "noga": [
-    "joga",
-    "toga",
-    "nota"
-  ],
-  "nota": [
-    "kota",
-    "noga"
-  ],
-  "nula": [
-    "bula",
-    "kula",
-    "lula",
-    "mula"
-  ],
-  "njima": [
-    "njiva"
-  ],
-  "njime": [
-    "njome"
-  ],
-  "njiva": [
-    "njima"
-  ],
-  "njome": [
-    "njime"
-  ],
-  "oaza": [
-    "baza",
-    "faza",
-    "gaza",
-    "vaza"
-  ],
-  "obad": [
-    "otad",
-    "obod",
-    "obao"
-  ],
-  "obao": [
-    "orao"
-  ],
-  "obje": [
-    "dolje",
-    "kolje",
-    "polje"
-  ],
-  "oboa": [
-    "obod",
-    "obor"
-  ],
-  "obod": [
+  "uvod": [
+    "svod",
+    "urod",
     "ubod",
-    "oboa",
-    "obor"
+    "uvid",
+    "uvoz"
   ],
-  "obor": [
-    "zbor",
-    "opor",
-    "oboa",
-    "obod"
-  ],
-  "ocat": [
-    "opat"
-  ],
-  "očaj": [
-    "onaj",
-    "ovaj"
-  ],
-  "očit": [
-    "ošit"
-  ],
-  "očni": [
-    "osni"
-  ],
-  "odan": [
-    "oganj",
-    "ovan",
-    "odar"
-  ],
-  "odar": [
-    "udar",
-    "odan"
-  ],
-  "odio": [
-    "udio"
-  ],
-  "okot": [
-    "omot",
-    "okov"
-  ],
-  "okov": [
-    "okot"
-  ],
-  "okus": [
-    "ukus",
-    "opus"
-  ],
-  "omot": [
-    "okot"
-  ],
-  "onaj": [
-    "očaj",
-    "ovaj"
-  ],
-  "onud": [
-    "ovud"
-  ],
-  "opak": [
-    "ipak",
-    "opat"
-  ],
-  "opat": [
-    "ocat",
-    "opet",
-    "opak"
-  ],
-  "opet": [
-    "opat"
-  ],
-  "opip": [
-    "osip"
-  ],
-  "opis": [
-    "spis",
-    "upis",
-    "opus",
-    "opip"
-  ],
-  "opor": [
-    "spor",
-    "obor"
-  ],
-  "opus": [
-    "okus",
-    "opis"
-  ],
-  "orač": [
-    "drač",
-    "trač",
-    "vrač",
-    "orah",
-    "orao"
-  ],
-  "orah": [
-    "grah",
-    "prah",
-    "orač",
-    "orao"
-  ],
-  "orao": [
-    "obao"
-  ],
-  "osam": [
-    "osim"
-  ],
-  "osim": [
-    "osam",
-    "osip"
-  ],
-  "osip": [
-    "opip",
-    "osim"
-  ],
-  "osmi": [
-    "osni",
-    "osti"
-  ],
-  "osni": [
-    "usni",
-    "očni",
-    "osmi",
-    "osti"
-  ],
-  "osoj": [
-    "ovoj"
-  ],
-  "osti": [
-    "isti",
-    "osmi",
-    "osni"
-  ],
-  "ošit": [
-    "očit"
-  ],
-  "otac": [
-    "otad"
-  ],
-  "otad": [
-    "obad",
-    "otac"
-  ],
-  "ovaj": [
-    "očaj",
-    "onaj",
-    "ovoj",
-    "ovan"
-  ],
-  "ovan": [
-    "odan",
-    "oganj",
-    "ovaj"
-  ],
-  "ovoj": [
-    "svoj",
-    "tvoj",
-    "osoj"
-  ],
-  "ovud": [
-    "svud",
-    "onud"
-  ],
-  "pače": [
-    "mače"
-  ],
-  "pakt": [
-    "takt"
-  ],
-  "pano": [
-    "rano",
-    "puno"
-  ],
-  "papa": [
-    "kapa",
-    "mapa",
-    "sapa",
-    "šapa",
-    "pipa"
-  ],
-  "para": [
-    "bara",
-    "šara",
-    "žara",
+  "bora": [
+    "kora",
     "pora",
-    "pura",
-    "papa",
-    "paša"
+    "mora",
+    "gora",
+    "zora",
+    "bura",
+    "bara",
+    "boba",
+    "boća",
+    "boja",
+    "boca"
   ],
-  "park": [
-    "pauk",
-    "para"
-  ],
-  "paša": [
-    "čaša",
-    "kaša",
-    "papa",
-    "para"
+  "kota": [
+    "nota",
+    "kuta",
+    "kita",
+    "koda",
+    "kora",
+    "kola",
+    "kosa",
+    "koza",
+    "koka",
+    "koma",
+    "koća",
+    "koža",
+    "koča"
   ],
   "pauk": [
+    "nauk",
     "bauk",
     "jauk",
-    "nauk",
     "park",
     "paun"
   ],
-  "paun": [
-    "pauk"
+  "blog": [
+    "slog",
+    "ulog",
+    "glog",
+    "blag",
+    "blok"
   ],
-  "peći": [
+  "užar": [
+    "udar",
+    "ular",
+    "ulja",
+    "urar",
+    "užad",
+    "užas"
+  ],
+  "mlak": [
+    "slak",
+    "vlak",
+    "tlak",
+    "mrak",
+    "mlaz",
+    "mlad",
+    "mlat",
+    "mlađ"
+  ],
+  "maći": [
+    "taći",
+    "naći",
+    "zaći",
+    "moći",
+    "malj",
+    "mati",
+    "manj",
+    "mali"
+  ],
+  "tuga": [
+    "kuga",
+    "duga",
+    "vuga",
+    "šuga",
+    "fuga",
+    "toga",
+    "tuna",
+    "tuda",
+    "tuba",
+    "tuja",
+    "tuča"
+  ],
+  "umak": [
+    "smak",
+    "uzak",
+    "ulja",
+    "ujak",
+    "umah",
+    "uman"
+  ],
+  "teći": [
+    "peći",
     "leći",
     "reći",
-    "teći",
-    "poći",
-    "pući",
-    "peti"
-  ],
-  "perm": [
-    "pero"
-  ],
-  "pero": [
-    "perm"
-  ],
-  "pest": [
-    "čest",
-    "gest",
-    "šest",
-    "test",
-    "post",
-    "prst",
-    "pust"
-  ],
-  "peta": [
-    "meta",
-    "teta",
-    "pita",
-    "puta",
-    "peti"
-  ],
-  "peti": [
-    "ljeti",
-    "žeti",
-    "piti",
-    "peći",
-    "peta"
-  ],
-  "piće": [
-    "biće",
-    "pile",
-    "pire"
-  ],
-  "pila": [
-    "kila",
-    "lila",
-    "sila",
-    "vila",
-    "žila",
-    "pola",
-    "pipa",
-    "pita",
-    "pile"
-  ],
-  "pile": [
-    "vile",
-    "piće",
-    "pire",
-    "pila"
-  ],
-  "pipa": [
-    "lipa",
-    "sipa",
-    "papa"
-  ],
-  "pire": [
-    "piće",
-    "pile"
-  ],
-  "pita": [
-    "kita",
-    "peta",
-    "puta",
-    "pila",
-    "pipa",
-    "piti"
-  ],
-  "piti": [
-    "biti",
-    "liti",
-    "niti",
-    "šiti",
-    "viti",
-    "peti"
-  ],
-  "pivo": [
-    "nivo",
-    "živo"
-  ],
-  "pjev": [
-    "gnjev"
-  ],
-  "plač": [
-    "plah",
-    "plan",
-    "plav"
-  ],
-  "plah": [
-    "prah",
-    "plač",
-    "plan",
-    "plav"
-  ],
-  "plan": [
-    "član",
-    "dlan",
-    "elan",
-    "slan",
-    "plin",
-    "plač",
-    "plah",
-    "plav"
-  ],
-  "plav": [
-    "plač",
-    "plah",
-    "plan"
-  ],
-  "ples": [
-    "plus"
-  ],
-  "plik": [
-    "klik",
-    "plin",
-    "pliš"
-  ],
-  "plin": [
-    "klin",
-    "mlin",
-    "plan",
-    "plik",
-    "pliš"
-  ],
-  "pliš": [
-    "fliš",
-    "plik",
-    "plin"
-  ],
-  "plod": [
-    "plot"
-  ],
-  "plot": [
-    "plod"
-  ],
-  "plug": [
-    "plus"
-  ],
-  "plus": [
-    "ples",
-    "plug"
-  ],
-  "poći": [
-    "doći",
-    "moći",
-    "peći",
-    "pući"
-  ],
-  "poda": [
-    "koda",
-    "moda",
-    "roda",
-    "voda",
-    "pola",
-    "pora",
-    "poza"
-  ],
-  "pola": [
-    "kola",
-    "pila",
-    "poda",
-    "pora",
-    "poza",
-    "polje"
-  ],
-  "polje": [
-    "dolje",
-    "kolje"
-  ],
-  "pora": [
-    "bora",
-    "gora",
-    "kora",
-    "mora",
-    "zora",
-    "para",
-    "pura",
-    "poda",
-    "pola",
-    "poza"
-  ],
-  "post": [
-    "gost",
-    "kost",
-    "most",
-    "tost",
-    "pest",
-    "prst",
-    "pust"
-  ],
-  "poza": [
-    "doza",
-    "koza",
-    "loza",
-    "roza",
-    "poda",
-    "pola",
-    "pora"
-  ],
-  "prag": [
-    "drag",
-    "trag",
-    "vrag",
-    "prah",
-    "pras"
-  ],
-  "prah": [
-    "grah",
-    "orah",
-    "plah",
-    "prag",
-    "pras"
-  ],
-  "pras": [
-    "tras",
-    "prag",
-    "prah"
-  ],
-  "prst": [
-    "krst",
-    "pest",
-    "post",
-    "pust",
-    "prut"
-  ],
-  "prud": [
-    "trud",
-    "prut"
-  ],
-  "prut": [
-    "krut",
-    "trut",
-    "prst",
-    "prud"
-  ],
-  "psić": [
-    "ptić"
-  ],
-  "ptić": [
-    "psić"
-  ],
-  "puce": [
-    "tuce"
-  ],
-  "pući": [
+    "taći",
     "tući",
-    "vući",
-    "peći",
-    "poći"
-  ],
-  "puls": [
-    "pult"
-  ],
-  "pult": [
-    "kult",
-    "pust",
-    "puls"
-  ],
-  "puma": [
-    "guma",
-    "kuma",
-    "suma",
-    "šuma",
-    "pura",
-    "pusa",
-    "puta"
-  ],
-  "punč": [
-    "puno"
-  ],
-  "puno": [
-    "runo",
-    "pano",
-    "punč"
-  ],
-  "pura": [
-    "bura",
-    "cura",
-    "hura",
-    "jura",
-    "para",
-    "pora",
-    "puma",
-    "pusa",
-    "puta"
-  ],
-  "pusa": [
-    "puma",
-    "pura",
-    "puta",
-    "pust"
-  ],
-  "pust": [
-    "gust",
-    "tust",
-    "pest",
-    "post",
-    "prst",
-    "pult",
-    "pusa"
-  ],
-  "puta": [
-    "juta",
-    "kuta",
-    "šuta",
-    "peta",
-    "pita",
-    "puma",
-    "pura",
-    "pusa"
-  ],
-  "radi": [
-    "vadi",
-    "rani",
-    "rado"
-  ],
-  "rado": [
-    "rudo",
-    "ralo",
-    "rano",
-    "radi"
-  ],
-  "raja": [
-    "mrlja",
-    "raka",
-    "rana",
-    "rasa",
-    "rata",
-    "raža"
-  ],
-  "raka": [
-    "baka",
-    "šaka",
-    "rika",
-    "ruka",
-    "raja",
-    "rana",
-    "rasa",
-    "rata",
-    "raža"
-  ],
-  "ralo": [
-    "halo",
-    "malo",
-    "salo",
-    "žalo",
-    "rilo",
-    "rado",
-    "rano",
-    "kralj",
-    "ralje"
-  ],
-  "rana": [
-    "mana",
-    "runa",
-    "raja",
-    "raka",
-    "rasa",
-    "rata",
-    "raža"
-  ],
-  "ranč": [
-    "rana",
-    "rang",
-    "rani",
-    "rano"
-  ],
-  "rang": [
-    "ring",
-    "rana",
-    "ranč",
-    "rani",
-    "rano"
+    "tebi"
   ],
   "rani": [
     "lani",
     "vani",
     "radi",
     "rana",
-    "ranč",
+    "rano",
     "rang",
-    "rano"
+    "ranč"
   ],
-  "rano": [
-    "pano",
-    "runo",
-    "rado",
-    "ralo",
-    "rana",
-    "ranč",
-    "rang",
-    "rani"
+  "urod": [
+    "brod",
+    "uvod",
+    "ubod",
+    "ured",
+    "urok"
   ],
-  "rasa": [
-    "kasa",
-    "masa",
-    "resa",
-    "rosa",
-    "raja",
-    "raka",
-    "rana",
-    "rata",
-    "raža"
-  ],
-  "rast": [
-    "čast",
-    "mast",
-    "tast",
-    "rasa"
-  ],
-  "rata": [
-    "tata",
-    "vata",
-    "raja",
-    "raka",
-    "rana",
-    "rasa",
-    "raža"
-  ],
-  "raža": [
-    "riža",
-    "ruža",
-    "raja",
-    "raka",
-    "rana",
-    "rasa",
-    "rata"
-  ],
-  "rđa": [
-    "čađa",
-    "lađa",
-    "leđa",
-    "lođa",
-    "međa",
-    "vođa",
-    "arka",
-    "crta",
-    "grba",
-    "krma",
-    "krpa",
-    "mrva",
-    "srna",
-    "trka",
-    "urna",
-    "vrba",
-    "vrša"
-  ],
-  "reći": [
-    "leći",
-    "peći",
-    "teći",
-    "remi"
-  ],
-  "rema": [
-    "gema",
-    "tema",
-    "rima",
-    "repa",
-    "rera",
-    "resa",
-    "remi"
-  ],
-  "remi": [
-    "reći",
-    "rema"
-  ],
-  "repa": [
-    "rupa",
-    "rema",
-    "rera",
-    "resa"
-  ],
-  "resa": [
-    "kesa",
-    "rasa",
-    "rosa",
-    "rema",
-    "repa",
-    "rera"
-  ],
-  "riba": [
-    "šiba",
+  "boba": [
     "roba",
-    "rika",
-    "rima",
-    "riva",
-    "riža"
-  ],
-  "rika": [
-    "dika",
-    "sika",
-    "vika",
-    "raka",
-    "ruka",
-    "riba",
-    "rima",
-    "riva",
-    "riža"
-  ],
-  "rilo": [
-    "bilo",
-    "šilo",
-    "ralo"
-  ],
-  "rima": [
-    "njima",
-    "zima",
-    "rema",
-    "riba",
-    "rika",
-    "riva",
-    "riža"
-  ],
-  "ring": [
-    "rang"
-  ],
-  "rips": [
-    "čips",
-    "gips"
-  ],
-  "riva": [
-    "njiva",
-    "živa",
-    "riba",
-    "rika",
-    "rima",
-    "riža"
-  ],
-  "riža": [
-    "raža",
-    "ruža",
-    "riba",
-    "rika",
-    "rima",
-    "riva"
-  ],
-  "roba": [
-    "boba",
-    "doba",
     "soba",
-    "riba",
-    "roda",
-    "rosa",
-    "roza"
+    "doba",
+    "baba",
+    "beba",
+    "bora",
+    "boća",
+    "boja",
+    "boca"
   ],
-  "roda": [
-    "koda",
-    "moda",
-    "poda",
-    "voda",
-    "ruda",
-    "roba",
-    "rosa",
-    "roza"
-  ],
-  "rosa": [
-    "kosa",
-    "rasa",
-    "resa",
-    "roba",
-    "roda",
-    "roza"
-  ],
-  "roza": [
-    "doza",
-    "koza",
-    "loza",
-    "poza",
-    "roba",
-    "roda",
-    "rosa"
-  ],
-  "ruče": [
-    "juče"
-  ],
-  "ruda": [
-    "duda",
-    "kuda",
-    "luda",
-    "tuda",
-    "roda",
-    "ruka",
-    "runa",
-    "rupa",
-    "ruža",
-    "rudo"
-  ],
-  "rudo": [
-    "čudo",
-    "ludo",
-    "rado",
-    "ruho",
-    "runo",
-    "ruda"
-  ],
-  "ruho": [
-    "rudo",
-    "runo"
-  ],
-  "ruka": [
-    "buka",
-    "huka",
-    "kuka",
-    "luka",
-    "muka",
-    "žuka",
-    "raka",
-    "rika",
-    "ruda",
-    "runa",
-    "rupa",
-    "ruža"
-  ],
-  "rulja": [
-    "hulja"
-  ],
-  "runa": [
-    "buna",
+  "tuna": [
     "kuna",
-    "tuna",
+    "runa",
+    "buna",
     "vuna",
     "žuna",
-    "rana",
-    "ruda",
-    "ruka",
-    "rupa",
-    "ruža",
-    "runo"
+    "tona",
+    "tuga",
+    "tuda",
+    "tuba",
+    "tuja",
+    "tuča"
   ],
-  "runo": [
-    "puno",
-    "rano",
-    "rudo",
-    "ruho",
-    "runa"
-  ],
-  "rupa": [
-    "kupa",
-    "lupa",
-    "župa",
-    "repa",
-    "ruda",
-    "ruka",
-    "runa",
-    "ruža"
-  ],
-  "ruža": [
-    "raža",
-    "riža",
-    "ruda",
-    "ruka",
-    "runa",
-    "rupa"
-  ],
-  "saće": [
-    "gaće"
-  ],
-  "sada": [
-    "kada",
-    "mada",
-    "nada",
-    "tada",
-    "sida",
-    "sapa"
-  ],
-  "sako": [
-    "iako",
-    "jako",
-    "kako",
-    "lako",
-    "tako",
-    "salo",
-    "samo"
-  ],
-  "salo": [
-    "halo",
-    "malo",
-    "ralo",
-    "žalo",
-    "selo",
-    "sako",
-    "samo"
-  ],
-  "samo": [
-    "kamo",
-    "tamo",
-    "sako",
-    "salo"
-  ],
-  "sapa": [
-    "kapa",
-    "mapa",
-    "papa",
-    "šapa",
-    "sipa",
-    "sada"
-  ],
-  "sebe": [
-    "tebe"
-  ],
-  "seka": [
-    "deka",
-    "jeka",
-    "neka",
-    "teka",
-    "sika",
-    "seks"
-  ],
-  "seks": [
-    "keks"
-  ],
-  "selo": [
-    "čelo",
-    "jelo",
-    "salo"
-  ],
-  "sići": [
-    "dići"
-  ],
-  "sida": [
-    "sada",
-    "siga",
-    "sika",
-    "sila",
-    "sipa",
-    "sisa"
-  ],
-  "siga": [
-    "liga",
-    "sida",
-    "sika",
-    "sila",
-    "sipa",
-    "sisa"
-  ],
-  "sika": [
-    "dika",
-    "rika",
-    "vika",
-    "seka",
-    "sida",
-    "siga",
-    "sila",
-    "sipa",
-    "sisa"
-  ],
-  "sila": [
-    "kila",
+  "kila": [
     "lila",
+    "sila",
     "pila",
     "vila",
     "žila",
-    "sida",
-    "siga",
-    "sika",
-    "sipa",
-    "sisa"
+    "kula",
+    "kola",
+    "kita",
+    "kiša",
+    "kilt"
   ],
-  "sipa": [
-    "lipa",
-    "pipa",
-    "sapa",
-    "sida",
-    "siga",
-    "sika",
-    "sila",
-    "sisa"
+  "koka": [
+    "kuka",
+    "koda",
+    "kora",
+    "kola",
+    "kosa",
+    "koza",
+    "kota",
+    "koma",
+    "koća",
+    "koža",
+    "koča",
+    "koks"
   ],
-  "sisa": [
-    "lisa",
-    "misa",
-    "tisa"
+  "opis": [
+    "upis",
+    "spis",
+    "opus",
+    "opip"
   ],
-  "sito": [
-    "mito",
-    "žito"
-  ],
-  "sjaj": [
-    "skaj"
-  ],
-  "skaj": [
-    "sjaj"
-  ],
-  "skeč": [
-    "smeč"
-  ],
-  "skok": [
-    "srok"
-  ],
-  "skup": [
-    "stup",
-    "skut"
-  ],
-  "skut": [
-    "skup"
-  ],
-  "slab": [
-    "slak",
-    "slan",
-    "slap"
-  ],
-  "slak": [
-    "mlak",
-    "tlak",
-    "vlak",
-    "smak",
-    "svak",
-    "slab",
-    "slan",
-    "slap"
-  ],
-  "slan": [
-    "član",
-    "dlan",
-    "elan",
-    "plan",
-    "stan",
-    "slon",
-    "slab",
-    "slak",
-    "slap"
-  ],
-  "slap": [
-    "hlap",
-    "stap",
-    "slab",
-    "slak",
-    "slan"
-  ],
-  "sleđ": [
-    "smeđ"
-  ],
-  "slog": [
+  "ulog": [
+    "slog",
     "blog",
     "glog",
-    "ulog",
-    "smog",
-    "stog",
-    "sloj",
-    "slom",
-    "slon"
-  ],
-  "sloj": [
-    "spoj",
-    "svoj",
-    "slog",
-    "slom",
-    "slon"
-  ],
-  "slom": [
-    "slog",
-    "sloj",
-    "slon"
-  ],
-  "slon": [
-    "klon",
-    "slan",
-    "slog",
-    "sloj",
-    "slom"
-  ],
-  "sluh": [
-    "gluh",
-    "sluz"
-  ],
-  "sluz": [
-    "sluh"
-  ],
-  "sljez": [
-    "uljez"
-  ],
-  "smak": [
-    "umak",
-    "slak",
-    "svak"
-  ],
-  "smeč": [
-    "skeč",
-    "smeđ"
-  ],
-  "smeđ": [
-    "sleđ",
-    "smuđ",
-    "smeč"
-  ],
-  "smog": [
-    "slog",
-    "stog"
-  ],
-  "smuđ": [
-    "smeđ"
-  ],
-  "soba": [
-    "boba",
-    "doba",
-    "roba",
-    "soja",
-    "sova"
-  ],
-  "soja": [
-    "boja",
-    "soba",
-    "sova"
-  ],
-  "sova": [
-    "soba",
-    "soja"
-  ],
-  "spas": [
-    "stas",
-    "spis"
-  ],
-  "spis": [
-    "opis",
-    "upis",
-    "spas"
-  ],
-  "spoj": [
-    "sloj",
-    "svoj",
-    "spol",
-    "spor"
-  ],
-  "spol": [
-    "stol",
-    "spoj",
-    "spor"
-  ],
-  "spor": [
-    "opor",
-    "spoj",
-    "spol"
-  ],
-  "sram": [
-    "gram",
-    "hram"
-  ],
-  "sred": [
-    "ured",
-    "srez"
-  ],
-  "srez": [
-    "sred"
-  ],
-  "srna": [
-    "urna"
-  ],
-  "srok": [
-    "urok",
-    "skok"
-  ],
-  "stan": [
-    "slan",
-    "stap",
-    "star",
-    "stas",
-    "stav",
-    "staž"
-  ],
-  "stap": [
-    "štap",
-    "slap",
-    "stup",
-    "stan",
-    "star",
-    "stas",
-    "stav",
-    "staž"
-  ],
-  "star": [
-    "stan",
-    "stap",
-    "stas",
-    "stav",
-    "staž"
-  ],
-  "stas": [
-    "spas"
-  ],
-  "stav": [
-    "stan",
-    "stap",
-    "star",
-    "stas",
-    "staž"
-  ],
-  "staž": [
-    "stan",
-    "stap",
-    "star",
-    "stas",
-    "stav"
-  ],
-  "stid": [
-    "stih",
-    "stil"
-  ],
-  "stih": [
-    "stid",
-    "stil"
-  ],
-  "stil": [
-    "etil",
-    "stol",
-    "stid",
-    "stih"
-  ],
-  "stog": [
-    "slog",
-    "smog",
-    "stol"
-  ],
-  "stol": [
-    "atol",
-    "spol",
-    "stil",
-    "stog"
-  ],
-  "stup": [
-    "skup",
-    "stap"
-  ],
-  "suma": [
-    "guma",
-    "kuma",
-    "puma",
-    "šuma",
-    "suša",
-    "suza"
-  ],
-  "suša": [
-    "buša",
-    "duša",
-    "guša",
-    "šuša",
-    "suma",
-    "suza"
-  ],
-  "suza": [
-    "muza",
-    "suma",
-    "suša"
-  ],
-  "svak": [
-    "slak",
-    "smak",
-    "svat"
-  ],
-  "svat": [
-    "cvat",
-    "hvat",
-    "svet",
-    "svak"
-  ],
-  "svet": [
-    "svat"
-  ],
-  "svod": [
-    "uvod",
-    "svud",
-    "svoj"
-  ],
-  "svoj": [
-    "ovoj",
-    "tvoj",
-    "sloj",
-    "spoj",
-    "svod"
-  ],
-  "svud": [
-    "ovud",
-    "svod"
-  ],
-  "šaka": [
-    "baka",
-    "raka",
-    "šala",
-    "šapa",
-    "šara"
-  ],
-  "šala": [
-    "bala",
-    "hala",
-    "šaka",
-    "šapa",
-    "šara"
-  ],
-  "šapa": [
-    "kapa",
-    "mapa",
-    "papa",
-    "sapa",
-    "šaka",
-    "šala",
-    "šara"
-  ],
-  "šara": [
-    "bara",
-    "para",
-    "žara",
-    "šaka",
-    "šala",
-    "šapa"
-  ],
-  "šarm": [
-    "šara"
-  ],
-  "šest": [
-    "čest",
-    "gest",
-    "pest",
-    "test"
-  ],
-  "ševa": [
-    "deva"
-  ],
-  "šiba": [
-    "riba",
-    "šija"
-  ],
-  "šija": [
-    "đija",
-    "šljap",
-    "šiba"
-  ],
-  "šilo": [
-    "bilo",
-    "rilo",
-    "šilt"
-  ],
-  "šilt": [
-    "kilt",
-    "šilo"
-  ],
-  "šiti": [
-    "biti",
-    "liti",
-    "niti",
-    "piti",
-    "viti"
-  ],
-  "šlag": [
-    "blag",
-    "špag"
-  ],
-  "šlic": [
-    "špic"
-  ],
-  "špag": [
-    "šlag"
-  ],
-  "špic": [
-    "šlic"
-  ],
-  "štap": [
-    "stap"
-  ],
-  "šuga": [
-    "duga",
-    "fuga",
-    "kuga",
-    "tuga",
-    "vuga",
-    "šuma",
-    "šuša",
-    "šuta"
-  ],
-  "šuma": [
-    "guma",
-    "kuma",
-    "puma",
-    "suma",
-    "šuga",
-    "šuša",
-    "šuta"
-  ],
-  "šuša": [
-    "buša",
-    "duša",
-    "guša",
-    "suša"
-  ],
-  "šuta": [
-    "juta",
-    "kuta",
-    "puta",
-    "šuga",
-    "šuma",
-    "šuša"
-  ],
-  "taći": [
-    "maći",
-    "naći",
-    "zaći",
-    "teći",
-    "tući"
-  ],
-  "tada": [
-    "kada",
-    "mada",
-    "nada",
-    "sada",
+    "ubog",
+    "ulov"
+  ],
+  "tvor": [
+    "čvor",
+    "dvor",
+    "tvar",
+    "tvoj"
+  ],
+  "ruda": [
+    "kuda",
     "tuda",
-    "tama",
-    "tata",
-    "tava"
-  ],
-  "tako": [
-    "iako",
-    "jako",
-    "kako",
-    "lako",
-    "sako",
-    "tamo",
-    "takt"
-  ],
-  "takt": [
-    "pakt",
-    "tast",
-    "tašt"
-  ],
-  "tama": [
-    "dama",
-    "jama",
-    "lama",
-    "ljama",
-    "mama",
-    "nama",
-    "vama",
-    "tema",
-    "tada",
-    "tata",
-    "tava"
-  ],
-  "tamo": [
-    "kamo",
-    "samo",
-    "tako",
-    "tama"
-  ],
-  "tane": [
-    "lane"
+    "duda",
+    "luda",
+    "roda",
+    "ruka",
+    "runa",
+    "rupa",
+    "ruža",
+    "rulj",
+    "rudo"
   ],
   "tast": [
     "čast",
@@ -3876,631 +729,6 @@ export const sveHrvRijeci: { [key: string]: string[] } = {
     "takt",
     "tašt"
   ],
-  "tašt": [
-    "takt",
-    "tast"
-  ],
-  "tata": [
-    "rata",
-    "vata",
-    "teta"
-  ],
-  "tava": [
-    "java",
-    "kava",
-    "lava",
-    "tada",
-    "tama",
-    "tata"
-  ],
-  "tebe": [
-    "sebe",
-    "tele"
-  ],
-  "tebi": [
-    "teći",
-    "tebe"
-  ],
-  "teći": [
-    "leći",
-    "peći",
-    "reći",
-    "taći",
-    "tući",
-    "tebi"
-  ],
-  "teka": [
-    "deka",
-    "jeka",
-    "neka",
-    "seka",
-    "trka",
-    "tema",
-    "teta",
-    "teza"
-  ],
-  "tele": [
-    "tebe"
-  ],
-  "tema": [
-    "gema",
-    "rema",
-    "tama",
-    "teka",
-    "teta",
-    "teza"
-  ],
-  "test": [
-    "čest",
-    "gest",
-    "pest",
-    "šest",
-    "tast",
-    "tost",
-    "tust"
-  ],
-  "teta": [
-    "meta",
-    "peta",
-    "tata"
-  ],
-  "teza": [
-    "jeza",
-    "veza",
-    "teka",
-    "tema",
-    "teta"
-  ],
-  "tisa": [
-    "lisa",
-    "misa",
-    "sisa"
-  ],
-  "tlak": [
-    "mlak",
-    "slak",
-    "vlak",
-    "trak"
-  ],
-  "toga": [
-    "joga",
-    "noga",
-    "tuga",
-    "tona"
-  ],
-  "tona": [
-    "zona",
-    "tuna",
-    "toga"
-  ],
-  "tost": [
-    "gost",
-    "kost",
-    "most",
-    "post",
-    "tast",
-    "test",
-    "tust"
-  ],
-  "trač": [
-    "drač",
-    "orač",
-    "vrač",
-    "trag",
-    "trak",
-    "trap",
-    "tras"
-  ],
-  "trag": [
-    "drag",
-    "prag",
-    "vrag",
-    "trač",
-    "trak",
-    "trap",
-    "tras"
-  ],
-  "trak": [
-    "arak",
-    "brak",
-    "frak",
-    "krak",
-    "mrak",
-    "zrak",
-    "tlak",
-    "trik",
-    "trač",
-    "trag",
-    "trap",
-    "tras"
-  ],
-  "trap": [
-    "drap",
-    "trop",
-    "trup",
-    "trač",
-    "trag",
-    "trak",
-    "tras"
-  ],
-  "tras": [
-    "pras",
-    "tres",
-    "trač",
-    "trag",
-    "trak",
-    "trap"
-  ],
-  "tref": [
-    "tren",
-    "tres"
-  ],
-  "tren": [
-    "hren",
-    "trun",
-    "tref",
-    "tres"
-  ],
-  "tres": [
-    "dres",
-    "ures",
-    "tras",
-    "tref",
-    "tren"
-  ],
-  "trik": [
-    "krik",
-    "trak"
-  ],
-  "trka": [
-    "arka",
-    "teka"
-  ],
-  "trnje": [
-    "zrnje"
-  ],
-  "trom": [
-    "brom",
-    "grom",
-    "hrom",
-    "krom",
-    "trop"
-  ],
-  "trop": [
-    "trap",
-    "trup",
-    "trom"
-  ],
-  "trud": [
-    "prud",
-    "trun",
-    "truo",
-    "trup",
-    "trut"
-  ],
-  "trun": [
-    "tren",
-    "trud",
-    "truo",
-    "trup",
-    "trut"
-  ],
-  "truo": [
-    "trud",
-    "trun",
-    "trup",
-    "trut"
-  ],
-  "trup": [
-    "krup",
-    "trap",
-    "trop",
-    "trud",
-    "trun",
-    "truo",
-    "trut"
-  ],
-  "trut": [
-    "krut",
-    "prut"
-  ],
-  "tuba": [
-    "ćuba",
-    "guba",
-    "tuča",
-    "tuda",
-    "tuga",
-    "tuja",
-    "tuna"
-  ],
-  "tuce": [
-    "puce"
-  ],
-  "tuča": [
-    "vuča",
-    "tuba",
-    "tuda",
-    "tuga",
-    "tuja",
-    "tuna"
-  ],
-  "tući": [
-    "pući",
-    "vući",
-    "taći",
-    "teći"
-  ],
-  "tuda": [
-    "duda",
-    "kuda",
-    "luda",
-    "ruda",
-    "tada",
-    "tuba",
-    "tuča",
-    "tuga",
-    "tuja",
-    "tuna"
-  ],
-  "tuga": [
-    "duga",
-    "fuga",
-    "kuga",
-    "šuga",
-    "vuga",
-    "toga",
-    "tuba",
-    "tuča",
-    "tuda",
-    "tuja",
-    "tuna"
-  ],
-  "tuja": [
-    "guja",
-    "kuja",
-    "tuba",
-    "tuča",
-    "tuda",
-    "tuga",
-    "tuna"
-  ],
-  "tuna": [
-    "buna",
-    "kuna",
-    "runa",
-    "vuna",
-    "žuna",
-    "tona",
-    "tuba",
-    "tuča",
-    "tuda",
-    "tuga",
-    "tuja"
-  ],
-  "tust": [
-    "gust",
-    "pust",
-    "tast",
-    "test",
-    "tost"
-  ],
-  "tvar": [
-    "kvar",
-    "tvor"
-  ],
-  "tvid": [
-    "uvid",
-    "tvrd"
-  ],
-  "tvoj": [
-    "ovoj",
-    "svoj",
-    "tvor"
-  ],
-  "tvor": [
-    "čvor",
-    "dvor",
-    "tvar",
-    "tvoj"
-  ],
-  "tvrd": [
-    "tvid"
-  ],
-  "ubav": [
-    "udav"
-  ],
-  "ubod": [
-    "obod",
-    "urod",
-    "uvod",
-    "ubog"
-  ],
-  "ubog": [
-    "zbog",
-    "ulog",
-    "ubod"
-  ],
-  "udah": [
-    "umah",
-    "udalj",
-    "udar",
-    "udav"
-  ],
-  "udar": [
-    "odar",
-    "ular",
-    "urar",
-    "užar",
-    "udah",
-    "udalj",
-    "udav"
-  ],
-  "udav": [
-    "ubav",
-    "udah",
-    "udalj",
-    "udar"
-  ],
-  "udio": [
-    "odio"
-  ],
-  "ugao": [
-    "uzao"
-  ],
-  "ugor": [
-    "ukor",
-    "umor",
-    "utor",
-    "uzor"
-  ],
-  "uime": [
-    "njime",
-    "vime"
-  ],
-  "ujak": [
-    "bljak",
-    "umak",
-    "uzak"
-  ],
-  "ujna": [
-    "urna",
-    "usna"
-  ],
-  "ukaz": [
-    "ulaz"
-  ],
-  "ukop": [
-    "ukor"
-  ],
-  "ukor": [
-    "ugor",
-    "umor",
-    "utor",
-    "uzor",
-    "ukop"
-  ],
-  "ukus": [
-    "okus"
-  ],
-  "ular": [
-    "udar",
-    "urar",
-    "užar",
-    "ulaz"
-  ],
-  "ulaz": [
-    "mlaz",
-    "ukaz",
-    "ular"
-  ],
-  "ulog": [
-    "blog",
-    "glog",
-    "slog",
-    "ubog",
-    "ulov"
-  ],
-  "ulov": [
-    "ulog"
-  ],
-  "uljez": [
-    "sljez"
-  ],
-  "umah": [
-    "udah",
-    "umak",
-    "uman"
-  ],
-  "umak": [
-    "smak",
-    "ujak",
-    "uzak",
-    "umah",
-    "uman"
-  ],
-  "uman": [
-    "umah",
-    "umak"
-  ],
-  "umni": [
-    "usni",
-    "ušni"
-  ],
-  "umor": [
-    "ugor",
-    "ukor",
-    "utor",
-    "uzor"
-  ],
-  "upad": [
-    "užad"
-  ],
-  "upis": [
-    "opis",
-    "spis",
-    "uvis",
-    "upit"
-  ],
-  "upit": [
-    "upis"
-  ],
-  "urar": [
-    "udar",
-    "ular",
-    "užar"
-  ],
-  "ured": [
-    "sred",
-    "urod",
-    "ures"
-  ],
-  "ures": [
-    "dres",
-    "tres",
-    "ured"
-  ],
-  "urin": [
-    "krin"
-  ],
-  "urna": [
-    "srna",
-    "ujna",
-    "usna"
-  ],
-  "urod": [
-    "brod",
-    "ubod",
-    "uvod",
-    "ured",
-    "urok"
-  ],
-  "urok": [
-    "srok",
-    "urod"
-  ],
-  "usna": [
-    "ujna",
-    "urna",
-    "usta",
-    "usni"
-  ],
-  "usni": [
-    "osni",
-    "umni",
-    "ušni",
-    "usna"
-  ],
-  "usta": [
-    "usna",
-    "usto"
-  ],
-  "usto": [
-    "isto",
-    "usta"
-  ],
-  "ušni": [
-    "umni",
-    "usni"
-  ],
-  "utor": [
-    "ugor",
-    "ukor",
-    "umor",
-    "uzor"
-  ],
-  "uveo": [
-    "uvez"
-  ],
-  "uvez": [
-    "uvoz",
-    "uveo"
-  ],
-  "uvid": [
-    "tvid",
-    "uvod",
-    "uvis"
-  ],
-  "uvis": [
-    "upis",
-    "uvid"
-  ],
-  "uvod": [
-    "svod",
-    "ubod",
-    "urod",
-    "uvid",
-    "uvoz"
-  ],
-  "uvoz": [
-    "uvez",
-    "uvod"
-  ],
-  "uzak": [
-    "ujak",
-    "umak",
-    "uzao"
-  ],
-  "uzao": [
-    "ugao",
-    "uzak"
-  ],
-  "uzor": [
-    "ugor",
-    "ukor",
-    "umor",
-    "utor"
-  ],
-  "užad": [
-    "upad",
-    "užar",
-    "užas"
-  ],
-  "užar": [
-    "udar",
-    "ular",
-    "urar",
-    "užad",
-    "užas"
-  ],
-  "užas": [
-    "užad",
-    "užar"
-  ],
-  "vadi": [
-    "radi",
-    "vani"
-  ],
-  "vaga": [
-    "ljaga",
-    "vuga",
-    "vama",
-    "vata",
-    "vaza"
-  ],
-  "vama": [
-    "dama",
-    "jama",
-    "lama",
-    "ljama",
-    "mama",
-    "nama",
-    "tama",
-    "vaga",
-    "vata",
-    "vaza"
-  ],
-  "vani": [
-    "lani",
-    "rani",
-    "vadi"
-  ],
-  "vata": [
-    "rata",
-    "tata",
-    "vaga",
-    "vama",
-    "vaza"
-  ],
   "vaza": [
     "baza",
     "faza",
@@ -4508,131 +736,1839 @@ export const sveHrvRijeci: { [key: string]: string[] } = {
     "oaza",
     "veza",
     "viza",
-    "vaga",
     "vama",
+    "vaga",
     "vata"
   ],
-  "vena": [
-    "žena",
-    "vuna",
-    "veza"
-  ],
-  "veto": [
-    "geto",
-    "ljeto"
-  ],
-  "veza": [
-    "jeza",
-    "teza",
-    "vaza",
-    "viza",
-    "vena"
-  ],
-  "vika": [
-    "dika",
-    "rika",
-    "sika",
+  "lila": [
+    "kila",
+    "sila",
+    "pila",
     "vila",
-    "viza"
+    "žila",
+    "lula",
+    "lisa",
+    "lipa",
+    "lira",
+    "liga"
+  ],
+  "stil": [
+    "etil",
+    "stol",
+    "stid",
+    "stih"
+  ],
+  "mada": [
+    "kada",
+    "tada",
+    "sada",
+    "nada",
+    "moda",
+    "mama",
+    "masa",
+    "mapa",
+    "malj",
+    "mana",
+    "manj",
+    "maca"
+  ],
+  "upis": [
+    "opis",
+    "spis",
+    "uvis",
+    "upit"
+  ],
+  "ralo": [
+    "salo",
+    "malo",
+    "halo",
+    "žalo",
+    "rilo",
+    "rano",
+    "rado"
+  ],
+  "tako": [
+    "kako",
+    "sako",
+    "iako",
+    "lako",
+    "jako",
+    "tamo",
+    "takt"
+  ],
+  "brom": [
+    "grom",
+    "krom",
+    "hrom",
+    "trom",
+    "brod",
+    "broj",
+    "broš"
+  ],
+  "sila": [
+    "kila",
+    "lila",
+    "pila",
+    "vila",
+    "žila",
+    "sika",
+    "sisa",
+    "sipa",
+    "siga",
+    "sida",
+    "sinj"
+  ],
+  "rasa": [
+    "masa",
+    "kasa",
+    "resa",
+    "rosa",
+    "rana",
+    "raka",
+    "rata",
+    "raža",
+    "raja",
+    "rast"
+  ],
+  "svoj": [
+    "ovoj",
+    "tvoj",
+    "sloj",
+    "spoj",
+    "svod"
+  ],
+  "guma": [
+    "kuma",
+    "puma",
+    "šuma",
+    "suma",
+    "gema",
+    "guba",
+    "guša",
+    "guja",
+    "gumb"
+  ],
+  "rika": [
+    "sika",
+    "dika",
+    "vika",
+    "ruka",
+    "raka",
+    "rima",
+    "riba",
+    "riva",
+    "riža"
+  ],
+  "salo": [
+    "ralo",
+    "malo",
+    "halo",
+    "žalo",
+    "selo",
+    "sako",
+    "samo",
+    "sanj"
+  ],
+  "sako": [
+    "kako",
+    "tako",
+    "iako",
+    "lako",
+    "jako",
+    "salo",
+    "samo",
+    "sanj"
+  ],
+  "gram": [
+    "hram",
+    "sram",
+    "grom",
+    "grab",
+    "grah",
+    "grad",
+    "graf"
+  ],
+  "ljet": [
+    "ljut"
+  ],
+  "peći": [
+    "teći",
+    "leći",
+    "reći",
+    "poći",
+    "pući",
+    "peti"
+  ],
+  "kost": [
+    "most",
+    "post",
+    "tost",
+    "gost",
+    "kist",
+    "krst",
+    "kopt",
+    "kosa"
+  ],
+  "trup": [
+    "krup",
+    "trap",
+    "trop",
+    "trut",
+    "trun",
+    "trud",
+    "truo"
+  ],
+  "bula": [
+    "kula",
+    "mula",
+    "lula",
+    "nula",
+    "bala",
+    "bura",
+    "buna",
+    "buka",
+    "buša",
+    "buha",
+    "buća"
+  ],
+  "pila": [
+    "kila",
+    "lila",
+    "sila",
+    "vila",
+    "žila",
+    "pola",
+    "pita",
+    "pipa",
+    "pile"
+  ],
+  "svat": [
+    "cvat",
+    "hvat",
+    "svet",
+    "svak"
+  ],
+  "pora": [
+    "kora",
+    "bora",
+    "mora",
+    "gora",
+    "zora",
+    "para",
+    "pura",
+    "poza",
+    "poda",
+    "pola"
+  ],
+  "sika": [
+    "rika",
+    "dika",
+    "vika",
+    "seka",
+    "sila",
+    "sisa",
+    "sipa",
+    "siga",
+    "sida",
+    "sinj"
+  ],
+  "vama": [
+    "mama",
+    "tama",
+    "lama",
+    "dama",
+    "ljam",
+    "jama",
+    "nama",
+    "vaza",
+    "vaga",
+    "vata"
+  ],
+  "koma": [
+    "njom",
+    "kuma",
+    "krma",
+    "koda",
+    "kora",
+    "kola",
+    "kosa",
+    "koza",
+    "kota",
+    "koka",
+    "koća",
+    "koža",
+    "koča"
+  ],
+  "masa": [
+    "rasa",
+    "kasa",
+    "misa",
+    "mama",
+    "mada",
+    "mapa",
+    "malj",
+    "mana",
+    "manj",
+    "maca",
+    "mast"
+  ],
+  "kapa": [
+    "mapa",
+    "šapa",
+    "papa",
+    "sapa",
+    "kupa",
+    "krpa",
+    "kada",
+    "kasa",
+    "kaša",
+    "kava"
+  ],
+  "ovaj": [
+    "očaj",
+    "onaj",
+    "ovoj",
+    "ovan"
+  ],
+  "bala": [
+    "šala",
+    "hala",
+    "bula",
+    "bara",
+    "baza",
+    "baba",
+    "baka",
+    "bale"
+  ],
+  "krin": [
+    "urin",
+    "klin",
+    "kran",
+    "krik",
+    "kriv",
+    "križ"
+  ],
+  "koća": [
+    "boća",
+    "kuća",
+    "koda",
+    "kora",
+    "kola",
+    "kosa",
+    "koza",
+    "kota",
+    "koka",
+    "koma",
+    "koža",
+    "koča"
+  ],
+  "mora": [
+    "kora",
+    "bora",
+    "pora",
+    "gora",
+    "zora",
+    "moda",
+    "mort",
+    "more",
+    "morž"
+  ],
+  "duga": [
+    "kuga",
+    "tuga",
+    "vuga",
+    "šuga",
+    "fuga",
+    "duda",
+    "duša",
+    "dunj",
+    "dugo"
+  ],
+  "mapa": [
+    "kapa",
+    "šapa",
+    "papa",
+    "sapa",
+    "mama",
+    "mada",
+    "masa",
+    "malj",
+    "mana",
+    "manj",
+    "maca"
+  ],
+  "para": [
+    "bara",
+    "šara",
+    "žara",
+    "pora",
+    "pura",
+    "papa",
+    "paša",
+    "park"
+  ],
+  "rima": [
+    "njim",
+    "zima",
+    "rema",
+    "rika",
+    "riba",
+    "riva",
+    "riža"
+  ],
+  "jare": [
+    "janj",
+    "jaje",
+    "jard",
+    "jari"
+  ],
+  "iako": [
+    "kako",
+    "tako",
+    "sako",
+    "lako",
+    "jako",
+    "itko"
+  ],
+  "lako": [
+    "kako",
+    "tako",
+    "sako",
+    "iako",
+    "jako",
+    "laso"
+  ],
+  "tebe": [
+    "sebe",
+    "tele",
+    "tebi"
+  ],
+  "stol": [
+    "atol",
+    "spol",
+    "stil",
+    "stog"
+  ],
+  "krut": [
+    "trut",
+    "prut",
+    "krst",
+    "krup",
+    "kruh",
+    "krug"
+  ],
+  "tres": [
+    "ures",
+    "dres",
+    "tras",
+    "tren",
+    "tref"
+  ],
+  "deka": [
+    "teka",
+    "jeka",
+    "seka",
+    "neka",
+    "dika",
+    "deva"
+  ],
+  "tuda": [
+    "kuda",
+    "ruda",
+    "duda",
+    "luda",
+    "tada",
+    "tuga",
+    "tuna",
+    "tuba",
+    "tuja",
+    "tuča"
+  ],
+  "jako": [
+    "kako",
+    "tako",
+    "sako",
+    "iako",
+    "lako",
+    "janj",
+    "jato"
+  ],
+  "obor": [
+    "zbor",
+    "opor",
+    "obod",
+    "oboa"
+  ],
+  "ovoj": [
+    "svoj",
+    "tvoj",
+    "osoj",
+    "ovaj"
+  ],
+  "baza": [
+    "vaza",
+    "faza",
+    "gaza",
+    "oaza",
+    "bara",
+    "bala",
+    "baba",
+    "baka"
+  ],
+  "kada": [
+    "mada",
+    "tada",
+    "sada",
+    "nada",
+    "koda",
+    "kuda",
+    "kapa",
+    "kasa",
+    "kaša",
+    "kava"
+  ],
+  "rema": [
+    "tema",
+    "gema",
+    "rima",
+    "resa",
+    "repa",
+    "rera",
+    "remi"
+  ],
+  "buša": [
+    "guša",
+    "duša",
+    "šuša",
+    "suša",
+    "bura",
+    "buna",
+    "buka",
+    "bula",
+    "buha",
+    "buća"
   ],
   "vila": [
     "kila",
     "lila",
-    "pila",
     "sila",
+    "pila",
     "žila",
-    "vika",
     "viza",
+    "vika",
     "vile"
   ],
-  "vile": [
-    "pile",
-    "vime",
-    "više",
-    "vila"
+  "stas": [
+    "spas",
+    "stap",
+    "stan",
+    "star",
+    "stav",
+    "staž"
+  ],
+  "pura": [
+    "bura",
+    "jura",
+    "hura",
+    "cura",
+    "pora",
+    "para",
+    "puta",
+    "puma",
+    "pusa"
+  ],
+  "gora": [
+    "kora",
+    "bora",
+    "pora",
+    "mora",
+    "zora",
+    "gira",
+    "gore",
+    "gord"
+  ],
+  "koža": [
+    "loža",
+    "koda",
+    "kora",
+    "kola",
+    "kosa",
+    "koza",
+    "kota",
+    "koka",
+    "koma",
+    "koća",
+    "koča"
+  ],
+  "lisa": [
+    "sisa",
+    "misa",
+    "tisa",
+    "lila",
+    "lipa",
+    "lira",
+    "liga",
+    "list"
+  ],
+  "zrak": [
+    "trak",
+    "krak",
+    "brak",
+    "mrak",
+    "arak",
+    "frak",
+    "znak"
+  ],
+  "trap": [
+    "drap",
+    "trup",
+    "trop",
+    "trak",
+    "trač",
+    "trag",
+    "tras"
+  ],
+  "kuja": [
+    "tuja",
+    "guja",
+    "kuka",
+    "kula",
+    "kupa",
+    "kuma",
+    "kuda",
+    "kuta",
+    "kuga",
+    "kuna",
+    "kuća"
+  ],
+  "raka": [
+    "baka",
+    "šaka",
+    "ruka",
+    "rika",
+    "rana",
+    "rasa",
+    "rata",
+    "raža",
+    "raja"
+  ],
+  "krik": [
+    "trik",
+    "klik",
+    "krak",
+    "krin",
+    "kriv",
+    "križ"
+  ],
+  "brod": [
+    "urod",
+    "brid",
+    "brom",
+    "broj",
+    "broš"
+  ],
+  "lama": [
+    "mama",
+    "tama",
+    "vama",
+    "dama",
+    "ljam",
+    "jama",
+    "nama",
+    "lađa",
+    "lava"
+  ],
+  "obod": [
+    "ubod",
+    "obad",
+    "obor",
+    "oboa"
+  ],
+  "doći": [
+    "poći",
+    "moći",
+    "dići",
+    "donj"
+  ],
+  "muka": [
+    "kuka",
+    "ruka",
+    "buka",
+    "luka",
+    "huka",
+    "žuka",
+    "mula",
+    "muha",
+    "muza",
+    "munj"
+  ],
+  "pust": [
+    "tust",
+    "gust",
+    "pest",
+    "post",
+    "prst",
+    "pult",
+    "pusa"
+  ],
+  "trač": [
+    "vrač",
+    "orač",
+    "drač",
+    "trak",
+    "trap",
+    "trag",
+    "tras"
+  ],
+  "jeka": [
+    "teka",
+    "deka",
+    "seka",
+    "neka",
+    "jeza",
+    "jela"
+  ],
+  "sloj": [
+    "svoj",
+    "spoj",
+    "slog",
+    "slon",
+    "slom"
+  ],
+  "rudo": [
+    "čudo",
+    "ludo",
+    "rado",
+    "runo",
+    "rulj",
+    "ruho",
+    "ruda"
+  ],
+  "trag": [
+    "drag",
+    "vrag",
+    "prag",
+    "trak",
+    "trap",
+    "trač",
+    "tras"
+  ],
+  "šara": [
+    "bara",
+    "para",
+    "žara",
+    "šapa",
+    "šala",
+    "šaka",
+    "šarm"
+  ],
+  "piti": [
+    "biti",
+    "liti",
+    "niti",
+    "šiti",
+    "viti",
+    "peti",
+    "pita"
+  ],
+  "seka": [
+    "teka",
+    "deka",
+    "jeka",
+    "neka",
+    "sika",
+    "seks"
+  ],
+  "uvez": [
+    "ulje",
+    "uvoz",
+    "uveo"
+  ],
+  "mlaz": [
+    "ulaz",
+    "mraz",
+    "mlak",
+    "mlad",
+    "mlat",
+    "mlađ"
+  ],
+  "kuća": [
+    "buća",
+    "koća",
+    "kuka",
+    "kula",
+    "kupa",
+    "kuma",
+    "kuda",
+    "kuta",
+    "kuga",
+    "kuna",
+    "kuja"
+  ],
+  "krup": [
+    "trup",
+    "krep",
+    "krut",
+    "kruh",
+    "krug"
+  ],
+  "plin": [
+    "klin",
+    "mlin",
+    "plan",
+    "pliš",
+    "plik"
+  ],
+  "trut": [
+    "krut",
+    "prut",
+    "trup",
+    "trun",
+    "trud",
+    "truo"
+  ],
+  "baba": [
+    "žaba",
+    "boba",
+    "beba",
+    "bara",
+    "bala",
+    "baza",
+    "baka"
+  ],
+  "taći": [
+    "maći",
+    "naći",
+    "zaći",
+    "teći",
+    "tući"
+  ],
+  "mlad": [
+    "glad",
+    "hlad",
+    "mlak",
+    "mlaz",
+    "mlat",
+    "mlađ"
+  ],
+  "krom": [
+    "grom",
+    "brom",
+    "hrom",
+    "trom",
+    "kroj",
+    "krov"
+  ],
+  "most": [
+    "kost",
+    "post",
+    "tost",
+    "gost",
+    "mast",
+    "mort",
+    "mošt"
+  ],
+  "malj": [
+    "milj",
+    "mrlj",
+    "manj"
+  ],
+  "ular": [
+    "udar",
+    "užar",
+    "ulja",
+    "urar",
+    "ulaz"
+  ],
+  "mlat": [
+    "vlat",
+    "alat",
+    "mlak",
+    "mlaz",
+    "mlad",
+    "mlađ"
+  ],
+  "grab": [
+    "grob",
+    "grub",
+    "gram",
+    "grah",
+    "grad",
+    "graf"
+  ],
+  "stan": [
+    "slan",
+    "stap",
+    "stas",
+    "star",
+    "stav",
+    "staž"
+  ],
+  "živo": [
+    "njiv",
+    "nivo",
+    "pivo",
+    "žito",
+    "žilj",
+    "živa"
+  ],
+  "sisa": [
+    "lisa",
+    "misa",
+    "tisa",
+    "sila",
+    "sika",
+    "sipa",
+    "siga",
+    "sida",
+    "sinj"
+  ],
+  "drag": [
+    "trag",
+    "vrag",
+    "prag",
+    "drug",
+    "drač",
+    "drap"
+  ],
+  "kamo": [
+    "ljam",
+    "samo",
+    "tamo",
+    "kako",
+    "karo",
+    "kamp"
+  ],
+  "duda": [
+    "kuda",
+    "ruda",
+    "tuda",
+    "luda",
+    "duga",
+    "duša",
+    "dunj",
+    "dude"
+  ],
+  "ubod": [
+    "obod",
+    "uvod",
+    "urod",
+    "ubog"
+  ],
+  "rupa": [
+    "kupa",
+    "lupa",
+    "župa",
+    "repa",
+    "ruka",
+    "runa",
+    "ruda",
+    "ruža",
+    "rulj"
+  ],
+  "grah": [
+    "prah",
+    "orah",
+    "gram",
+    "grab",
+    "grad",
+    "graf"
+  ],
+  "pest": [
+    "test",
+    "čest",
+    "gest",
+    "šest",
+    "pust",
+    "post",
+    "prst"
+  ],
+  "njim": [
+    "njom",
+    "njiv"
+  ],
+  "dama": [
+    "mama",
+    "tama",
+    "vama",
+    "lama",
+    "ljam",
+    "jama",
+    "nama",
+    "danj",
+    "daća"
+  ],
+  "post": [
+    "kost",
+    "most",
+    "tost",
+    "gost",
+    "pust",
+    "pest",
+    "prst"
+  ],
+  "test": [
+    "pest",
+    "čest",
+    "gest",
+    "šest",
+    "tast",
+    "tost",
+    "tust"
+  ],
+  "slon": [
+    "klon",
+    "slan",
+    "slog",
+    "sloj",
+    "slom"
+  ],
+  "tost": [
+    "kost",
+    "most",
+    "post",
+    "gost",
+    "tast",
+    "test",
+    "tust"
+  ],
+  "puta": [
+    "kuta",
+    "ljut",
+    "šuta",
+    "juta",
+    "pita",
+    "peta",
+    "pura",
+    "puma",
+    "pusa"
+  ],
+  "klik": [
+    "plik",
+    "krik",
+    "klin",
+    "klif",
+    "klip"
+  ],
+  "sipa": [
+    "lipa",
+    "pipa",
+    "sapa",
+    "sila",
+    "sika",
+    "sisa",
+    "siga",
+    "sida",
+    "sinj"
+  ],
+  "žila": [
+    "kila",
+    "lila",
+    "sila",
+    "pila",
+    "vila",
+    "živa",
+    "žilj",
+    "žica"
+  ],
+  "mito": [
+    "žito",
+    "sito",
+    "milj",
+    "mimo"
+  ],
+  "peti": [
+    "ljet",
+    "žeti",
+    "piti",
+    "peći",
+    "peta"
+  ],
+  "danj": [
+    "janj",
+    "manj",
+    "sanj",
+    "dunj",
+    "donj",
+    "dinj"
+  ],
+  "riba": [
+    "šiba",
+    "roba",
+    "rika",
+    "rima",
+    "riva",
+    "riža"
+  ],
+  "tras": [
+    "pras",
+    "tres",
+    "trak",
+    "trap",
+    "trač",
+    "trag"
+  ],
+  "koča": [
+    "koda",
+    "kora",
+    "kola",
+    "kosa",
+    "koza",
+    "kota",
+    "koka",
+    "koma",
+    "koća",
+    "koža"
+  ],
+  "neka": [
+    "teka",
+    "deka",
+    "jeka",
+    "seka",
+    "neki"
+  ],
+  "vuna": [
+    "kuna",
+    "runa",
+    "buna",
+    "tuna",
+    "žuna",
+    "vena",
+    "vuga",
+    "vuča"
+  ],
+  "ljam": [
+    "ljag"
+  ],
+  "mana": [
+    "rana",
+    "mina",
+    "mama",
+    "mada",
+    "masa",
+    "mapa",
+    "malj",
+    "manj",
+    "maca"
+  ],
+  "vrač": [
+    "trač",
+    "orač",
+    "drač",
+    "vrag",
+    "vrat",
+    "vran"
+  ],
+  "vrag": [
+    "trag",
+    "drag",
+    "prag",
+    "vrač",
+    "vrat",
+    "vran"
+  ],
+  "udav": [
+    "ulja",
+    "ubav",
+    "udar",
+    "udah",
+    "udal"
+  ],
+  "žuna": [
+    "kuna",
+    "runa",
+    "buna",
+    "tuna",
+    "vuna",
+    "žena",
+    "žuka",
+    "župa"
+  ],
+  "tren": [
+    "hren",
+    "trun",
+    "tres",
+    "tref"
+  ],
+  "teta": [
+    "ljet",
+    "peta",
+    "meta",
+    "tata",
+    "teka",
+    "tema",
+    "teza"
+  ],
+  "riva": [
+    "živa",
+    "njiv",
+    "rika",
+    "rima",
+    "riba",
+    "riža"
+  ],
+  "guba": [
+    "tuba",
+    "ćuba",
+    "grba",
+    "guma",
+    "guša",
+    "guja"
+  ],
+  "vuga": [
+    "kuga",
+    "tuga",
+    "duga",
+    "šuga",
+    "fuga",
+    "vaga",
+    "vuna",
+    "vuča"
+  ],
+  "roba": [
+    "boba",
+    "soba",
+    "doba",
+    "riba",
+    "roda",
+    "roza",
+    "rosa"
+  ],
+  "luda": [
+    "kuda",
+    "ruda",
+    "tuda",
+    "duda",
+    "luka",
+    "lula",
+    "lupa",
+    "ludo"
+  ],
+  "spoj": [
+    "svoj",
+    "sloj",
+    "spor",
+    "spol"
+  ],
+  "luka": [
+    "kuka",
+    "ruka",
+    "buka",
+    "muka",
+    "huka",
+    "žuka",
+    "luda",
+    "lula",
+    "lupa"
   ],
   "vime": [
-    "njime",
+    "njim",
     "uime",
     "vile",
     "više"
   ],
-  "vino": [
-    "kino"
+  "uvid": [
+    "tvid",
+    "uvod",
+    "uvis"
   ],
-  "više": [
-    "vile",
-    "vime"
+  "zbor": [
+    "obor",
+    "zbir",
+    "zbog"
   ],
-  "viti": [
-    "biti",
-    "liti",
-    "niti",
-    "piti",
-    "šiti"
+  "roda": [
+    "koda",
+    "poda",
+    "voda",
+    "moda",
+    "ruda",
+    "roba",
+    "roza",
+    "rosa"
   ],
-  "viza": [
-    "niza",
-    "vaza",
-    "veza",
-    "vika",
-    "vila"
+  "čelo": [
+    "jelo",
+    "selo",
+    "čulo",
+    "čedo"
   ],
-  "vlak": [
-    "mlak",
+  "kasa": [
+    "rasa",
+    "masa",
+    "kosa",
+    "kesa",
+    "kapa",
+    "kada",
+    "kaša",
+    "kava"
+  ],
+  "jama": [
+    "mama",
+    "tama",
+    "vama",
+    "lama",
+    "dama",
+    "ljam",
+    "nama",
+    "janj",
+    "java"
+  ],
+  "janj": [
+    "danj",
+    "manj",
+    "sanj"
+  ],
+  "kaša": [
+    "paša",
+    "čaša",
+    "kiša",
+    "kapa",
+    "kada",
+    "kasa",
+    "kava"
+  ],
+  "tada": [
+    "mada",
+    "kada",
+    "sada",
+    "nada",
+    "tuda",
+    "tama",
+    "tata",
+    "tava"
+  ],
+  "živa": [
+    "riva",
+    "njiv",
+    "žila",
+    "žilj",
+    "žica",
+    "živo"
+  ],
+  "nama": [
+    "mama",
+    "tama",
+    "vama",
+    "lama",
+    "dama",
+    "ljam",
+    "jama",
+    "nada"
+  ],
+  "slap": [
+    "hlap",
+    "stap",
+    "slan",
     "slak",
-    "tlak",
-    "vlas",
-    "vlat"
+    "slab"
   ],
-  "vlas": [
-    "glas",
-    "klas",
-    "vlak",
-    "vlat"
+  "trun": [
+    "tren",
+    "trup",
+    "trut",
+    "trud",
+    "truo"
+  ],
+  "dika": [
+    "rika",
+    "sika",
+    "vika",
+    "deka",
+    "dina",
+    "dinj"
+  ],
+  "šuga": [
+    "kuga",
+    "tuga",
+    "duga",
+    "vuga",
+    "fuga",
+    "šuša",
+    "šuma",
+    "šuta"
+  ],
+  "tema": [
+    "rema",
+    "gema",
+    "tama",
+    "teka",
+    "teta",
+    "teza"
+  ],
+  "baka": [
+    "raka",
+    "šaka",
+    "buka",
+    "bara",
+    "bala",
+    "baza",
+    "baba"
+  ],
+  "udah": [
+    "ulja",
+    "umah",
+    "udar",
+    "udav",
+    "udal"
+  ],
+  "mula": [
+    "kula",
+    "bula",
+    "lula",
+    "nula",
+    "muka",
+    "muha",
+    "muza",
+    "munj"
   ],
   "vlat": [
-    "alat",
     "mlat",
+    "alat",
     "vrat",
     "vlak",
     "vlas"
   ],
-  "voda": [
-    "koda",
-    "moda",
-    "poda",
-    "roda",
-    "vođa"
+  "poći": [
+    "doći",
+    "moći",
+    "peći",
+    "pući"
   ],
-  "vođa": [
-    "lođa",
-    "voda"
+  "šapa": [
+    "kapa",
+    "mapa",
+    "papa",
+    "sapa",
+    "šara",
+    "šala",
+    "šaka"
   ],
-  "volt": [
-    "volja"
+  "trud": [
+    "prud",
+    "trup",
+    "trut",
+    "trun",
+    "truo"
   ],
-  "vrač": [
-    "drač",
-    "orač",
-    "trač",
-    "vrag",
-    "vran",
-    "vrat"
+  "buha": [
+    "muha",
+    "juha",
+    "bura",
+    "buna",
+    "buka",
+    "bula",
+    "buša",
+    "buća"
   ],
-  "vrag": [
-    "drag",
+  "rang": [
+    "ring",
+    "rana",
+    "rano",
+    "rani",
+    "ranč"
+  ],
+  "grob": [
+    "grab",
+    "grub",
+    "grom",
+    "groš",
+    "grof"
+  ],
+  "obad": [
+    "otad",
+    "obod",
+    "obao"
+  ],
+  "runo": [
+    "puno",
+    "rano",
+    "rudo",
+    "rulj",
+    "ruho",
+    "runa"
+  ],
+  "tuba": [
+    "guba",
+    "ćuba",
+    "tuga",
+    "tuna",
+    "tuda",
+    "tuja",
+    "tuča"
+  ],
+  "malo": [
+    "ralo",
+    "salo",
+    "halo",
+    "žalo",
+    "malj",
+    "manj",
+    "mali"
+  ],
+  "uzak": [
+    "umak",
+    "ulja",
+    "ujak",
+    "uzao"
+  ],
+  "kruh": [
+    "bruh",
+    "krut",
+    "krup",
+    "krug"
+  ],
+  "gnom": [
+    "mnom",
+    "grom",
+    "gnoj"
+  ],
+  "papa": [
+    "kapa",
+    "mapa",
+    "šapa",
+    "sapa",
+    "pipa",
+    "para",
+    "paša"
+  ],
+  "čest": [
+    "pest",
+    "test",
+    "gest",
+    "šest",
+    "čast",
+    "čist"
+  ],
+  "žito": [
+    "mito",
+    "sito",
+    "živo",
+    "žilj"
+  ],
+  "lipa": [
+    "sipa",
+    "pipa",
+    "lupa",
+    "lila",
+    "lisa",
+    "lira",
+    "liga"
+  ],
+  "lula": [
+    "kula",
+    "bula",
+    "mula",
+    "nula",
+    "lila",
+    "luda",
+    "luka",
+    "lupa"
+  ],
+  "guša": [
+    "buša",
+    "duša",
+    "šuša",
+    "suša",
+    "guma",
+    "guba",
+    "guja"
+  ],
+  "klon": [
+    "slon",
+    "klin",
+    "klen",
+    "klor"
+  ],
+  "sapa": [
+    "kapa",
+    "mapa",
+    "šapa",
+    "papa",
+    "sipa",
+    "sada",
+    "sanj"
+  ],
+  "star": [
+    "stap",
+    "stas",
+    "stan",
+    "stav",
+    "staž"
+  ],
+  "stav": [
+    "stap",
+    "stas",
+    "stan",
+    "star",
+    "staž"
+  ],
+  "staž": [
+    "stap",
+    "stas",
+    "stan",
+    "star",
+    "stav"
+  ],
+  "arak": [
+    "trak",
+    "krak",
+    "brak",
+    "mrak",
+    "zrak",
+    "frak"
+  ],
+  "frak": [
+    "trak",
+    "krak",
+    "brak",
+    "mrak",
+    "zrak",
+    "arak"
+  ],
+  "čudo": [
+    "rudo",
+    "ludo",
+    "čedo",
+    "čulo"
+  ],
+  "hrom": [
+    "grom",
+    "brom",
+    "krom",
+    "trom",
+    "hram"
+  ],
+  "prah": [
+    "grah",
+    "orah",
+    "plah",
     "prag",
-    "trag",
-    "vrač",
-    "vran",
-    "vrat"
+    "pras"
   ],
-  "vran": [
-    "kran",
+  "gest": [
+    "pest",
+    "test",
+    "čest",
+    "šest",
+    "gost",
+    "gust"
+  ],
+  "rata": [
+    "tata",
+    "vata",
+    "rana",
+    "rasa",
+    "raka",
+    "raža",
+    "raja"
+  ],
+  "huka": [
+    "kuka",
+    "ruka",
+    "buka",
+    "muka",
+    "luka",
+    "žuka",
+    "hura",
+    "hulj"
+  ],
+  "osim": [
+    "osam",
+    "osip"
+  ],
+  "pući": [
+    "tući",
+    "vući",
+    "peći",
+    "poći"
+  ],
+  "vlak": [
+    "slak",
+    "mlak",
+    "tlak",
+    "vlat",
+    "vlas"
+  ],
+  "orač": [
+    "trač",
     "vrač",
-    "vrag",
-    "vrat"
+    "drač",
+    "orah",
+    "orao"
+  ],
+  "raža": [
+    "riža",
+    "ruža",
+    "rana",
+    "rasa",
+    "raka",
+    "rata",
+    "raja"
+  ],
+  "gost": [
+    "kost",
+    "most",
+    "post",
+    "tost",
+    "gest",
+    "gust"
+  ],
+  "buća": [
+    "kuća",
+    "boća",
+    "bura",
+    "buna",
+    "buka",
+    "bula",
+    "buša",
+    "buha"
+  ],
+  "milj": [
+    "bilj",
+    "žilj",
+    "malj",
+    "mrlj"
+  ],
+  "tući": [
+    "pući",
+    "vući",
+    "teći",
+    "taći"
+  ],
+  "kava": [
+    "tava",
+    "lava",
+    "java",
+    "kapa",
+    "kada",
+    "kasa",
+    "kaša"
+  ],
+  "trom": [
+    "grom",
+    "brom",
+    "krom",
+    "hrom",
+    "trop"
+  ],
+  "sada": [
+    "mada",
+    "kada",
+    "tada",
+    "nada",
+    "sida",
+    "sapa",
+    "sanj"
+  ],
+  "halo": [
+    "ralo",
+    "salo",
+    "malo",
+    "žalo",
+    "hala"
+  ],
+  "grad": [
+    "glad",
+    "gram",
+    "grab",
+    "grah",
+    "graf"
+  ],
+  "spis": [
+    "opis",
+    "upis",
+    "spas"
+  ],
+  "duša": [
+    "buša",
+    "guša",
+    "šuša",
+    "suša",
+    "duga",
+    "duda",
+    "dunj"
+  ],
+  "misa": [
+    "lisa",
+    "sisa",
+    "tisa",
+    "masa",
+    "milj",
+    "mina"
+  ],
+  "kist": [
+    "list",
+    "čist",
+    "kost",
+    "krst",
+    "kilt"
+  ],
+  "kran": [
+    "vran",
+    "krin",
+    "krak",
+    "kraj",
+    "kral"
+  ],
+  "resa": [
+    "kesa",
+    "rasa",
+    "rosa",
+    "rema",
+    "repa",
+    "rera"
+  ],
+  "graf": [
+    "grof",
+    "gram",
+    "grab",
+    "grah",
+    "grad"
+  ],
+  "žuka": [
+    "kuka",
+    "ruka",
+    "buka",
+    "muka",
+    "luka",
+    "huka",
+    "žuna",
+    "župa"
+  ],
+  "puma": [
+    "kuma",
+    "guma",
+    "šuma",
+    "suma",
+    "pura",
+    "puta",
+    "pusa"
+  ],
+  "bilo": [
+    "šilo",
+    "rilo",
+    "bilj",
+    "biro"
+  ],
+  "svod": [
+    "uvod",
+    "svud",
+    "svoj"
+  ],
+  "riža": [
+    "raža",
+    "ruža",
+    "rika",
+    "rima",
+    "riba",
+    "riva"
+  ],
+  "krug": [
+    "drug",
+    "krut",
+    "krup",
+    "kruh"
   ],
   "vrat": [
     "brat",
@@ -4641,132 +2577,1128 @@ export const sveHrvRijeci: { [key: string]: string[] } = {
     "vrag",
     "vran"
   ],
+  "roza": [
+    "koza",
+    "poza",
+    "loza",
+    "doza",
+    "roba",
+    "roda",
+    "rosa"
+  ],
+  "leći": [
+    "teći",
+    "peći",
+    "reći",
+    "leća"
+  ],
+  "mače": [
+    "pače",
+    "malj",
+    "manj"
+  ],
+  "okus": [
+    "ukus",
+    "opus"
+  ],
+  "poza": [
+    "koza",
+    "roza",
+    "loza",
+    "doza",
+    "pora",
+    "poda",
+    "pola"
+  ],
+  "pile": [
+    "vile",
+    "piće",
+    "pire",
+    "pila"
+  ],
+  "prag": [
+    "trag",
+    "drag",
+    "vrag",
+    "prah",
+    "pras"
+  ],
+  "etin": [
+    "eten",
+    "etil"
+  ],
+  "šuša": [
+    "buša",
+    "guša",
+    "duša",
+    "suša",
+    "šuga",
+    "šuma",
+    "šuta"
+  ],
+  "takt": [
+    "pakt",
+    "tast",
+    "tašt",
+    "tako"
+  ],
+  "reći": [
+    "teći",
+    "peći",
+    "leći",
+    "remi"
+  ],
+  "drač": [
+    "trač",
+    "vrač",
+    "orač",
+    "drag",
+    "drap"
+  ],
+  "ulja": [
+    "šlja",
+    "blja",
+    "ulje"
+  ],
+  "urar": [
+    "udar",
+    "užar",
+    "ular",
+    "ulja"
+  ],
+  "užad": [
+    "ulja",
+    "upad",
+    "užar",
+    "užas"
+  ],
+  "ured": [
+    "sred",
+    "ulje",
+    "urod",
+    "ures"
+  ],
+  "šuma": [
+    "kuma",
+    "guma",
+    "puma",
+    "suma",
+    "šuga",
+    "šuša",
+    "šuta"
+  ],
+  "pita": [
+    "kita",
+    "puta",
+    "peta",
+    "pila",
+    "pipa",
+    "piti"
+  ],
+  "poda": [
+    "koda",
+    "roda",
+    "voda",
+    "moda",
+    "pora",
+    "poza",
+    "pola"
+  ],
+  "žena": [
+    "vena",
+    "žuna",
+    "žega",
+    "želj"
+  ],
+  "lađa": [
+    "čađa",
+    "lođa",
+    "leđa",
+    "lama",
+    "lava"
+  ],
+  "teza": [
+    "veza",
+    "jeza",
+    "teka",
+    "teta",
+    "tema"
+  ],
+  "lođa": [
+    "vođa",
+    "lađa",
+    "leđa",
+    "loza",
+    "loža"
+  ],
+  "vile": [
+    "pile",
+    "vime",
+    "više",
+    "vila"
+  ],
+  "voda": [
+    "koda",
+    "roda",
+    "poda",
+    "moda",
+    "vođa",
+    "volj"
+  ],
+  "tvoj": [
+    "svoj",
+    "ovoj",
+    "tvor"
+  ],
+  "ruža": [
+    "raža",
+    "riža",
+    "ruka",
+    "runa",
+    "ruda",
+    "rupa",
+    "rulj"
+  ],
+  "tuja": [
+    "kuja",
+    "guja",
+    "tuga",
+    "tuna",
+    "tuda",
+    "tuba",
+    "tuča"
+  ],
+  "veza": [
+    "teza",
+    "jeza",
+    "vaza",
+    "viza",
+    "vena"
+  ],
+  "soba": [
+    "boba",
+    "roba",
+    "doba",
+    "soja",
+    "sova"
+  ],
+  "peta": [
+    "ljet",
+    "teta",
+    "meta",
+    "puta",
+    "pita",
+    "peti"
+  ],
+  "žega": [
+    "njeg",
+    "žena",
+    "želj"
+  ],
+  "ovud": [
+    "svud",
+    "onud"
+  ],
+  "alka": [
+    "arka",
+    "alga"
+  ],
+  "vlas": [
+    "glas",
+    "klas",
+    "vlat",
+    "vlak"
+  ],
+  "leđa": [
+    "međa",
+    "lađa",
+    "lođa",
+    "leća"
+  ],
+  "đija": [
+    "šija",
+    "điha"
+  ],
+  "bauk": [
+    "nauk",
+    "pauk",
+    "jauk"
+  ],
+  "jauk": [
+    "nauk",
+    "pauk",
+    "bauk",
+    "janj"
+  ],
+  "ubog": [
+    "zbog",
+    "ulog",
+    "ubod"
+  ],
+  "jard": [
+    "bard",
+    "janj",
+    "jare",
+    "jari"
+  ],
+  "ludo": [
+    "rudo",
+    "čudo",
+    "lido",
+    "luda"
+  ],
+  "čedo": [
+    "medo",
+    "čudo",
+    "čelo"
+  ],
+  "viza": [
+    "niza",
+    "vaza",
+    "veza",
+    "vila",
+    "vika"
+  ],
+  "sići": [
+    "dići",
+    "sinj"
+  ],
+  "mort": [
+    "most",
+    "mošt",
+    "mora",
+    "more",
+    "morž"
+  ],
+  "osip": [
+    "opip",
+    "osim"
+  ],
+  "lupa": [
+    "kupa",
+    "rupa",
+    "župa",
+    "lipa",
+    "luda",
+    "luka",
+    "lula"
+  ],
+  "prst": [
+    "krst",
+    "pust",
+    "pest",
+    "post",
+    "prut"
+  ],
+  "zora": [
+    "kora",
+    "bora",
+    "pora",
+    "mora",
+    "gora",
+    "zona"
+  ],
+  "šlag": [
+    "blag",
+    "špag",
+    "šlja"
+  ],
+  "bilj": [
+    "milj",
+    "žilj"
+  ],
+  "srok": [
+    "urok",
+    "skok"
+  ],
+  "spor": [
+    "opor",
+    "spoj",
+    "spol"
+  ],
+  "loza": [
+    "koza",
+    "roza",
+    "poza",
+    "doza",
+    "lođa",
+    "loža"
+  ],
+  "tata": [
+    "rata",
+    "vata",
+    "teta",
+    "tama",
+    "tada",
+    "tava"
+  ],
+  "spol": [
+    "stol",
+    "spoj",
+    "spor"
+  ],
+  "pliš": [
+    "fliš",
+    "plin",
+    "plik"
+  ],
+  "čast": [
+    "tast",
+    "mast",
+    "rast",
+    "čest",
+    "čist"
+  ],
+  "jato": [
+    "nato",
+    "zato",
+    "jako",
+    "janj"
+  ],
+  "šilo": [
+    "bilo",
+    "rilo",
+    "šilt"
+  ],
+  "glad": [
+    "mlad",
+    "hlad",
+    "grad",
+    "glas"
+  ],
+  "jura": [
+    "bura",
+    "pura",
+    "hura",
+    "cura",
+    "juha",
+    "juta"
+  ],
+  "biti": [
+    "piti",
+    "liti",
+    "niti",
+    "šiti",
+    "viti",
+    "bilj"
+  ],
+  "liti": [
+    "piti",
+    "biti",
+    "niti",
+    "šiti",
+    "viti"
+  ],
+  "niti": [
+    "piti",
+    "biti",
+    "liti",
+    "šiti",
+    "viti"
+  ],
+  "šiti": [
+    "piti",
+    "biti",
+    "liti",
+    "niti",
+    "viti"
+  ],
+  "viti": [
+    "piti",
+    "biti",
+    "liti",
+    "niti",
+    "šiti"
+  ],
+  "broj": [
+    "kroj",
+    "brom",
+    "brod",
+    "broš"
+  ],
+  "kriv": [
+    "krov",
+    "krin",
+    "krik",
+    "križ"
+  ],
+  "broš": [
+    "groš",
+    "brom",
+    "brod",
+    "broj"
+  ],
+  "siga": [
+    "liga",
+    "sila",
+    "sika",
+    "sisa",
+    "sipa",
+    "sida",
+    "sinj"
+  ],
+  "tava": [
+    "kava",
+    "lava",
+    "java",
+    "tama",
+    "tada",
+    "tata"
+  ],
+  "ures": [
+    "tres",
+    "dres",
+    "ulje",
+    "ured"
+  ],
+  "list": [
+    "kist",
+    "čist",
+    "lift",
+    "lisa"
+  ],
+  "tvid": [
+    "uvid",
+    "tvrd"
+  ],
+  "umah": [
+    "udah",
+    "ulja",
+    "umak",
+    "uman"
+  ],
+  "sida": [
+    "sada",
+    "sila",
+    "sika",
+    "sisa",
+    "sipa",
+    "siga",
+    "sinj"
+  ],
+  "stog": [
+    "slog",
+    "smog",
+    "stol"
+  ],
+  "lani": [
+    "rani",
+    "vani",
+    "lane"
+  ],
+  "boća": [
+    "koća",
+    "buća",
+    "bora",
+    "boba",
+    "boja",
+    "boca"
+  ],
+  "suša": [
+    "buša",
+    "guša",
+    "duša",
+    "šuša",
+    "suma",
+    "suza"
+  ],
+  "hura": [
+    "bura",
+    "pura",
+    "jura",
+    "cura",
+    "huka",
+    "hulj"
+  ],
+  "puno": [
+    "runo",
+    "pano",
+    "punč"
+  ],
+  "tust": [
+    "pust",
+    "gust",
+    "tast",
+    "test",
+    "tost"
+  ],
+  "tvar": [
+    "kvar",
+    "tvor"
+  ],
+  "suma": [
+    "kuma",
+    "guma",
+    "puma",
+    "šuma",
+    "suša",
+    "suza"
+  ],
+  "plah": [
+    "prah",
+    "plan",
+    "plač",
+    "plav"
+  ],
+  "orah": [
+    "grah",
+    "prah",
+    "orač",
+    "orao"
+  ],
+  "piće": [
+    "biće",
+    "pile",
+    "pire"
+  ],
+  "rosa": [
+    "kosa",
+    "rasa",
+    "resa",
+    "roba",
+    "roda",
+    "roza"
+  ],
+  "šala": [
+    "bala",
+    "hala",
+    "šara",
+    "šapa",
+    "šaka"
+  ],
+  "kroj": [
+    "broj",
+    "kraj",
+    "krom",
+    "krov"
+  ],
+  "mati": [
+    "dati",
+    "maći",
+    "malj",
+    "manj",
+    "mali"
+  ],
+  "otad": [
+    "obad",
+    "otac"
+  ],
+  "prut": [
+    "krut",
+    "trut",
+    "prst",
+    "prud"
+  ],
+  "uzao": [
+    "ulja",
+    "ugao",
+    "uzak"
+  ],
+  "ljut": [
+    "ljet"
+  ],
+  "rado": [
+    "rudo",
+    "rano",
+    "ralo",
+    "radi"
+  ],
+  "muha": [
+    "buha",
+    "juha",
+    "muka",
+    "mula",
+    "muza",
+    "munj"
+  ],
+  "gnoj": [
+    "znoj",
+    "gnom"
+  ],
+  "mnom": [
+    "gnom",
+    "miom"
+  ],
+  "skup": [
+    "stup",
+    "skut"
+  ],
+  "međa": [
+    "leđa",
+    "meta",
+    "među"
+  ],
+  "manj": [
+    "danj",
+    "janj",
+    "sanj",
+    "munj",
+    "malj"
+  ],
+  "groš": [
+    "broš",
+    "grom",
+    "grob",
+    "grof"
+  ],
+  "tuča": [
+    "vuča",
+    "tuga",
+    "tuna",
+    "tuda",
+    "tuba",
+    "tuja"
+  ],
+  "opus": [
+    "okus",
+    "opis"
+  ],
+  "kilt": [
+    "šilt",
+    "kult",
+    "kist",
+    "kila"
+  ],
+  "mast": [
+    "tast",
+    "čast",
+    "rast",
+    "most",
+    "malj",
+    "manj",
+    "masa"
+  ],
+  "etil": [
+    "stil",
+    "etin"
+  ],
+  "glog": [
+    "slog",
+    "blog",
+    "ulog"
+  ],
+  "samo": [
+    "kamo",
+    "ljam",
+    "tamo",
+    "salo",
+    "sako",
+    "sanj"
+  ],
+  "rilo": [
+    "bilo",
+    "šilo",
+    "ralo"
+  ],
+  "ulje": [
+    "slje",
+    "ulja"
+  ],
+  "slje": [
+    "ulje"
+  ],
+  "vika": [
+    "rika",
+    "sika",
+    "dika",
+    "vila",
+    "viza"
+  ],
+  "boja": [
+    "soja",
+    "bora",
+    "boba",
+    "boća",
+    "boca"
+  ],
+  "jeza": [
+    "teza",
+    "veza",
+    "jeka",
+    "jela"
+  ],
+  "grof": [
+    "graf",
+    "grom",
+    "grob",
+    "groš"
+  ],
+  "moda": [
+    "koda",
+    "roda",
+    "poda",
+    "voda",
+    "mada",
+    "mora"
+  ],
+  "truo": [
+    "trup",
+    "trut",
+    "trun",
+    "trud"
+  ],
+  "opip": [
+    "osip",
+    "opis"
+  ],
+  "moći": [
+    "doći",
+    "poći",
+    "maći"
+  ],
+  "drug": [
+    "krug",
+    "drag",
+    "drum"
+  ],
+  "ulaz": [
+    "mlaz",
+    "ulja",
+    "ukaz",
+    "ular"
+  ],
+  "šuta": [
+    "kuta",
+    "puta",
+    "ljut",
+    "juta",
+    "šuga",
+    "šuša",
+    "šuma"
+  ],
+  "atol": [
+    "stol",
+    "atom"
+  ],
+  "maca": [
+    "mama",
+    "mada",
+    "masa",
+    "mapa",
+    "malj",
+    "mana",
+    "manj"
+  ],
+  "lira": [
+    "gira",
+    "lila",
+    "lisa",
+    "lipa",
+    "liga"
+  ],
+  "juha": [
+    "buha",
+    "muha",
+    "joha",
+    "jura",
+    "juta"
+  ],
   "vrba": [
     "grba",
     "vrša"
   ],
-  "vreo": [
-    "zreo",
-    "vrlo"
+  "žalo": [
+    "ralo",
+    "salo",
+    "malo",
+    "halo"
   ],
-  "vrlo": [
-    "grlo",
-    "vreo"
-  ],
-  "vrša": [
-    "vrba"
-  ],
-  "vuča": [
-    "tuča",
-    "vuga",
-    "vuna"
-  ],
-  "vući": [
-    "pući",
-    "tući"
-  ],
-  "vuga": [
-    "duga",
-    "fuga",
-    "kuga",
-    "šuga",
+  "toga": [
+    "joga",
+    "noga",
     "tuga",
-    "vaga",
-    "vuča",
-    "vuna"
+    "tona"
   ],
-  "vuna": [
-    "buna",
-    "kuna",
-    "runa",
-    "tuna",
-    "žuna",
-    "vena",
-    "vuča",
-    "vuga"
+  "svak": [
+    "slak",
+    "smak",
+    "svat"
+  ],
+  "rulj": [
+    "hulj"
+  ],
+  "član": [
+    "slan",
+    "plan",
+    "dlan",
+    "elan"
+  ],
+  "dlan": [
+    "slan",
+    "plan",
+    "član",
+    "elan"
+  ],
+  "elan": [
+    "slan",
+    "plan",
+    "član",
+    "dlan"
+  ],
+  "klen": [
+    "klin",
+    "klon",
+    "kler"
+  ],
+  "zima": [
+    "rima",
+    "njim",
+    "zimi"
+  ],
+  "srez": [
+    "slje",
+    "sred"
+  ],
+  "svud": [
+    "ovud",
+    "svod"
+  ],
+  "arka": [
+    "trka",
+    "alka"
+  ],
+  "kraj": [
+    "kroj",
+    "krak",
+    "kran",
+    "kral"
+  ],
+  "medo": [
+    "čedo",
+    "meso"
+  ],
+  "koks": [
+    "boks",
+    "keks",
+    "koka"
+  ],
+  "vani": [
+    "rani",
+    "lani",
+    "vadi"
+  ],
+  "šaka": [
+    "raka",
+    "baka",
+    "šara",
+    "šapa",
+    "šala"
+  ],
+  "mlađ": [
+    "mlak",
+    "mlaz",
+    "mlad",
+    "mlat"
+  ],
+  "šija": [
+    "đija",
+    "šiba"
+  ],
+  "tamo": [
+    "kamo",
+    "ljam",
+    "samo",
+    "tako",
+    "tama"
+  ],
+  "dunj": [
+    "munj",
+    "danj",
+    "donj",
+    "dinj"
+  ],
+  "vaga": [
+    "ljag",
+    "vuga",
+    "vaza",
+    "vama",
+    "vata"
+  ],
+  "udal": [
+    "ulja",
+    "udar",
+    "udav",
+    "udah"
+  ],
+  "lava": [
+    "kava",
+    "tava",
+    "java",
+    "lama",
+    "lađa"
+  ],
+  "dići": [
+    "sići",
+    "doći",
+    "dinj"
+  ],
+  "čist": [
+    "kist",
+    "list",
+    "čest",
+    "čast"
+  ],
+  "plik": [
+    "klik",
+    "plin",
+    "pliš"
+  ],
+  "krst": [
+    "prst",
+    "kost",
+    "kist",
+    "krut"
+  ],
+  "smak": [
+    "umak",
+    "slak",
+    "svak"
+  ],
+  "lane": [
+    "tane",
+    "lani"
+  ],
+  "vran": [
+    "kran",
+    "vrač",
+    "vrag",
+    "vrat"
+  ],
+  "ranč": [
+    "rana",
+    "rano",
+    "rani",
+    "rang"
+  ],
+  "jelo": [
+    "čelo",
+    "selo",
+    "jela"
+  ],
+  "liga": [
+    "siga",
+    "lila",
+    "lisa",
+    "lipa",
+    "lira"
+  ],
+  "blag": [
+    "šlag",
+    "blja",
+    "blog"
+  ],
+  "tlak": [
+    "slak",
+    "mlak",
+    "vlak",
+    "trak"
+  ],
+  "pipa": [
+    "sipa",
+    "lipa",
+    "papa",
+    "pila",
+    "pita"
+  ],
+  "vata": [
+    "rata",
+    "tata",
+    "vaza",
+    "vama",
+    "vaga"
+  ],
+  "urok": [
+    "srok",
+    "urod"
+  ],
+  "orao": [
+    "obao",
+    "orač",
+    "orah"
+  ],
+  "pult": [
+    "kult",
+    "pust",
+    "puls"
+  ],
+  "naći": [
+    "maći",
+    "taći",
+    "zaći"
   ],
   "zaći": [
     "maći",
-    "naći",
-    "taći"
+    "taći",
+    "naći"
   ],
-  "zato": [
-    "jato",
-    "nato"
+  "mali": [
+    "maći",
+    "malj",
+    "mati",
+    "manj",
+    "malo"
   ],
-  "zbir": [
-    "zbor"
+  "čvor": [
+    "tvor",
+    "dvor"
   ],
-  "zbog": [
-    "ubog",
-    "zbor"
+  "dvor": [
+    "tvor",
+    "čvor"
   ],
-  "zbor": [
-    "obor",
-    "zbir",
-    "zbog"
+  "stid": [
+    "stil",
+    "stih"
   ],
-  "zeba": [
-    "beba"
+  "stih": [
+    "stil",
+    "stid"
   ],
-  "zima": [
-    "njima",
-    "rima",
-    "zimi"
-  ],
-  "znak": [
-    "zrak"
-  ],
-  "znoj": [
-    "gnoj"
-  ],
-  "zona": [
-    "tona",
-    "zora"
-  ],
-  "zora": [
-    "bora",
-    "gora",
-    "kora",
+  "more": [
+    "gore",
     "mora",
-    "pora",
-    "zona"
+    "mort",
+    "morž"
   ],
-  "zrak": [
-    "arak",
-    "brak",
-    "frak",
-    "krak",
-    "mrak",
-    "trak",
-    "znak"
+  "glas": [
+    "vlas",
+    "klas",
+    "glad"
   ],
-  "zreo": [
-    "vreo",
-    "zrno"
+  "guja": [
+    "kuja",
+    "tuja",
+    "guma",
+    "guba",
+    "guša"
   ],
-  "zrno": [
-    "zreo",
-    "zrnje"
-  ],
-  "zrnje": [
-    "trnje"
-  ],
-  "zvrk": [
-    "zvuk"
-  ],
-  "zvuk": [
-    "zvrk"
-  ],
-  "žaba": [
-    "baba",
-    "žara"
-  ],
-  "žalo": [
-    "halo",
-    "malo",
-    "ralo",
+  "selo": [
+    "čelo",
+    "jelo",
     "salo"
+  ],
+  "sred": [
+    "ured",
+    "slje",
+    "srez"
+  ],
+  "slom": [
+    "slog",
+    "sloj",
+    "slon"
+  ],
+  "sito": [
+    "mito",
+    "žito",
+    "sinj"
+  ],
+  "geto": [
+    "ljet",
+    "veto"
+  ],
+  "veto": [
+    "ljet",
+    "geto"
   ],
   "žara": [
     "bara",
@@ -4774,80 +3706,1001 @@ export const sveHrvRijeci: { [key: string]: string[] } = {
     "šara",
     "žaba"
   ],
-  "žega": [
-    "njega",
-    "žena"
-  ],
-  "žena": [
-    "vena",
-    "žuna",
-    "žega"
-  ],
-  "žeti": [
-    "ljeti",
-    "peti"
-  ],
-  "žica": [
-    "žila",
-    "živa"
-  ],
-  "žila": [
+  "kita": [
+    "pita",
+    "kuta",
+    "kota",
     "kila",
-    "lila",
-    "pila",
-    "sila",
-    "vila",
-    "žica",
-    "živa",
-    "žilje"
+    "kiša"
   ],
-  "žilje": [
-    "bilje",
-    "milje"
+  "raja": [
+    "rana",
+    "rasa",
+    "raka",
+    "rata",
+    "raža"
   ],
-  "žito": [
-    "mito",
-    "sito",
-    "živo"
+  "uvis": [
+    "upis",
+    "uvid"
   ],
-  "živa": [
-    "njiva",
-    "riva",
-    "žica",
-    "žila",
-    "živo"
+  "doza": [
+    "koza",
+    "roza",
+    "poza",
+    "loza",
+    "donj",
+    "doba"
   ],
-  "živo": [
-    "nivo",
-    "pivo",
-    "žito",
-    "živa"
-  ],
-  "žuka": [
-    "buka",
-    "huka",
-    "kuka",
-    "luka",
+  "muza": [
+    "suza",
     "muka",
-    "ruka",
-    "žuna",
-    "župa"
+    "mula",
+    "muha",
+    "munj"
   ],
-  "žuna": [
-    "buna",
-    "kuna",
-    "runa",
-    "tuna",
-    "vuna",
-    "žena",
-    "žuka",
-    "župa"
+  "uvoz": [
+    "uvez",
+    "uvod"
+  ],
+  "cvat": [
+    "svat",
+    "hvat"
+  ],
+  "hvat": [
+    "svat",
+    "cvat"
+  ],
+  "radi": [
+    "vadi",
+    "rani",
+    "rado"
+  ],
+  "juta": [
+    "kuta",
+    "puta",
+    "ljut",
+    "šuta",
+    "jura",
+    "juha"
+  ],
+  "mina": [
+    "dina",
+    "mana",
+    "milj",
+    "misa"
+  ],
+  "munj": [
+    "dunj",
+    "manj"
+  ],
+  "kiša": [
+    "niša",
+    "kaša",
+    "kila",
+    "kita"
+  ],
+  "očaj": [
+    "ovaj",
+    "onaj"
+  ],
+  "onaj": [
+    "ovaj",
+    "očaj"
+  ],
+  "klif": [
+    "klin",
+    "klik",
+    "klip"
+  ],
+  "klip": [
+    "klin",
+    "klik",
+    "klif"
+  ],
+  "ovan": [
+    "odan",
+    "ovaj"
+  ],
+  "brid": [
+    "hrid",
+    "brod"
+  ],
+  "mrlj": [
+    "malj",
+    "milj"
+  ],
+  "odan": [
+    "ovan",
+    "odar"
+  ],
+  "gust": [
+    "pust",
+    "tust",
+    "gest",
+    "gost"
+  ],
+  "donj": [
+    "danj",
+    "dunj",
+    "dinj"
+  ],
+  "jaje": [
+    "jare",
+    "janj"
+  ],
+  "hlad": [
+    "mlad",
+    "glad",
+    "hlap"
+  ],
+  "pola": [
+    "kola",
+    "pila",
+    "pora",
+    "poza",
+    "poda"
+  ],
+  "joga": [
+    "toga",
+    "noga",
+    "joha"
+  ],
+  "tebi": [
+    "teći",
+    "tebe"
+  ],
+  "jela": [
+    "jeka",
+    "jeza",
+    "jelo"
+  ],
+  "paša": [
+    "kaša",
+    "čaša",
+    "para",
+    "papa"
+  ],
+  "zbog": [
+    "ubog",
+    "zbor"
+  ],
+  "šest": [
+    "pest",
+    "test",
+    "čest",
+    "gest"
+  ],
+  "faza": [
+    "vaza",
+    "baza",
+    "gaza",
+    "oaza"
+  ],
+  "gaza": [
+    "vaza",
+    "baza",
+    "faza",
+    "oaza"
+  ],
+  "oaza": [
+    "vaza",
+    "baza",
+    "faza",
+    "gaza"
+  ],
+  "repa": [
+    "rupa",
+    "rema",
+    "resa",
+    "rera"
+  ],
+  "beba": [
+    "zeba",
+    "boba",
+    "baba"
+  ],
+  "rast": [
+    "tast",
+    "čast",
+    "mast",
+    "rasa"
+  ],
+  "nada": [
+    "mada",
+    "kada",
+    "tada",
+    "sada",
+    "nama"
+  ],
+  "fuga": [
+    "kuga",
+    "tuga",
+    "duga",
+    "vuga",
+    "šuga"
+  ],
+  "dati": [
+    "mati",
+    "danj"
+  ],
+  "noga": [
+    "toga",
+    "joga",
+    "nota"
+  ],
+  "meta": [
+    "ljet",
+    "teta",
+    "peta",
+    "međa"
+  ],
+  "doba": [
+    "boba",
+    "roba",
+    "soba",
+    "doza",
+    "donj"
+  ],
+  "križ": [
+    "krin",
+    "krik",
+    "kriv"
+  ],
+  "štap": [
+    "stap",
+    "šlja"
+  ],
+  "hram": [
+    "gram",
+    "sram",
+    "hrom"
+  ],
+  "stup": [
+    "skup",
+    "stap"
+  ],
+  "plač": [
+    "plan",
+    "plah",
+    "plav"
+  ],
+  "plav": [
+    "plan",
+    "plah",
+    "plač"
   ],
   "župa": [
     "kupa",
-    "lupa",
     "rupa",
-    "žuka",
-    "žuna"
+    "lupa",
+    "žuna",
+    "žuka"
+  ],
+  "deva": [
+    "ševa",
+    "deka"
+  ],
+  "njiv": [
+    "njim"
+  ],
+  "ujak": [
+    "umak",
+    "uzak",
+    "ulja"
+  ],
+  "nato": [
+    "jato",
+    "zato"
+  ],
+  "zato": [
+    "jato",
+    "nato"
+  ],
+  "krov": [
+    "kriv",
+    "krom",
+    "kroj"
+  ],
+  "nivo": [
+    "živo",
+    "njiv",
+    "pivo"
+  ],
+  "pivo": [
+    "živo",
+    "njiv",
+    "nivo"
+  ],
+  "jari": [
+    "janj",
+    "jare",
+    "jard"
+  ],
+  "oboa": [
+    "obor",
+    "obod"
+  ],
+  "opor": [
+    "spor",
+    "obor"
+  ],
+  "boca": [
+    "bora",
+    "boba",
+    "boća",
+    "boja"
+  ],
+  "brav": [
+    "mrav",
+    "blja",
+    "brak",
+    "brat"
+  ],
+  "slab": [
+    "slan",
+    "slak",
+    "slap"
+  ],
+  "trka": [
+    "arka",
+    "teka"
+  ],
+  "mrav": [
+    "brav",
+    "mrlj",
+    "mrak",
+    "mraz"
+  ],
+  "obao": [
+    "orao",
+    "obad"
+  ],
+  "pusa": [
+    "pura",
+    "puta",
+    "puma",
+    "pust"
+  ],
+  "odar": [
+    "udar",
+    "odan"
+  ],
+  "grba": [
+    "vrba",
+    "guba"
+  ],
+  "soja": [
+    "boja",
+    "soba",
+    "sova"
+  ],
+  "brat": [
+    "vrat",
+    "blja",
+    "brak",
+    "brav"
+  ],
+  "biće": [
+    "piće",
+    "bilj"
+  ],
+  "mraz": [
+    "mlaz",
+    "mrlj",
+    "mrak",
+    "mrav"
+  ],
+  "šiba": [
+    "riba",
+    "šija"
+  ],
+  "java": [
+    "kava",
+    "tava",
+    "lava",
+    "jama",
+    "janj"
+  ],
+  "uman": [
+    "ulja",
+    "umak",
+    "umah"
+  ],
+  "kult": [
+    "pult",
+    "kilt",
+    "kula"
+  ],
+  "žilj": [
+    "milj",
+    "bilj",
+    "želj"
+  ],
+  "kler": [
+    "klor",
+    "klen"
+  ],
+  "pras": [
+    "tras",
+    "prah",
+    "prag"
+  ],
+  "trop": [
+    "trup",
+    "trap",
+    "trom"
+  ],
+  "gore": [
+    "more",
+    "gora",
+    "gord"
+  ],
+  "vođa": [
+    "lođa",
+    "voda",
+    "volj"
+  ],
+  "klor": [
+    "kler",
+    "klon"
+  ],
+  "kral": [
+    "krak",
+    "kran",
+    "kraj"
+  ],
+  "cura": [
+    "bura",
+    "pura",
+    "jura",
+    "hura"
+  ],
+  "čaša": [
+    "kaša",
+    "paša",
+    "čađa"
+  ],
+  "drap": [
+    "trap",
+    "drag",
+    "drač"
+  ],
+  "užas": [
+    "ulja",
+    "užar",
+    "užad"
+  ],
+  "vena": [
+    "žena",
+    "vuna",
+    "veza"
+  ],
+  "uime": [
+    "njim",
+    "vime"
+  ],
+  "dina": [
+    "mina",
+    "dika",
+    "dinj"
+  ],
+  "tona": [
+    "zona",
+    "tuna",
+    "toga"
+  ],
+  "dres": [
+    "tres",
+    "ures"
+  ],
+  "keks": [
+    "seks",
+    "koks"
+  ],
+  "želj": [
+    "žilj"
+  ],
+  "spas": [
+    "stas",
+    "spis"
+  ],
+  "dinj": [
+    "sinj",
+    "danj",
+    "dunj",
+    "donj"
+  ],
+  "smog": [
+    "slog",
+    "stog"
+  ],
+  "hala": [
+    "bala",
+    "šala",
+    "halo"
+  ],
+  "dugo": [
+    "jugo",
+    "dunj",
+    "duga"
+  ],
+  "tref": [
+    "tres",
+    "tren"
+  ],
+  "pire": [
+    "pile",
+    "piće"
+  ],
+  "čulo": [
+    "čelo",
+    "čudo"
+  ],
+  "rera": [
+    "rema",
+    "resa",
+    "repa"
+  ],
+  "morž": [
+    "mora",
+    "mort",
+    "more"
+  ],
+  "vadi": [
+    "radi",
+    "vani"
+  ],
+  "žeti": [
+    "ljet",
+    "peti",
+    "želj"
+  ],
+  "gema": [
+    "rema",
+    "tema",
+    "guma"
+  ],
+  "šilt": [
+    "kilt",
+    "šilo"
+  ],
+  "više": [
+    "vime",
+    "vile"
+  ],
+  "seks": [
+    "keks",
+    "seka"
+  ],
+  "osam": [
+    "osim"
+  ],
+  "vući": [
+    "pući",
+    "tući"
+  ],
+  "nula": [
+    "kula",
+    "bula",
+    "mula",
+    "lula"
+  ],
+  "klas": [
+    "vlas",
+    "glas"
+  ],
+  "pano": [
+    "rano",
+    "puno"
+  ],
+  "pače": [
+    "mače"
+  ],
+  "ukus": [
+    "okus"
+  ],
+  "eten": [
+    "etin"
+  ],
+  "leća": [
+    "leđa",
+    "leći"
+  ],
+  "tisa": [
+    "lisa",
+    "sisa",
+    "misa"
+  ],
+  "bard": [
+    "jard",
+    "bara"
+  ],
+  "onud": [
+    "ovud"
+  ],
+  "alga": [
+    "alka"
+  ],
+  "mlin": [
+    "klin",
+    "plin"
+  ],
+  "điha": [
+    "đija"
+  ],
+  "park": [
+    "pauk",
+    "para"
+  ],
+  "sinj": [
+    "dinj",
+    "sanj"
+  ],
+  "špag": [
+    "šlag",
+    "šlja"
+  ],
+  "loža": [
+    "koža",
+    "lođa",
+    "loza"
+  ],
+  "skok": [
+    "srok"
+  ],
+  "hlap": [
+    "slap",
+    "hlad"
+  ],
+  "karo": [
+    "kako",
+    "kamo"
+  ],
+  "niza": [
+    "viza",
+    "niša"
+  ],
+  "suza": [
+    "muza",
+    "suša",
+    "suma"
+  ],
+  "tvrd": [
+    "tvid"
+  ],
+  "niša": [
+    "kiša",
+    "niza"
+  ],
+  "kvar": [
+    "tvar"
+  ],
+  "sebe": [
+    "tebe"
+  ],
+  "tele": [
+    "tebe"
+  ],
+  "otac": [
+    "otad"
+  ],
+  "ugao": [
+    "ulja",
+    "uzao"
+  ],
+  "sram": [
+    "gram",
+    "hram"
+  ],
+  "auto": [
+    "ljut"
+  ],
+  "znoj": [
+    "gnoj"
+  ],
+  "miom": [
+    "mnom",
+    "milj"
+  ],
+  "skut": [
+    "skup"
+  ],
+  "prud": [
+    "trud",
+    "prut"
+  ],
+  "remi": [
+    "reći",
+    "rema"
+  ],
+  "vuča": [
+    "tuča",
+    "vuna",
+    "vuga"
+  ],
+  "tašt": [
+    "tast",
+    "takt"
+  ],
+  "kesa": [
+    "resa",
+    "kosa",
+    "kasa"
+  ],
+  "atom": [
+    "atol"
+  ],
+  "ruho": [
+    "rudo",
+    "runo",
+    "rulj"
+  ],
+  "vrša": [
+    "vrba"
+  ],
+  "krpa": [
+    "kupa",
+    "kapa",
+    "krma"
+  ],
+  "hulj": [
+    "rulj"
+  ],
+  "alat": [
+    "mlat",
+    "vlat"
+  ],
+  "uveo": [
+    "ulje",
+    "uvez"
+  ],
+  "grub": [
+    "grab",
+    "grob"
+  ],
+  "meso": [
+    "medo"
+  ],
+  "joha": [
+    "juha",
+    "joga"
+  ],
+  "sova": [
+    "soba",
+    "soja"
+  ],
+  "čađa": [
+    "lađa",
+    "čaša"
+  ],
+  "tane": [
+    "lane"
+  ],
+  "krma": [
+    "kuma",
+    "koma",
+    "krpa"
+  ],
+  "mimo": [
+    "njim",
+    "mito",
+    "milj"
+  ],
+  "žica": [
+    "žila",
+    "živa",
+    "žilj"
+  ],
+  "trik": [
+    "krik",
+    "trak"
+  ],
+  "gord": [
+    "gora",
+    "gore"
+  ],
+  "hrid": [
+    "brid"
+  ],
+  "zbir": [
+    "zbor"
+  ],
+  "žaba": [
+    "baba",
+    "žara"
+  ],
+  "zona": [
+    "tona",
+    "zora"
+  ],
+  "mošt": [
+    "most",
+    "mort"
+  ],
+  "upit": [
+    "upis"
+  ],
+  "nota": [
+    "kota",
+    "noga"
+  ],
+  "šlja": [
+    "ulja",
+    "blja"
+  ],
+  "svet": [
+    "slje",
+    "svat"
+  ],
+  "ševa": [
+    "deva"
+  ],
+  "ćuba": [
+    "guba",
+    "tuba"
+  ],
+  "biro": [
+    "bilo",
+    "bilj"
+  ],
+  "neuk": [
+    "nauk"
+  ],
+  "naum": [
+    "nauk"
+  ],
+  "gira": [
+    "lira",
+    "gora"
+  ],
+  "upad": [
+    "ulja",
+    "užad"
+  ],
+  "osoj": [
+    "ovoj"
+  ],
+  "paun": [
+    "pauk"
+  ],
+  "fliš": [
+    "pliš"
+  ],
+  "blok": [
+    "blog"
+  ],
+  "ljag": [
+    "ljam"
+  ],
+  "jugo": [
+    "dugo"
+  ],
+  "punč": [
+    "puno"
+  ],
+  "njom": [
+    "njim"
+  ],
+  "sanj": [
+    "danj",
+    "janj",
+    "manj",
+    "sinj"
+  ],
+  "ulov": [
+    "ulog"
+  ],
+  "među": [
+    "međa"
+  ],
+  "ubav": [
+    "udav",
+    "ulja"
+  ],
+  "hren": [
+    "tren"
+  ],
+  "drum": [
+    "drug"
+  ],
+  "ukaz": [
+    "ulja",
+    "ulaz"
+  ],
+  "zimi": [
+    "njim",
+    "zima"
+  ],
+  "boks": [
+    "koks"
+  ],
+  "bruh": [
+    "kruh"
+  ],
+  "puls": [
+    "pult"
+  ],
+  "mrva": [
+    "mrlj"
+  ],
+  "krep": [
+    "krup"
+  ],
+  "pakt": [
+    "takt"
+  ],
+  "kamp": [
+    "ljam",
+    "kamo"
+  ],
+  "zeba": [
+    "beba"
+  ],
+  "lido": [
+    "ludo"
+  ],
+  "urin": [
+    "krin"
+  ],
+  "neki": [
+    "neka"
+  ],
+  "lift": [
+    "list"
+  ],
+  "itko": [
+    "iako"
+  ],
+  "laso": [
+    "lako"
+  ],
+  "kaki": [
+    "kako"
+  ],
+  "ring": [
+    "rang"
+  ],
+  "blja": [
+    "ulja",
+    "šlja"
+  ],
+  "znak": [
+    "zrak"
+  ],
+  "šarm": [
+    "šara"
+  ],
+  "kopt": [
+    "kost"
+  ],
+  "bale": [
+    "bala"
+  ],
+  "gumb": [
+    "guma"
+  ],
+  "dude": [
+    "dunj",
+    "duda"
+  ],
+  "daća": [
+    "dama",
+    "danj"
+  ],
+  "bure": [
+    "bura"
+  ],
+  "bunt": [
+    "buna"
+  ],
+  "kupe": [
+    "kupa"
+  ],
+  "kolo": [
+    "kola"
+  ],
+  "kuku": [
+    "kuka"
   ]
 }
