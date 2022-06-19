@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/pretvorle/static/css/main.b95b98e2.css",
-    "main.js": "/pretvorle/static/js/main.add03c42.js",
+    "main.js": "/pretvorle/static/js/main.519a5f38.js",
     "static/js/787.a1fe42e5.chunk.js": "/pretvorle/static/js/787.a1fe42e5.chunk.js",
     "index.html": "/pretvorle/index.html",
     "main.b95b98e2.css.map": "/pretvorle/static/css/main.b95b98e2.css.map",
-    "main.add03c42.js.map": "/pretvorle/static/js/main.add03c42.js.map",
+    "main.519a5f38.js.map": "/pretvorle/static/js/main.519a5f38.js.map",
     "787.a1fe42e5.chunk.js.map": "/pretvorle/static/js/787.a1fe42e5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b95b98e2.css",
-    "static/js/main.add03c42.js"
+    "static/js/main.519a5f38.js"
   ]
 }
