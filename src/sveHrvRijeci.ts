@@ -2743,7 +2743,6 @@ export const sveHrvRijeci: { [key: string]: string[] } = {
     "poda",
     "moda",
     "vođa",
-    "volj"
   ],
   "tvoj": [
     "svoj",
@@ -2791,7 +2790,6 @@ export const sveHrvRijeci: { [key: string]: string[] } = {
     "peti"
   ],
   "žega": [
-    "njeg",
     "žena",
     "želj"
   ],
@@ -4139,7 +4137,6 @@ export const sveHrvRijeci: { [key: string]: string[] } = {
   "vođa": [
     "lođa",
     "voda",
-    "volj"
   ],
   "klor": [
     "kler",
