@@ -888,9 +888,6 @@ export const sveHrvRijeci: { [key: string]: string[] } = {
     "grad",
     "graf"
   ],
-  "ljet": [
-    "ljut"
-  ],
   "peći": [
     "teći",
     "leći",
@@ -985,7 +982,6 @@ export const sveHrvRijeci: { [key: string]: string[] } = {
     "vata"
   ],
   "koma": [
-    "njom",
     "kuma",
     "krma",
     "koda",
@@ -1081,7 +1077,6 @@ export const sveHrvRijeci: { [key: string]: string[] } = {
     "fuga",
     "duda",
     "duša",
-    "dunj",
     "dugo"
   ],
   "mapa": [
@@ -1646,7 +1641,6 @@ export const sveHrvRijeci: { [key: string]: string[] } = {
     "luda",
     "duga",
     "duša",
-    "dunj",
     "dude"
   ],
   "ubod": [
@@ -1684,7 +1678,6 @@ export const sveHrvRijeci: { [key: string]: string[] } = {
     "prst"
   ],
   "njim": [
-    "njom",
     "njiv"
   ],
   "dama": [
@@ -1778,19 +1771,10 @@ export const sveHrvRijeci: { [key: string]: string[] } = {
     "mimo"
   ],
   "peti": [
-    "ljet",
     "žeti",
     "piti",
     "peći",
     "peta"
-  ],
-  "danj": [
-    "janj",
-    "manj",
-    "sanj",
-    "dunj",
-    "donj",
-    "dinj"
   ],
   "riba": [
     "šiba",
@@ -1891,7 +1875,6 @@ export const sveHrvRijeci: { [key: string]: string[] } = {
     "tref"
   ],
   "teta": [
-    "ljet",
     "peta",
     "meta",
     "tata",
@@ -2076,7 +2059,6 @@ export const sveHrvRijeci: { [key: string]: string[] } = {
     "vika",
     "deka",
     "dina",
-    "dinj"
   ],
   "šuga": [
     "kuga",
@@ -2486,8 +2468,7 @@ export const sveHrvRijeci: { [key: string]: string[] } = {
     "šuša",
     "suša",
     "duga",
-    "duda",
-    "dunj"
+    "duda"
   ],
   "misa": [
     "lisa",
@@ -2782,7 +2763,6 @@ export const sveHrvRijeci: { [key: string]: string[] } = {
     "sova"
   ],
   "peta": [
-    "ljet",
     "teta",
     "meta",
     "puta",
@@ -3499,12 +3479,6 @@ export const sveHrvRijeci: { [key: string]: string[] } = {
     "tako",
     "tama"
   ],
-  "dunj": [
-    "munj",
-    "danj",
-    "donj",
-    "dinj"
-  ],
   "vaga": [
     "ljag",
     "vuga",
@@ -3527,8 +3501,7 @@ export const sveHrvRijeci: { [key: string]: string[] } = {
   ],
   "dići": [
     "sići",
-    "doći",
-    "dinj"
+    "doći"
   ],
   "čist": [
     "kist",
@@ -3691,11 +3664,9 @@ export const sveHrvRijeci: { [key: string]: string[] } = {
     "sinj"
   ],
   "geto": [
-    "ljet",
     "veto"
   ],
   "veto": [
-    "ljet",
     "geto"
   ],
   "žara": [
@@ -3769,7 +3740,6 @@ export const sveHrvRijeci: { [key: string]: string[] } = {
     "misa"
   ],
   "munj": [
-    "dunj",
     "manj"
   ],
   "kiša": [
@@ -3817,11 +3787,6 @@ export const sveHrvRijeci: { [key: string]: string[] } = {
     "tust",
     "gest",
     "gost"
-  ],
-  "donj": [
-    "danj",
-    "dunj",
-    "dinj"
   ],
   "jaje": [
     "jare",
@@ -3928,7 +3893,6 @@ export const sveHrvRijeci: { [key: string]: string[] } = {
     "nota"
   ],
   "meta": [
-    "ljet",
     "teta",
     "peta",
     "međa"
@@ -4179,8 +4143,7 @@ export const sveHrvRijeci: { [key: string]: string[] } = {
   ],
   "dina": [
     "mina",
-    "dika",
-    "dinj"
+    "dika"
   ],
   "tona": [
     "zona",
@@ -4202,12 +4165,6 @@ export const sveHrvRijeci: { [key: string]: string[] } = {
     "stas",
     "spis"
   ],
-  "dinj": [
-    "sinj",
-    "danj",
-    "dunj",
-    "donj"
-  ],
   "smog": [
     "slog",
     "stog"
@@ -4219,7 +4176,6 @@ export const sveHrvRijeci: { [key: string]: string[] } = {
   ],
   "dugo": [
     "jugo",
-    "dunj",
     "duga"
   ],
   "tref": [
@@ -4249,7 +4205,6 @@ export const sveHrvRijeci: { [key: string]: string[] } = {
     "vani"
   ],
   "žeti": [
-    "ljet",
     "peti",
     "želj"
   ],
@@ -4330,13 +4285,8 @@ export const sveHrvRijeci: { [key: string]: string[] } = {
     "pauk",
     "para"
   ],
-  "sinj": [
-    "dinj",
-    "sanj"
-  ],
   "špag": [
-    "šlag",
-    "šlja"
+    "šlag"
   ],
   "loža": [
     "koža",
@@ -4678,7 +4628,6 @@ export const sveHrvRijeci: { [key: string]: string[] } = {
     "guma"
   ],
   "dude": [
-    "dunj",
     "duda"
   ],
   "daća": [
